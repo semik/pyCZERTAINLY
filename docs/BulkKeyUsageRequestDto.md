@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.bulk_key_usage_request_dto import BulkKeyUsageRequestDto
+from pyCZERTAINLY.models.bulk_key_usage_request_dto import BulkKeyUsageRequestDto
 
 # TODO update the JSON string below
 json = "{}"

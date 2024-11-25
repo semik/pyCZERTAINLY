@@ -1,4 +1,4 @@
-# openapi_client.CallbackApi
+# pyCZERTAINLY.CallbackApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -19,26 +19,26 @@ API to trigger the Callback for Connector.
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_callback import RequestAttributeCallback
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_callback import RequestAttributeCallback
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CallbackApi(api_client)
+    api_instance = pyCZERTAINLY.CallbackApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
     function_group = 'function_group_example' # str | Function Group
     kind = 'kind_example' # str | Kind
-    request_attribute_callback = openapi_client.RequestAttributeCallback() # RequestAttributeCallback | 
+    request_attribute_callback = pyCZERTAINLY.RequestAttributeCallback() # RequestAttributeCallback | 
 
     try:
         # Connector Callback API
@@ -98,26 +98,26 @@ API to trigger the Callback for resource.
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_callback import RequestAttributeCallback
-from openapi_client.models.resource import Resource
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_callback import RequestAttributeCallback
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CallbackApi(api_client)
-    resource = openapi_client.Resource() # Resource | Name of the resource
+    api_instance = pyCZERTAINLY.CallbackApi(api_client)
+    resource = pyCZERTAINLY.Resource() # Resource | Name of the resource
     parent_object_uuid = 'parent_object_uuid_example' # str | Parent Object UUID
-    request_attribute_callback = openapi_client.RequestAttributeCallback() # RequestAttributeCallback | 
+    request_attribute_callback = pyCZERTAINLY.RequestAttributeCallback() # RequestAttributeCallback | 
 
     try:
         # Resource Callback API

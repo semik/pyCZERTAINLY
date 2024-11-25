@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.certificate_dto import CertificateDto
+from pyCZERTAINLY.models.certificate_dto import CertificateDto
 
 # TODO update the JSON string below
 json = "{}"

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.base_attribute_content_dto import BaseAttributeContentDto
+from pyCZERTAINLY.models.base_attribute_content_dto import BaseAttributeContentDto
 
 # TODO update the JSON string below
 json = "{}"

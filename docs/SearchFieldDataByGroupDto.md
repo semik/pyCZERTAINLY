@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
+from pyCZERTAINLY.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
 
 # TODO update the JSON string below
 json = "{}"

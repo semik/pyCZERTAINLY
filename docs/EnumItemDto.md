@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.enum_item_dto import EnumItemDto
+from pyCZERTAINLY.models.enum_item_dto import EnumItemDto
 
 # TODO update the JSON string below
 json = "{}"

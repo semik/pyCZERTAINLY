@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.base_attribute_constraint import BaseAttributeConstraint
+from pyCZERTAINLY.models.base_attribute_constraint import BaseAttributeConstraint
 
 # TODO update the JSON string below
 json = "{}"

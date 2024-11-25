@@ -1,4 +1,4 @@
-# openapi_client.AuditLogApi
+# pyCZERTAINLY.AuditLogApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -19,23 +19,23 @@ Export Audit logs
 
 
 ```python
-import openapi_client
-from openapi_client.models.search_filter_request_dto import SearchFilterRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.search_filter_request_dto import SearchFilterRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuditLogApi(api_client)
-    search_filter_request_dto = [openapi_client.SearchFilterRequestDto()] # List[SearchFilterRequestDto] | 
+    api_instance = pyCZERTAINLY.AuditLogApi(api_client)
+    search_filter_request_dto = [pyCZERTAINLY.SearchFilterRequestDto()] # List[SearchFilterRequestDto] | 
 
     try:
         # Export Audit logs
@@ -90,22 +90,22 @@ Get Audit logs searchable fields information
 
 
 ```python
-import openapi_client
-from openapi_client.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuditLogApi(api_client)
+    api_instance = pyCZERTAINLY.AuditLogApi(api_client)
 
     try:
         # Get Audit logs searchable fields information
@@ -157,24 +157,24 @@ List Audit logs
 
 
 ```python
-import openapi_client
-from openapi_client.models.audit_log_response_dto import AuditLogResponseDto
-from openapi_client.models.search_request_dto import SearchRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.audit_log_response_dto import AuditLogResponseDto
+from pyCZERTAINLY.models.search_request_dto import SearchRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuditLogApi(api_client)
-    search_request_dto = openapi_client.SearchRequestDto() # SearchRequestDto | 
+    api_instance = pyCZERTAINLY.AuditLogApi(api_client)
+    search_request_dto = pyCZERTAINLY.SearchRequestDto() # SearchRequestDto | 
 
     try:
         # List Audit logs
@@ -229,23 +229,23 @@ Purge Audit logs
 
 
 ```python
-import openapi_client
-from openapi_client.models.search_filter_request_dto import SearchFilterRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.search_filter_request_dto import SearchFilterRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuditLogApi(api_client)
-    search_filter_request_dto = [openapi_client.SearchFilterRequestDto()] # List[SearchFilterRequestDto] | 
+    api_instance = pyCZERTAINLY.AuditLogApi(api_client)
+    search_filter_request_dto = [pyCZERTAINLY.SearchFilterRequestDto()] # List[SearchFilterRequestDto] | 
 
     try:
         # Purge Audit logs

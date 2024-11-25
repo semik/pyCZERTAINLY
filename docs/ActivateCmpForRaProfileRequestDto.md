@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.activate_cmp_for_ra_profile_request_dto import ActivateCmpForRaProfileRequestDto
+from pyCZERTAINLY.models.activate_cmp_for_ra_profile_request_dto import ActivateCmpForRaProfileRequestDto
 
 # TODO update the JSON string below
 json = "{}"

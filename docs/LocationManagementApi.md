@@ -1,4 +1,4 @@
-# openapi_client.LocationManagementApi
+# pyCZERTAINLY.LocationManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -30,25 +30,25 @@ Add Location
 
 
 ```python
-import openapi_client
-from openapi_client.models.add_location_request_dto import AddLocationRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.add_location_request_dto import AddLocationRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
-    add_location_request_dto = openapi_client.AddLocationRequestDto() # AddLocationRequestDto | 
+    add_location_request_dto = pyCZERTAINLY.AddLocationRequestDto() # AddLocationRequestDto | 
 
     try:
         # Add Location
@@ -107,21 +107,21 @@ Delete Location
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
 
@@ -179,21 +179,21 @@ Disable Location
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
 
@@ -251,26 +251,26 @@ Edit Location
 
 
 ```python
-import openapi_client
-from openapi_client.models.edit_location_request_dto import EditLocationRequestDto
-from openapi_client.models.location_dto import LocationDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.edit_location_request_dto import EditLocationRequestDto
+from pyCZERTAINLY.models.location_dto import LocationDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
-    edit_location_request_dto = openapi_client.EditLocationRequestDto() # EditLocationRequestDto | 
+    edit_location_request_dto = pyCZERTAINLY.EditLocationRequestDto() # EditLocationRequestDto | 
 
     try:
         # Edit Location
@@ -330,21 +330,21 @@ Enable Location
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
 
@@ -402,22 +402,22 @@ Get Location Details
 
 
 ```python
-import openapi_client
-from openapi_client.models.location_dto import LocationDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.location_dto import LocationDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
 
@@ -477,22 +477,22 @@ Get Locations searchable fields information
 
 
 ```python
-import openapi_client
-from openapi_client.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
 
     try:
         # Get Locations searchable fields information
@@ -546,26 +546,26 @@ Issue Certificate to Location
 
 
 ```python
-import openapi_client
-from openapi_client.models.issue_to_location_request_dto import IssueToLocationRequestDto
-from openapi_client.models.location_dto import LocationDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.issue_to_location_request_dto import IssueToLocationRequestDto
+from pyCZERTAINLY.models.location_dto import LocationDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
-    issue_to_location_request_dto = openapi_client.IssueToLocationRequestDto() # IssueToLocationRequestDto | 
+    issue_to_location_request_dto = pyCZERTAINLY.IssueToLocationRequestDto() # IssueToLocationRequestDto | 
 
     try:
         # Issue Certificate to Location
@@ -624,22 +624,22 @@ Get CSR Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
 
@@ -699,24 +699,24 @@ List Locations
 
 
 ```python
-import openapi_client
-from openapi_client.models.locations_response_dto import LocationsResponseDto
-from openapi_client.models.search_request_dto import SearchRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.locations_response_dto import LocationsResponseDto
+from pyCZERTAINLY.models.search_request_dto import SearchRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
-    search_request_dto = openapi_client.SearchRequestDto() # SearchRequestDto | 
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
+    search_request_dto = pyCZERTAINLY.SearchRequestDto() # SearchRequestDto | 
 
     try:
         # List Locations
@@ -773,22 +773,22 @@ Get push Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
 
@@ -848,27 +848,27 @@ Push Certificate to Location
 
 
 ```python
-import openapi_client
-from openapi_client.models.location_dto import LocationDto
-from openapi_client.models.push_to_location_request_dto import PushToLocationRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.location_dto import LocationDto
+from pyCZERTAINLY.models.push_to_location_request_dto import PushToLocationRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
     certificate_uuid = 'certificate_uuid_example' # str | Certificate UUID
-    push_to_location_request_dto = openapi_client.PushToLocationRequestDto() # PushToLocationRequestDto | 
+    push_to_location_request_dto = pyCZERTAINLY.PushToLocationRequestDto() # PushToLocationRequestDto | 
 
     try:
         # Push Certificate to Location
@@ -928,22 +928,22 @@ Remove Certificate from Location
 
 
 ```python
-import openapi_client
-from openapi_client.models.location_dto import LocationDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.location_dto import LocationDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
     certificate_uuid = 'certificate_uuid_example' # str | Certificate UUID
@@ -1005,22 +1005,22 @@ Renew Certificate in Location
 
 
 ```python
-import openapi_client
-from openapi_client.models.location_dto import LocationDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.location_dto import LocationDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
     certificate_uuid = 'certificate_uuid_example' # str | Certificate UUID
@@ -1082,22 +1082,22 @@ Sync Location content
 
 
 ```python
-import openapi_client
-from openapi_client.models.location_dto import LocationDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.location_dto import LocationDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.LocationManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity UUID
     location_uuid = 'location_uuid_example' # str | Location UUID
 

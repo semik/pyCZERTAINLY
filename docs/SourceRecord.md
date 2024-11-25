@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.source_record import SourceRecord
+from pyCZERTAINLY.models.source_record import SourceRecord
 
 # TODO update the JSON string below
 json = "{}"

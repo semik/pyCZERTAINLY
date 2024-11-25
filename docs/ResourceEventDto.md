@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.resource_event_dto import ResourceEventDto
+from pyCZERTAINLY.models.resource_event_dto import ResourceEventDto
 
 # TODO update the JSON string below
 json = "{}"

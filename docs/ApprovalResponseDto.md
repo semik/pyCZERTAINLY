@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.approval_response_dto import ApprovalResponseDto
+from pyCZERTAINLY.models.approval_response_dto import ApprovalResponseDto
 
 # TODO update the JSON string below
 json = "{}"

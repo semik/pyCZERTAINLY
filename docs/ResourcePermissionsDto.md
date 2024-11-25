@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.resource_permissions_dto import ResourcePermissionsDto
+from pyCZERTAINLY.models.resource_permissions_dto import ResourcePermissionsDto
 
 # TODO update the JSON string below
 json = "{}"

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.authentication_service_exception_dto import AuthenticationServiceExceptionDto
+from pyCZERTAINLY.models.authentication_service_exception_dto import AuthenticationServiceExceptionDto
 
 # TODO update the JSON string below
 json = "{}"

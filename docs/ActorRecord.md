@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.actor_record import ActorRecord
+from pyCZERTAINLY.models.actor_record import ActorRecord
 
 # TODO update the JSON string below
 json = "{}"

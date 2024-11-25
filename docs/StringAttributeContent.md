@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.string_attribute_content import StringAttributeContent
+from pyCZERTAINLY.models.string_attribute_content import StringAttributeContent
 
 # TODO update the JSON string below
 json = "{}"

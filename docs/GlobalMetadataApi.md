@@ -1,4 +1,4 @@
-# openapi_client.GlobalMetadataApi
+# pyCZERTAINLY.GlobalMetadataApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -23,21 +23,21 @@ Delete multiple Global Metadata
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.GlobalMetadataApi(api_client)
+    api_instance = pyCZERTAINLY.GlobalMetadataApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Global Metadata UUIDs
 
     try:
@@ -91,24 +91,24 @@ Create Global Metadata
 
 
 ```python
-import openapi_client
-from openapi_client.models.global_metadata_create_request_dto import GlobalMetadataCreateRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.global_metadata_create_request_dto import GlobalMetadataCreateRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.GlobalMetadataApi(api_client)
-    global_metadata_create_request_dto = openapi_client.GlobalMetadataCreateRequestDto() # GlobalMetadataCreateRequestDto | 
+    api_instance = pyCZERTAINLY.GlobalMetadataApi(api_client)
+    global_metadata_create_request_dto = pyCZERTAINLY.GlobalMetadataCreateRequestDto() # GlobalMetadataCreateRequestDto | 
 
     try:
         # Create Global Metadata
@@ -163,21 +163,21 @@ Delete Global Metadata
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.GlobalMetadataApi(api_client)
+    api_instance = pyCZERTAINLY.GlobalMetadataApi(api_client)
     uuid = 'uuid_example' # str | Global Metadata UUID
 
     try:
@@ -231,25 +231,25 @@ Edit Global Metadata
 
 
 ```python
-import openapi_client
-from openapi_client.models.global_metadata_definition_detail_dto import GlobalMetadataDefinitionDetailDto
-from openapi_client.models.global_metadata_update_request_dto import GlobalMetadataUpdateRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.global_metadata_definition_detail_dto import GlobalMetadataDefinitionDetailDto
+from pyCZERTAINLY.models.global_metadata_update_request_dto import GlobalMetadataUpdateRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.GlobalMetadataApi(api_client)
+    api_instance = pyCZERTAINLY.GlobalMetadataApi(api_client)
     uuid = 'uuid_example' # str | Global Metadata UUID
-    global_metadata_update_request_dto = openapi_client.GlobalMetadataUpdateRequestDto() # GlobalMetadataUpdateRequestDto | 
+    global_metadata_update_request_dto = pyCZERTAINLY.GlobalMetadataUpdateRequestDto() # GlobalMetadataUpdateRequestDto | 
 
     try:
         # Edit Global Metadata
@@ -305,22 +305,22 @@ Get Available Connector Metadata
 
 
 ```python
-import openapi_client
-from openapi_client.models.connector_metadata_response_dto import ConnectorMetadataResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connector_metadata_response_dto import ConnectorMetadataResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.GlobalMetadataApi(api_client)
+    api_instance = pyCZERTAINLY.GlobalMetadataApi(api_client)
     connector_uuid = 'connector_uuid_example' # str |  (optional)
 
     try:
@@ -376,22 +376,22 @@ Global Metadata details
 
 
 ```python
-import openapi_client
-from openapi_client.models.global_metadata_definition_detail_dto import GlobalMetadataDefinitionDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.global_metadata_definition_detail_dto import GlobalMetadataDefinitionDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.GlobalMetadataApi(api_client)
+    api_instance = pyCZERTAINLY.GlobalMetadataApi(api_client)
     uuid = 'uuid_example' # str | 
 
     try:
@@ -447,22 +447,22 @@ List Global Metadata
 
 
 ```python
-import openapi_client
-from openapi_client.models.attribute_definition_dto import AttributeDefinitionDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.attribute_definition_dto import AttributeDefinitionDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.GlobalMetadataApi(api_client)
+    api_instance = pyCZERTAINLY.GlobalMetadataApi(api_client)
 
     try:
         # List Global Metadata
@@ -514,24 +514,24 @@ Promote Connector Metadata to Global Metadata
 
 
 ```python
-import openapi_client
-from openapi_client.models.connector_metadata_promotion_request_dto import ConnectorMetadataPromotionRequestDto
-from openapi_client.models.global_metadata_definition_detail_dto import GlobalMetadataDefinitionDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connector_metadata_promotion_request_dto import ConnectorMetadataPromotionRequestDto
+from pyCZERTAINLY.models.global_metadata_definition_detail_dto import GlobalMetadataDefinitionDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.GlobalMetadataApi(api_client)
-    connector_metadata_promotion_request_dto = openapi_client.ConnectorMetadataPromotionRequestDto() # ConnectorMetadataPromotionRequestDto | 
+    api_instance = pyCZERTAINLY.GlobalMetadataApi(api_client)
+    connector_metadata_promotion_request_dto = pyCZERTAINLY.ConnectorMetadataPromotionRequestDto() # ConnectorMetadataPromotionRequestDto | 
 
     try:
         # Promote Connector Metadata to Global Metadata

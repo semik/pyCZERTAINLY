@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
 
 # TODO update the JSON string below
 json = "{}"

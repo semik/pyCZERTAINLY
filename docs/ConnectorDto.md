@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.connector_dto import ConnectorDto
+from pyCZERTAINLY.models.connector_dto import ConnectorDto
 
 # TODO update the JSON string below
 json = "{}"

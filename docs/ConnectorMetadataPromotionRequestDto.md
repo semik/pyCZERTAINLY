@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.connector_metadata_promotion_request_dto import ConnectorMetadataPromotionRequestDto
+from pyCZERTAINLY.models.connector_metadata_promotion_request_dto import ConnectorMetadataPromotionRequestDto
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# openapi_client.DiscoveryManagementApi
+# pyCZERTAINLY.DiscoveryManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -23,21 +23,21 @@ Delete Multiple Discoveries
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DiscoveryManagementApi(api_client)
+    api_instance = pyCZERTAINLY.DiscoveryManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Discovery UUIDs
 
     try:
@@ -93,24 +93,24 @@ Create Discovery
 
 
 ```python
-import openapi_client
-from openapi_client.models.discovery_dto import DiscoveryDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.discovery_dto import DiscoveryDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DiscoveryManagementApi(api_client)
-    discovery_dto = openapi_client.DiscoveryDto() # DiscoveryDto | 
+    api_instance = pyCZERTAINLY.DiscoveryManagementApi(api_client)
+    discovery_dto = pyCZERTAINLY.DiscoveryDto() # DiscoveryDto | 
 
     try:
         # Create Discovery
@@ -168,21 +168,21 @@ Delete Discovery
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DiscoveryManagementApi(api_client)
+    api_instance = pyCZERTAINLY.DiscoveryManagementApi(api_client)
     uuid = 'uuid_example' # str | Discovery UUID
 
     try:
@@ -238,22 +238,22 @@ Discovery Details
 
 
 ```python
-import openapi_client
-from openapi_client.models.discovery_history_detail_dto import DiscoveryHistoryDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.discovery_history_detail_dto import DiscoveryHistoryDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DiscoveryManagementApi(api_client)
+    api_instance = pyCZERTAINLY.DiscoveryManagementApi(api_client)
     uuid = 'uuid_example' # str | Discovery UUID
 
     try:
@@ -311,22 +311,22 @@ Discovery Details
 
 
 ```python
-import openapi_client
-from openapi_client.models.discovery_certificate_response_dto import DiscoveryCertificateResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.discovery_certificate_response_dto import DiscoveryCertificateResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DiscoveryManagementApi(api_client)
+    api_instance = pyCZERTAINLY.DiscoveryManagementApi(api_client)
     uuid = 'uuid_example' # str | Discovery UUID
     newly_discovered = True # bool |  (optional)
     items_per_page = 10 # int |  (optional) (default to 10)
@@ -390,22 +390,22 @@ Get Discovery searchable fields information
 
 
 ```python
-import openapi_client
-from openapi_client.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DiscoveryManagementApi(api_client)
+    api_instance = pyCZERTAINLY.DiscoveryManagementApi(api_client)
 
     try:
         # Get Discovery searchable fields information
@@ -459,24 +459,24 @@ List Discovery
 
 
 ```python
-import openapi_client
-from openapi_client.models.discovery_response_dto import DiscoveryResponseDto
-from openapi_client.models.search_request_dto import SearchRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.discovery_response_dto import DiscoveryResponseDto
+from pyCZERTAINLY.models.search_request_dto import SearchRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DiscoveryManagementApi(api_client)
-    search_request_dto = openapi_client.SearchRequestDto() # SearchRequestDto | 
+    api_instance = pyCZERTAINLY.DiscoveryManagementApi(api_client)
+    search_request_dto = pyCZERTAINLY.SearchRequestDto() # SearchRequestDto | 
 
     try:
         # List Discovery
@@ -533,24 +533,24 @@ Schedule Discovery
 
 
 ```python
-import openapi_client
-from openapi_client.models.schedule_discovery_dto import ScheduleDiscoveryDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.schedule_discovery_dto import ScheduleDiscoveryDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DiscoveryManagementApi(api_client)
-    schedule_discovery_dto = openapi_client.ScheduleDiscoveryDto() # ScheduleDiscoveryDto | 
+    api_instance = pyCZERTAINLY.DiscoveryManagementApi(api_client)
+    schedule_discovery_dto = pyCZERTAINLY.ScheduleDiscoveryDto() # ScheduleDiscoveryDto | 
 
     try:
         # Schedule Discovery

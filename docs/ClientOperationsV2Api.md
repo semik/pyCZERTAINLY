@@ -1,4 +1,4 @@
-# openapi_client.ClientOperationsV2Api
+# pyCZERTAINLY.ClientOperationsV2Api
 
 All URIs are relative to *http://localhost:45309*
 
@@ -24,26 +24,26 @@ Issue Certificate
 
 
 ```python
-import openapi_client
-from openapi_client.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
-from openapi_client.models.client_certificate_sign_request_dto import ClientCertificateSignRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
+from pyCZERTAINLY.models.client_certificate_sign_request_dto import ClientCertificateSignRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
-    client_certificate_sign_request_dto = openapi_client.ClientCertificateSignRequestDto() # ClientCertificateSignRequestDto | 
+    client_certificate_sign_request_dto = pyCZERTAINLY.ClientCertificateSignRequestDto() # ClientCertificateSignRequestDto | 
 
     try:
         # Issue Certificate
@@ -103,22 +103,22 @@ Issue existing certificate with status Requested
 
 
 ```python
-import openapi_client
-from openapi_client.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
     certificate_uuid = 'certificate_uuid_example' # str | Certificate UUID
@@ -181,22 +181,22 @@ Get issue Certificate Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -257,22 +257,22 @@ Get revocation Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -332,27 +332,27 @@ Rekey Certificate
 
 
 ```python
-import openapi_client
-from openapi_client.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
-from openapi_client.models.client_certificate_rekey_request_dto import ClientCertificateRekeyRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
+from pyCZERTAINLY.models.client_certificate_rekey_request_dto import ClientCertificateRekeyRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
     certificate_uuid = 'certificate_uuid_example' # str | Certificate UUID
-    client_certificate_rekey_request_dto = openapi_client.ClientCertificateRekeyRequestDto() # ClientCertificateRekeyRequestDto | 
+    client_certificate_rekey_request_dto = pyCZERTAINLY.ClientCertificateRekeyRequestDto() # ClientCertificateRekeyRequestDto | 
 
     try:
         # Rekey Certificate
@@ -413,27 +413,27 @@ Renew Certificate
 
 
 ```python
-import openapi_client
-from openapi_client.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
-from openapi_client.models.client_certificate_renew_request_dto import ClientCertificateRenewRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
+from pyCZERTAINLY.models.client_certificate_renew_request_dto import ClientCertificateRenewRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
     certificate_uuid = 'certificate_uuid_example' # str | Certificate UUID
-    client_certificate_renew_request_dto = openapi_client.ClientCertificateRenewRequestDto() # ClientCertificateRenewRequestDto | 
+    client_certificate_renew_request_dto = pyCZERTAINLY.ClientCertificateRenewRequestDto() # ClientCertificateRenewRequestDto | 
 
     try:
         # Renew Certificate
@@ -494,26 +494,26 @@ Revoke Certificate
 
 
 ```python
-import openapi_client
-from openapi_client.models.client_certificate_revocation_dto import ClientCertificateRevocationDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.client_certificate_revocation_dto import ClientCertificateRevocationDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
     certificate_uuid = 'certificate_uuid_example' # str | Certificate UUID
-    client_certificate_revocation_dto = openapi_client.ClientCertificateRevocationDto() # ClientCertificateRevocationDto | 
+    client_certificate_revocation_dto = pyCZERTAINLY.ClientCertificateRevocationDto() # ClientCertificateRevocationDto | 
 
     try:
         # Revoke Certificate
@@ -571,25 +571,25 @@ Validate issue Certificate Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate issue Certificate Attributes
@@ -647,25 +647,25 @@ Validate revocation Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClientOperationsV2Api(api_client)
+    api_instance = pyCZERTAINLY.ClientOperationsV2Api(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate revocation Attributes

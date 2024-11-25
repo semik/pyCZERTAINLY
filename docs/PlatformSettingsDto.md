@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.platform_settings_dto import PlatformSettingsDto
+from pyCZERTAINLY.models.platform_settings_dto import PlatformSettingsDto
 
 # TODO update the JSON string below
 json = "{}"

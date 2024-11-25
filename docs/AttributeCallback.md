@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.attribute_callback import AttributeCallback
+from pyCZERTAINLY.models.attribute_callback import AttributeCallback
 
 # TODO update the JSON string below
 json = "{}"

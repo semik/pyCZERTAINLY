@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.sign_data_request_dto import SignDataRequestDto
+from pyCZERTAINLY.models.sign_data_request_dto import SignDataRequestDto
 
 # TODO update the JSON string below
 json = "{}"

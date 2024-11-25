@@ -1,4 +1,4 @@
-# openapi_client.TokenProfileManagementApi
+# pyCZERTAINLY.TokenProfileManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -28,25 +28,25 @@ Create Token Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.add_token_profile_request_dto import AddTokenProfileRequestDto
-from openapi_client.models.token_profile_detail_dto import TokenProfileDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.add_token_profile_request_dto import AddTokenProfileRequestDto
+from pyCZERTAINLY.models.token_profile_detail_dto import TokenProfileDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
-    add_token_profile_request_dto = openapi_client.AddTokenProfileRequestDto() # AddTokenProfileRequestDto | 
+    add_token_profile_request_dto = pyCZERTAINLY.AddTokenProfileRequestDto() # AddTokenProfileRequestDto | 
 
     try:
         # Create Token Profile
@@ -105,21 +105,21 @@ Delete Token Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Token Profile UUID
 
     try:
@@ -175,21 +175,21 @@ Delete Token Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Token Profile UUID
 
@@ -247,21 +247,21 @@ Delete multiple Token Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Token Profile UUIDs
 
     try:
@@ -318,21 +318,21 @@ Disable Token Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Token Profile UUID
 
@@ -390,21 +390,21 @@ Disable multiple Token Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Token Profile UUIDs
 
     try:
@@ -460,26 +460,26 @@ Edit Token Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.edit_token_profile_request_dto import EditTokenProfileRequestDto
-from openapi_client.models.token_profile_detail_dto import TokenProfileDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.edit_token_profile_request_dto import EditTokenProfileRequestDto
+from pyCZERTAINLY.models.token_profile_detail_dto import TokenProfileDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Token Profile UUID
-    edit_token_profile_request_dto = openapi_client.EditTokenProfileRequestDto() # EditTokenProfileRequestDto | 
+    edit_token_profile_request_dto = pyCZERTAINLY.EditTokenProfileRequestDto() # EditTokenProfileRequestDto | 
 
     try:
         # Edit Token Profile
@@ -539,21 +539,21 @@ Enable Token Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Token Profile UUID
 
@@ -611,21 +611,21 @@ Enable multiple Token Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Token Profile UUIDs
 
     try:
@@ -681,22 +681,22 @@ Details of Token Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.token_profile_detail_dto import TokenProfileDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.token_profile_detail_dto import TokenProfileDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Token Profile UUID
 
@@ -756,22 +756,22 @@ List of available Token Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.token_profile_dto import TokenProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.token_profile_dto import TokenProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     enabled = True # bool |  (optional)
 
     try:
@@ -829,25 +829,25 @@ Update Key Usage
 
 
 ```python
-import openapi_client
-from openapi_client.models.token_profile_key_usage_request_dto import TokenProfileKeyUsageRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.token_profile_key_usage_request_dto import TokenProfileKeyUsageRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     token_profile_uuid = 'token_profile_uuid_example' # str | Token Profile UUID
-    token_profile_key_usage_request_dto = openapi_client.TokenProfileKeyUsageRequestDto() # TokenProfileKeyUsageRequestDto | 
+    token_profile_key_usage_request_dto = pyCZERTAINLY.TokenProfileKeyUsageRequestDto() # TokenProfileKeyUsageRequestDto | 
 
     try:
         # Update Key Usage
@@ -904,23 +904,23 @@ Update Key Usages for Multiple Token Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_token_profile_key_usage_request_dto import BulkTokenProfileKeyUsageRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_token_profile_key_usage_request_dto import BulkTokenProfileKeyUsageRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TokenProfileManagementApi(api_client)
-    bulk_token_profile_key_usage_request_dto = openapi_client.BulkTokenProfileKeyUsageRequestDto() # BulkTokenProfileKeyUsageRequestDto | 
+    api_instance = pyCZERTAINLY.TokenProfileManagementApi(api_client)
+    bulk_token_profile_key_usage_request_dto = pyCZERTAINLY.BulkTokenProfileKeyUsageRequestDto() # BulkTokenProfileKeyUsageRequestDto | 
 
     try:
         # Update Key Usages for Multiple Token Profiles

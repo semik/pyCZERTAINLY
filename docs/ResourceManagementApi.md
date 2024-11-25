@@ -1,4 +1,4 @@
-# openapi_client.ResourceManagementApi
+# pyCZERTAINLY.ResourceManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -18,24 +18,24 @@ Retrieve a list of all events that can be triggered by a resource
 
 
 ```python
-import openapi_client
-from openapi_client.models.resource import Resource
-from openapi_client.models.resource_event_dto import ResourceEventDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.models.resource_event_dto import ResourceEventDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ResourceManagementApi(api_client)
-    resource = openapi_client.Resource() # Resource | Resource
+    api_instance = pyCZERTAINLY.ResourceManagementApi(api_client)
+    resource = pyCZERTAINLY.Resource() # Resource | Resource
 
     try:
         # Retrieve a list of all events that can be triggered by a resource
@@ -90,24 +90,24 @@ Retrieve filter fields that can be used for creating rule conditions and actions
 
 
 ```python
-import openapi_client
-from openapi_client.models.resource import Resource
-from openapi_client.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ResourceManagementApi(api_client)
-    resource = openapi_client.Resource() # Resource | Resource
+    api_instance = pyCZERTAINLY.ResourceManagementApi(api_client)
+    resource = pyCZERTAINLY.Resource() # Resource | Resource
     settable = True # bool |  (optional)
 
     try:
@@ -164,22 +164,22 @@ Retrieve list of resources with information and settings
 
 
 ```python
-import openapi_client
-from openapi_client.models.resource_dto import ResourceDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.resource_dto import ResourceDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ResourceManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ResourceManagementApi(api_client)
 
     try:
         # Retrieve list of resources with information and settings

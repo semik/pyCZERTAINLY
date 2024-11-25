@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.function_group_dto import FunctionGroupDto
+from pyCZERTAINLY.models.function_group_dto import FunctionGroupDto
 
 # TODO update the JSON string below
 json = "{}"

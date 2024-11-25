@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.compliance_profile_request_dto import ComplianceProfileRequestDto
+from pyCZERTAINLY.models.compliance_profile_request_dto import ComplianceProfileRequestDto
 
 # TODO update the JSON string below
 json = "{}"

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.attribute_callback_mapping import AttributeCallbackMapping
+from pyCZERTAINLY.models.attribute_callback_mapping import AttributeCallbackMapping
 
 # TODO update the JSON string below
 json = "{}"

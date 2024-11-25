@@ -1,4 +1,4 @@
-# openapi_client.CustomAttributesApi
+# pyCZERTAINLY.CustomAttributesApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -30,21 +30,21 @@ Delete multiple Custom Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Attribute UUIDs
 
     try:
@@ -98,21 +98,21 @@ Disable multiple Custom Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Attribute UUIDs
 
     try:
@@ -166,21 +166,21 @@ Enable multiple Custom Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Attribute UUIDs
 
     try:
@@ -234,24 +234,24 @@ Create Custom Attribute
 
 
 ```python
-import openapi_client
-from openapi_client.models.custom_attribute_create_request_dto import CustomAttributeCreateRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.custom_attribute_create_request_dto import CustomAttributeCreateRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
-    custom_attribute_create_request_dto = openapi_client.CustomAttributeCreateRequestDto() # CustomAttributeCreateRequestDto | 
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
+    custom_attribute_create_request_dto = pyCZERTAINLY.CustomAttributeCreateRequestDto() # CustomAttributeCreateRequestDto | 
 
     try:
         # Create Custom Attribute
@@ -306,24 +306,24 @@ Delete Value of a Custom Attribute for a Resource
 
 
 ```python
-import openapi_client
-from openapi_client.models.resource import Resource
-from openapi_client.models.response_attribute_dto import ResponseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.models.response_attribute_dto import ResponseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
-    resource_name = openapi_client.Resource() # Resource | Resource Type
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
+    resource_name = pyCZERTAINLY.Resource() # Resource | Resource Type
     object_uuid = 'object_uuid_example' # str | Object UUID
     attribute_uuid = 'attribute_uuid_example' # str | Custom Attribute UUID
 
@@ -382,21 +382,21 @@ Delete Custom Attribute
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     uuid = 'uuid_example' # str | Custom Attribute UUID
 
     try:
@@ -450,21 +450,21 @@ Disable Custom Attribute
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     uuid = 'uuid_example' # str | Custom Attribute UUID
 
     try:
@@ -518,25 +518,25 @@ Edit Custom Attribute
 
 
 ```python
-import openapi_client
-from openapi_client.models.custom_attribute_definition_detail_dto import CustomAttributeDefinitionDetailDto
-from openapi_client.models.custom_attribute_update_request_dto import CustomAttributeUpdateRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.custom_attribute_definition_detail_dto import CustomAttributeDefinitionDetailDto
+from pyCZERTAINLY.models.custom_attribute_update_request_dto import CustomAttributeUpdateRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     uuid = 'uuid_example' # str | Attribute UUID
-    custom_attribute_update_request_dto = openapi_client.CustomAttributeUpdateRequestDto() # CustomAttributeUpdateRequestDto | 
+    custom_attribute_update_request_dto = pyCZERTAINLY.CustomAttributeUpdateRequestDto() # CustomAttributeUpdateRequestDto | 
 
     try:
         # Edit Custom Attribute
@@ -592,21 +592,21 @@ Enable Custom Attribute
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     uuid = 'uuid_example' # str | Custom Attribute UUID
 
     try:
@@ -660,22 +660,22 @@ Custom Attribute details
 
 
 ```python
-import openapi_client
-from openapi_client.models.custom_attribute_definition_detail_dto import CustomAttributeDefinitionDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.custom_attribute_definition_detail_dto import CustomAttributeDefinitionDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     uuid = 'uuid_example' # str | 
 
     try:
@@ -731,24 +731,24 @@ Get Custom Attributes for a resource
 
 
 ```python
-import openapi_client
-from openapi_client.models.custom_attribute import CustomAttribute
-from openapi_client.models.resource import Resource
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.custom_attribute import CustomAttribute
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
-    resource = openapi_client.Resource() # Resource | Resource Name
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
+    resource = pyCZERTAINLY.Resource() # Resource | Resource Name
 
     try:
         # Get Custom Attributes for a resource
@@ -803,22 +803,22 @@ Get available resources for Custom Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.resource import Resource
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
 
     try:
         # Get available resources for Custom Attributes
@@ -870,24 +870,24 @@ List Custom Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.attribute_content_type import AttributeContentType
-from openapi_client.models.custom_attribute_definition_dto import CustomAttributeDefinitionDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.attribute_content_type import AttributeContentType
+from pyCZERTAINLY.models.custom_attribute_definition_dto import CustomAttributeDefinitionDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
-    attribute_content_type = openapi_client.AttributeContentType() # AttributeContentType |  (optional)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
+    attribute_content_type = pyCZERTAINLY.AttributeContentType() # AttributeContentType |  (optional)
 
     try:
         # List Custom Attributes
@@ -942,28 +942,28 @@ Update Value of a Custom Attribute for a Resource
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_content_dto import BaseAttributeContentDto
-from openapi_client.models.resource import Resource
-from openapi_client.models.response_attribute_dto import ResponseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_content_dto import BaseAttributeContentDto
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.models.response_attribute_dto import ResponseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
-    resource_name = openapi_client.Resource() # Resource | Resource Type
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
+    resource_name = pyCZERTAINLY.Resource() # Resource | Resource Type
     object_uuid = 'object_uuid_example' # str | Object UUID
     attribute_uuid = 'attribute_uuid_example' # str | Custom Attribute UUID
-    base_attribute_content_dto = [openapi_client.BaseAttributeContentDto()] # List[BaseAttributeContentDto] | 
+    base_attribute_content_dto = [pyCZERTAINLY.BaseAttributeContentDto()] # List[BaseAttributeContentDto] | 
 
     try:
         # Update Value of a Custom Attribute for a Resource
@@ -1021,21 +1021,21 @@ Associate Custom Attribute to Resource
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CustomAttributesApi(api_client)
+    api_instance = pyCZERTAINLY.CustomAttributesApi(api_client)
     uuid = 'uuid_example' # str | Custom Attribute UUID
     request_body = ["raProfiles","authorities"] # List[str] | List of Resources
 

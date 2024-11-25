@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.token_profile_key_usage_request_dto import TokenProfileKeyUsageRequestDto
+from pyCZERTAINLY.models.token_profile_key_usage_request_dto import TokenProfileKeyUsageRequestDto
 
 # TODO update the JSON string below
 json = "{}"

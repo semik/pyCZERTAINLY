@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.schedule_discovery_dto import ScheduleDiscoveryDto
+from pyCZERTAINLY.models.schedule_discovery_dto import ScheduleDiscoveryDto
 
 # TODO update the JSON string below
 json = "{}"

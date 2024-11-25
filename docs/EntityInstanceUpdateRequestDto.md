@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.entity_instance_update_request_dto import EntityInstanceUpdateRequestDto
+from pyCZERTAINLY.models.entity_instance_update_request_dto import EntityInstanceUpdateRequestDto
 
 # TODO update the JSON string below
 json = "{}"

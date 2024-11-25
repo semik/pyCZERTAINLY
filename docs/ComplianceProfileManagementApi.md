@@ -1,4 +1,4 @@
-# openapi_client.ComplianceProfileManagementApi
+# pyCZERTAINLY.ComplianceProfileManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -31,24 +31,24 @@ Add group to a Compliance Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.compliance_group_request_dto import ComplianceGroupRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compliance_group_request_dto import ComplianceGroupRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
-    compliance_group_request_dto = openapi_client.ComplianceGroupRequestDto() # ComplianceGroupRequestDto | 
+    compliance_group_request_dto = pyCZERTAINLY.ComplianceGroupRequestDto() # ComplianceGroupRequestDto | 
 
     try:
         # Add group to a Compliance Profile
@@ -105,25 +105,25 @@ Add rule to a Compliance Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.compliance_profile_rule_dto import ComplianceProfileRuleDto
-from openapi_client.models.compliance_rule_addition_request_dto import ComplianceRuleAdditionRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compliance_profile_rule_dto import ComplianceProfileRuleDto
+from pyCZERTAINLY.models.compliance_rule_addition_request_dto import ComplianceRuleAdditionRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
-    compliance_rule_addition_request_dto = openapi_client.ComplianceRuleAdditionRequestDto() # ComplianceRuleAdditionRequestDto | 
+    compliance_rule_addition_request_dto = pyCZERTAINLY.ComplianceRuleAdditionRequestDto() # ComplianceRuleAdditionRequestDto | 
 
     try:
         # Add rule to a Compliance Profile
@@ -182,24 +182,24 @@ Associate Compliance Profile to RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.ra_profile_association_request_dto import RaProfileAssociationRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.ra_profile_association_request_dto import RaProfileAssociationRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
-    ra_profile_association_request_dto = openapi_client.RaProfileAssociationRequestDto() # RaProfileAssociationRequestDto | 
+    ra_profile_association_request_dto = pyCZERTAINLY.RaProfileAssociationRequestDto() # RaProfileAssociationRequestDto | 
 
     try:
         # Associate Compliance Profile to RA Profile
@@ -257,22 +257,22 @@ Delete multiple Compliance Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Compliance Profile UUIDs
 
     try:
@@ -331,21 +331,21 @@ Initiate Certificate Compliance Check
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | RA Profile UUIDs
 
     try:
@@ -401,24 +401,24 @@ Add Compliance Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.compliance_profile_request_dto import ComplianceProfileRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compliance_profile_request_dto import ComplianceProfileRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
-    compliance_profile_request_dto = openapi_client.ComplianceProfileRequestDto() # ComplianceProfileRequestDto | 
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
+    compliance_profile_request_dto = pyCZERTAINLY.ComplianceProfileRequestDto() # ComplianceProfileRequestDto | 
 
     try:
         # Add Compliance Profile
@@ -476,21 +476,21 @@ Delete Compliance Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
 
     try:
@@ -546,24 +546,24 @@ Disassociate Compliance Profile to RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.ra_profile_association_request_dto import RaProfileAssociationRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.ra_profile_association_request_dto import RaProfileAssociationRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
-    ra_profile_association_request_dto = openapi_client.RaProfileAssociationRequestDto() # RaProfileAssociationRequestDto | 
+    ra_profile_association_request_dto = pyCZERTAINLY.RaProfileAssociationRequestDto() # RaProfileAssociationRequestDto | 
 
     try:
         # Disassociate Compliance Profile to RA Profile
@@ -621,22 +621,22 @@ Force delete Compliance Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     request_body = ['request_body_example'] # List[str] | 
 
     try:
@@ -695,22 +695,22 @@ Get RA Profiles for a Compliance Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.simplified_ra_profile_dto import SimplifiedRaProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.simplified_ra_profile_dto import SimplifiedRaProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
 
     try:
@@ -768,22 +768,22 @@ Get Compliance groups
 
 
 ```python
-import openapi_client
-from openapi_client.models.compliance_groups_list_response_dto import ComplianceGroupsListResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compliance_groups_list_response_dto import ComplianceGroupsListResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     compliance_provider = 'compliance_provider_example' # str |  (optional)
     kind = 'kind_example' # str |  (optional)
 
@@ -844,22 +844,22 @@ Details of a Compliance Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.compliance_profile_dto import ComplianceProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compliance_profile_dto import ComplianceProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
 
     try:
@@ -917,26 +917,26 @@ Get Compliance rules
 
 
 ```python
-import openapi_client
-from openapi_client.models.certificate_type import CertificateType
-from openapi_client.models.compliance_rules_list_response_dto import ComplianceRulesListResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.certificate_type import CertificateType
+from pyCZERTAINLY.models.compliance_rules_list_response_dto import ComplianceRulesListResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     compliance_provider = 'compliance_provider_example' # str |  (optional)
     kind = 'kind_example' # str |  (optional)
-    certificate_type = [openapi_client.CertificateType()] # List[CertificateType] |  (optional)
+    certificate_type = [pyCZERTAINLY.CertificateType()] # List[CertificateType] |  (optional)
 
     try:
         # Get Compliance rules
@@ -996,22 +996,22 @@ List of available Compliance Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.compliance_profiles_list_dto import ComplianceProfilesListDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compliance_profiles_list_dto import ComplianceProfilesListDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
 
     try:
         # List of available Compliance Profiles
@@ -1065,24 +1065,24 @@ Delete group from a Compliance Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.compliance_group_request_dto import ComplianceGroupRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compliance_group_request_dto import ComplianceGroupRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
-    compliance_group_request_dto = openapi_client.ComplianceGroupRequestDto() # ComplianceGroupRequestDto | 
+    compliance_group_request_dto = pyCZERTAINLY.ComplianceGroupRequestDto() # ComplianceGroupRequestDto | 
 
     try:
         # Delete group from a Compliance Profile
@@ -1139,24 +1139,24 @@ Delete rule from a Compliance Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.compliance_rule_deletion_request_dto import ComplianceRuleDeletionRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compliance_rule_deletion_request_dto import ComplianceRuleDeletionRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ComplianceProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ComplianceProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | Compliance Profile UUID
-    compliance_rule_deletion_request_dto = openapi_client.ComplianceRuleDeletionRequestDto() # ComplianceRuleDeletionRequestDto | 
+    compliance_rule_deletion_request_dto = pyCZERTAINLY.ComplianceRuleDeletionRequestDto() # ComplianceRuleDeletionRequestDto | 
 
     try:
         # Delete rule from a Compliance Profile

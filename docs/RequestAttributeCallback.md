@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.request_attribute_callback import RequestAttributeCallback
+from pyCZERTAINLY.models.request_attribute_callback import RequestAttributeCallback
 
 # TODO update the JSON string below
 json = "{}"

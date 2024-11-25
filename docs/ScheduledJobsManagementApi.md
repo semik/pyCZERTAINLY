@@ -1,4 +1,4 @@
-# openapi_client.ScheduledJobsManagementApi
+# pyCZERTAINLY.ScheduledJobsManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -22,21 +22,21 @@ Delete Scheduled job
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduledJobsManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ScheduledJobsManagementApi(api_client)
     uuid = 'uuid_example' # str | Scheduled job UUID
 
     try:
@@ -85,21 +85,21 @@ Disabling of Scheduled job
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduledJobsManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ScheduledJobsManagementApi(api_client)
     uuid = 'uuid_example' # str | Scheduled job UUID
 
     try:
@@ -148,21 +148,21 @@ Enabling of Scheduled job
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduledJobsManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ScheduledJobsManagementApi(api_client)
     uuid = 'uuid_example' # str | Scheduled job UUID
 
     try:
@@ -211,22 +211,22 @@ Scheduled job detail
 
 
 ```python
-import openapi_client
-from openapi_client.models.scheduled_job_detail_dto import ScheduledJobDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.scheduled_job_detail_dto import ScheduledJobDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduledJobsManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ScheduledJobsManagementApi(api_client)
     uuid = 'uuid_example' # str | Scheduled job UUID
 
     try:
@@ -277,24 +277,24 @@ Scheduled job history
 
 
 ```python
-import openapi_client
-from openapi_client.models.pagination_request_dto import PaginationRequestDto
-from openapi_client.models.scheduled_job_history_response_dto import ScheduledJobHistoryResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.pagination_request_dto import PaginationRequestDto
+from pyCZERTAINLY.models.scheduled_job_history_response_dto import ScheduledJobHistoryResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduledJobsManagementApi(api_client)
-    pagination = openapi_client.PaginationRequestDto() # PaginationRequestDto | 
+    api_instance = pyCZERTAINLY.ScheduledJobsManagementApi(api_client)
+    pagination = pyCZERTAINLY.PaginationRequestDto() # PaginationRequestDto | 
     uuid = 'uuid_example' # str | Scheduled job UUID
 
     try:
@@ -346,24 +346,24 @@ List of scheduled jobs
 
 
 ```python
-import openapi_client
-from openapi_client.models.pagination_request_dto import PaginationRequestDto
-from openapi_client.models.scheduled_jobs_response_dto import ScheduledJobsResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.pagination_request_dto import PaginationRequestDto
+from pyCZERTAINLY.models.scheduled_jobs_response_dto import ScheduledJobsResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduledJobsManagementApi(api_client)
-    pagination = openapi_client.PaginationRequestDto() # PaginationRequestDto | 
+    api_instance = pyCZERTAINLY.ScheduledJobsManagementApi(api_client)
+    pagination = pyCZERTAINLY.PaginationRequestDto() # PaginationRequestDto | 
 
     try:
         # List of scheduled jobs
@@ -413,25 +413,25 @@ Edit Scheduled job
 
 
 ```python
-import openapi_client
-from openapi_client.models.scheduled_job_detail_dto import ScheduledJobDetailDto
-from openapi_client.models.update_scheduled_job import UpdateScheduledJob
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.scheduled_job_detail_dto import ScheduledJobDetailDto
+from pyCZERTAINLY.models.update_scheduled_job import UpdateScheduledJob
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScheduledJobsManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ScheduledJobsManagementApi(api_client)
     uuid = 'uuid_example' # str | Scheduled job UUID
-    update_scheduled_job = openapi_client.UpdateScheduledJob() # UpdateScheduledJob | 
+    update_scheduled_job = pyCZERTAINLY.UpdateScheduledJob() # UpdateScheduledJob | 
 
     try:
         # Edit Scheduled job

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.health_dto import HealthDto
+from pyCZERTAINLY.models.health_dto import HealthDto
 
 # TODO update the JSON string below
 json = "{}"

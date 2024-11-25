@@ -1,4 +1,4 @@
-# openapi_client.LocalOperationsApi
+# pyCZERTAINLY.LocalOperationsApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -16,24 +16,24 @@ Create Administrator
 
 
 ```python
-import openapi_client
-from openapi_client.models.add_user_request_dto import AddUserRequestDto
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.add_user_request_dto import AddUserRequestDto
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.LocalOperationsApi(api_client)
-    add_user_request_dto = openapi_client.AddUserRequestDto() # AddUserRequestDto | 
+    api_instance = pyCZERTAINLY.LocalOperationsApi(api_client)
+    add_user_request_dto = pyCZERTAINLY.AddUserRequestDto() # AddUserRequestDto | 
 
     try:
         # Create Administrator

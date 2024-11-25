@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.scheduled_job_history_dto import ScheduledJobHistoryDto
+from pyCZERTAINLY.models.scheduled_job_history_dto import ScheduledJobHistoryDto
 
 # TODO update the JSON string below
 json = "{}"

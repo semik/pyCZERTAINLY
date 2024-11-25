@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.custom_attribute_definition_dto import CustomAttributeDefinitionDto
+from pyCZERTAINLY.models.custom_attribute_definition_dto import CustomAttributeDefinitionDto
 
 # TODO update the JSON string below
 json = "{}"

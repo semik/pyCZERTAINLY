@@ -1,4 +1,4 @@
-# openapi_client.ApprovalProfileInventoryApi
+# pyCZERTAINLY.ApprovalProfileInventoryApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -22,24 +22,24 @@ Create a Approval profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.approval_profile_request_dto import ApprovalProfileRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.approval_profile_request_dto import ApprovalProfileRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApprovalProfileInventoryApi(api_client)
-    approval_profile_request_dto = openapi_client.ApprovalProfileRequestDto() # ApprovalProfileRequestDto | 
+    api_instance = pyCZERTAINLY.ApprovalProfileInventoryApi(api_client)
+    approval_profile_request_dto = pyCZERTAINLY.ApprovalProfileRequestDto() # ApprovalProfileRequestDto | 
 
     try:
         # Create a Approval profile
@@ -95,21 +95,21 @@ Delete an approval profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApprovalProfileInventoryApi(api_client)
+    api_instance = pyCZERTAINLY.ApprovalProfileInventoryApi(api_client)
     uuid = 'uuid_example' # str | Approval profile UUID
 
     try:
@@ -163,21 +163,21 @@ Disabling of Approval profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApprovalProfileInventoryApi(api_client)
+    api_instance = pyCZERTAINLY.ApprovalProfileInventoryApi(api_client)
     uuid = 'uuid_example' # str | Approval profile UUID
 
     try:
@@ -231,24 +231,24 @@ Edit an Approval profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.approval_profile_update_request_dto import ApprovalProfileUpdateRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.approval_profile_update_request_dto import ApprovalProfileUpdateRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApprovalProfileInventoryApi(api_client)
+    api_instance = pyCZERTAINLY.ApprovalProfileInventoryApi(api_client)
     uuid = 'uuid_example' # str | Approval profile UUID
-    approval_profile_update_request_dto = openapi_client.ApprovalProfileUpdateRequestDto() # ApprovalProfileUpdateRequestDto | 
+    approval_profile_update_request_dto = pyCZERTAINLY.ApprovalProfileUpdateRequestDto() # ApprovalProfileUpdateRequestDto | 
 
     try:
         # Edit an Approval profile
@@ -305,21 +305,21 @@ Enabling of Approval profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApprovalProfileInventoryApi(api_client)
+    api_instance = pyCZERTAINLY.ApprovalProfileInventoryApi(api_client)
     uuid = 'uuid_example' # str | Approval profile UUID
 
     try:
@@ -373,25 +373,25 @@ Get Approval Profile Details
 
 
 ```python
-import openapi_client
-from openapi_client.models.approval_profile_detail_dto import ApprovalProfileDetailDto
-from openapi_client.models.approval_profile_for_version_dto import ApprovalProfileForVersionDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.approval_profile_detail_dto import ApprovalProfileDetailDto
+from pyCZERTAINLY.models.approval_profile_for_version_dto import ApprovalProfileForVersionDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApprovalProfileInventoryApi(api_client)
+    api_instance = pyCZERTAINLY.ApprovalProfileInventoryApi(api_client)
     uuid = 'uuid_example' # str | Approval profile UUID
-    approval_profile_for_version_dto = openapi_client.ApprovalProfileForVersionDto() # ApprovalProfileForVersionDto | Select specific version of the approval profile
+    approval_profile_for_version_dto = pyCZERTAINLY.ApprovalProfileForVersionDto() # ApprovalProfileForVersionDto | Select specific version of the approval profile
 
     try:
         # Get Approval Profile Details
@@ -447,24 +447,24 @@ List Approval Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.approval_profile_response_dto import ApprovalProfileResponseDto
-from openapi_client.models.pagination_request_dto import PaginationRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.approval_profile_response_dto import ApprovalProfileResponseDto
+from pyCZERTAINLY.models.pagination_request_dto import PaginationRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ApprovalProfileInventoryApi(api_client)
-    pagination_request_dto = openapi_client.PaginationRequestDto() # PaginationRequestDto | 
+    api_instance = pyCZERTAINLY.ApprovalProfileInventoryApi(api_client)
+    pagination_request_dto = pyCZERTAINLY.PaginationRequestDto() # PaginationRequestDto | 
 
     try:
         # List Approval Profiles

@@ -1,4 +1,4 @@
-# openapi_client.CryptographicOperationsControllerApi
+# pyCZERTAINLY.CryptographicOperationsControllerApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -23,28 +23,28 @@ Decrypt data using a Key
 
 
 ```python
-import openapi_client
-from openapi_client.models.cipher_data_request_dto import CipherDataRequestDto
-from openapi_client.models.decrypt_data_response_dto import DecryptDataResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.cipher_data_request_dto import CipherDataRequestDto
+from pyCZERTAINLY.models.decrypt_data_response_dto import DecryptDataResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicOperationsControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicOperationsControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     token_profile_uuid = 'token_profile_uuid_example' # str | Token Profile UUID
     uuid = 'uuid_example' # str | Key UUID
     key_item_uuid = 'key_item_uuid_example' # str | Key Item UUID
-    cipher_data_request_dto = openapi_client.CipherDataRequestDto() # CipherDataRequestDto | 
+    cipher_data_request_dto = pyCZERTAINLY.CipherDataRequestDto() # CipherDataRequestDto | 
 
     try:
         # Decrypt data using a Key
@@ -104,28 +104,28 @@ Encrypt data using a Key
 
 
 ```python
-import openapi_client
-from openapi_client.models.cipher_data_request_dto import CipherDataRequestDto
-from openapi_client.models.encrypt_data_response_dto import EncryptDataResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.cipher_data_request_dto import CipherDataRequestDto
+from pyCZERTAINLY.models.encrypt_data_response_dto import EncryptDataResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicOperationsControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicOperationsControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     token_profile_uuid = 'token_profile_uuid_example' # str | Token Profile UUID
     uuid = 'uuid_example' # str | Key UUID
     key_item_uuid = 'key_item_uuid_example' # str | Key Item UUID
-    cipher_data_request_dto = openapi_client.CipherDataRequestDto() # CipherDataRequestDto | 
+    cipher_data_request_dto = pyCZERTAINLY.CipherDataRequestDto() # CipherDataRequestDto | 
 
     try:
         # Encrypt data using a Key
@@ -185,28 +185,28 @@ List of cipher Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.models.key_algorithm import KeyAlgorithm
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.models.key_algorithm import KeyAlgorithm
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicOperationsControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicOperationsControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     token_profile_uuid = 'token_profile_uuid_example' # str | Token Profile UUID
     uuid = 'uuid_example' # str | Key UUID
     key_item_uuid = 'key_item_uuid_example' # str | Key Item UUID
-    algorithm = openapi_client.KeyAlgorithm() # KeyAlgorithm | Cryptographic algorithm
+    algorithm = pyCZERTAINLY.KeyAlgorithm() # KeyAlgorithm | Cryptographic algorithm
 
     try:
         # List of cipher Attributes
@@ -265,22 +265,22 @@ List of random generator Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicOperationsControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicOperationsControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
 
     try:
@@ -336,28 +336,28 @@ List of signature Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.models.key_algorithm import KeyAlgorithm
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.models.key_algorithm import KeyAlgorithm
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicOperationsControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicOperationsControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     token_profile_uuid = 'token_profile_uuid_example' # str | Token Profile UUID
     uuid = 'uuid_example' # str | Key instance UUID
     key_item_uuid = 'key_item_uuid_example' # str | Key Item UUID
-    algorithm = openapi_client.KeyAlgorithm() # KeyAlgorithm | Cryptographic algorithm
+    algorithm = pyCZERTAINLY.KeyAlgorithm() # KeyAlgorithm | Cryptographic algorithm
 
     try:
         # List of signature Attributes
@@ -416,25 +416,25 @@ Generate random data
 
 
 ```python
-import openapi_client
-from openapi_client.models.random_data_request_dto import RandomDataRequestDto
-from openapi_client.models.random_data_response_dto import RandomDataResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.random_data_request_dto import RandomDataRequestDto
+from pyCZERTAINLY.models.random_data_response_dto import RandomDataResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicOperationsControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicOperationsControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
-    random_data_request_dto = openapi_client.RandomDataRequestDto() # RandomDataRequestDto | 
+    random_data_request_dto = pyCZERTAINLY.RandomDataRequestDto() # RandomDataRequestDto | 
 
     try:
         # Generate random data
@@ -491,28 +491,28 @@ Sign data using a Key
 
 
 ```python
-import openapi_client
-from openapi_client.models.sign_data_request_dto import SignDataRequestDto
-from openapi_client.models.sign_data_response_dto import SignDataResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.sign_data_request_dto import SignDataRequestDto
+from pyCZERTAINLY.models.sign_data_response_dto import SignDataResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicOperationsControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicOperationsControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     token_profile_uuid = 'token_profile_uuid_example' # str | Token Profile UUID
     uuid = 'uuid_example' # str | Key UUID
     key_item_uuid = 'key_item_uuid_example' # str | Key Item UUID
-    sign_data_request_dto = openapi_client.SignDataRequestDto() # SignDataRequestDto | 
+    sign_data_request_dto = pyCZERTAINLY.SignDataRequestDto() # SignDataRequestDto | 
 
     try:
         # Sign data using a Key
@@ -572,28 +572,28 @@ Verify data using a Key
 
 
 ```python
-import openapi_client
-from openapi_client.models.verify_data_request_dto import VerifyDataRequestDto
-from openapi_client.models.verify_data_response_dto import VerifyDataResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.verify_data_request_dto import VerifyDataRequestDto
+from pyCZERTAINLY.models.verify_data_response_dto import VerifyDataResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicOperationsControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicOperationsControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     token_profile_uuid = 'token_profile_uuid_example' # str | Token Profile UUID
     uuid = 'uuid_example' # str | Key UUID
     key_item_uuid = 'key_item_uuid_example' # str | Key Item UUID
-    verify_data_request_dto = openapi_client.VerifyDataRequestDto() # VerifyDataRequestDto | 
+    verify_data_request_dto = pyCZERTAINLY.VerifyDataRequestDto() # VerifyDataRequestDto | 
 
     try:
         # Verify data using a Key

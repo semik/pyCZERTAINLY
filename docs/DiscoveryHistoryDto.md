@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.discovery_history_dto import DiscoveryHistoryDto
+from pyCZERTAINLY.models.discovery_history_dto import DiscoveryHistoryDto
 
 # TODO update the JSON string below
 json = "{}"

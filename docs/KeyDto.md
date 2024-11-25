@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.key_dto import KeyDto
+from pyCZERTAINLY.models.key_dto import KeyDto
 
 # TODO update the JSON string below
 json = "{}"

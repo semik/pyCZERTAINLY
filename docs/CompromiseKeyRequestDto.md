@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.compromise_key_request_dto import CompromiseKeyRequestDto
+from pyCZERTAINLY.models.compromise_key_request_dto import CompromiseKeyRequestDto
 
 # TODO update the JSON string below
 json = "{}"

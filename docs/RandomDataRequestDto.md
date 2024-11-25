@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.random_data_request_dto import RandomDataRequestDto
+from pyCZERTAINLY.models.random_data_request_dto import RandomDataRequestDto
 
 # TODO update the JSON string below
 json = "{}"

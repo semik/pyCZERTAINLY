@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.date_time_attribute_constraint import DateTimeAttributeConstraint
+from pyCZERTAINLY.models.date_time_attribute_constraint import DateTimeAttributeConstraint
 
 # TODO update the JSON string below
 json = "{}"

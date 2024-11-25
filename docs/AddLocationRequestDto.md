@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.add_location_request_dto import AddLocationRequestDto
+from pyCZERTAINLY.models.add_location_request_dto import AddLocationRequestDto
 
 # TODO update the JSON string below
 json = "{}"

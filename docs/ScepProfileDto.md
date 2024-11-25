@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.scep_profile_dto import ScepProfileDto
+from pyCZERTAINLY.models.scep_profile_dto import ScepProfileDto
 
 # TODO update the JSON string below
 json = "{}"

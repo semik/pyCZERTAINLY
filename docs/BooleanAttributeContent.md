@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.boolean_attribute_content import BooleanAttributeContent
+from pyCZERTAINLY.models.boolean_attribute_content import BooleanAttributeContent
 
 # TODO update the JSON string below
 json = "{}"

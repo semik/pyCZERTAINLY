@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.cryptographic_key_response_dto import CryptographicKeyResponseDto
+from pyCZERTAINLY.models.cryptographic_key_response_dto import CryptographicKeyResponseDto
 
 # TODO update the JSON string below
 json = "{}"

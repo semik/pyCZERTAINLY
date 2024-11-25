@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.token_instance_detail_dto import TokenInstanceDetailDto
+from pyCZERTAINLY.models.token_instance_detail_dto import TokenInstanceDetailDto
 
 # TODO update the JSON string below
 json = "{}"

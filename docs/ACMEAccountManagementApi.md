@@ -1,4 +1,4 @@
-# openapi_client.ACMEAccountManagementApi
+# pyCZERTAINLY.ACMEAccountManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -23,21 +23,21 @@ Disable multiple ACME Accounts
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ACMEAccountManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ACMEAccountManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | ACME Account UUIDs
 
     try:
@@ -91,21 +91,21 @@ Enable multiple ACME Accounts
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ACMEAccountManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ACMEAccountManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | ACME Account UUIDs
 
     try:
@@ -159,21 +159,21 @@ Revoke multiple ACME Accounts
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ACMEAccountManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ACMEAccountManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | ACME Account UUIDs
 
     try:
@@ -227,21 +227,21 @@ Disable ACME Account
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ACMEAccountManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ACMEAccountManagementApi(api_client)
     acme_profile_uuid = 'acme_profile_uuid_example' # str | ACME Profile UUID
     acme_account_uuid = 'acme_account_uuid_example' # str | ACME Account UUID
 
@@ -297,21 +297,21 @@ Enable ACME Account
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ACMEAccountManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ACMEAccountManagementApi(api_client)
     acme_profile_uuid = 'acme_profile_uuid_example' # str | ACME Profile UUID
     acme_account_uuid = 'acme_account_uuid_example' # str | ACME Account UUID
 
@@ -367,22 +367,22 @@ Details of ACME Account
 
 
 ```python
-import openapi_client
-from openapi_client.models.acme_account_response_dto import AcmeAccountResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.acme_account_response_dto import AcmeAccountResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ACMEAccountManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ACMEAccountManagementApi(api_client)
     acme_profile_uuid = 'acme_profile_uuid_example' # str | ACME Profile UUID
     acme_account_uuid = 'acme_account_uuid_example' # str | ACME Account UUID
 
@@ -440,22 +440,22 @@ List ACME Accounts
 
 
 ```python
-import openapi_client
-from openapi_client.models.acme_account_list_response_dto import AcmeAccountListResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.acme_account_list_response_dto import AcmeAccountListResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ACMEAccountManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ACMEAccountManagementApi(api_client)
 
     try:
         # List ACME Accounts
@@ -507,21 +507,21 @@ Revoke ACME Account
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ACMEAccountManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ACMEAccountManagementApi(api_client)
     acme_profile_uuid = 'acme_profile_uuid_example' # str | ACME Profile UUID
     acme_account_uuid = 'acme_account_uuid_example' # str | ACME Account UUID
 

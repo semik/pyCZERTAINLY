@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.pagination_request_dto import PaginationRequestDto
+from pyCZERTAINLY.models.pagination_request_dto import PaginationRequestDto
 
 # TODO update the JSON string below
 json = "{}"

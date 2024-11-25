@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.connect_request_dto import ConnectRequestDto
+from pyCZERTAINLY.models.connect_request_dto import ConnectRequestDto
 
 # TODO update the JSON string below
 json = "{}"

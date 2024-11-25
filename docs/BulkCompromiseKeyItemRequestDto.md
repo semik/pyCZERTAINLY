@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.bulk_compromise_key_item_request_dto import BulkCompromiseKeyItemRequestDto
+from pyCZERTAINLY.models.bulk_compromise_key_item_request_dto import BulkCompromiseKeyItemRequestDto
 
 # TODO update the JSON string below
 json = "{}"

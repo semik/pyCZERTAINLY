@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.global_metadata_create_request_dto import GlobalMetadataCreateRequestDto
+from pyCZERTAINLY.models.global_metadata_create_request_dto import GlobalMetadataCreateRequestDto
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# openapi_client.CMPProfileManagementApi
+# pyCZERTAINLY.CMPProfileManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -28,22 +28,22 @@ Delete multiple CMP Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | CMP Profile UUIDs
 
     try:
@@ -99,21 +99,21 @@ Disable multiple CMP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | CMP Profile UUIDs
 
     try:
@@ -167,21 +167,21 @@ Enable multiple CMP Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | CMP Profile UUIDs
 
     try:
@@ -235,24 +235,24 @@ Create CMP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.cmp_profile_detail_dto import CmpProfileDetailDto
-from openapi_client.models.cmp_profile_request_dto import CmpProfileRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.cmp_profile_detail_dto import CmpProfileDetailDto
+from pyCZERTAINLY.models.cmp_profile_request_dto import CmpProfileRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
-    cmp_profile_request_dto = openapi_client.CmpProfileRequestDto() # CmpProfileRequestDto | 
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
+    cmp_profile_request_dto = pyCZERTAINLY.CmpProfileRequestDto() # CmpProfileRequestDto | 
 
     try:
         # Create CMP Profile
@@ -307,21 +307,21 @@ Delete CMP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     cmp_profile_uuid = 'cmp_profile_uuid_example' # str | CMP Profile UUID
 
     try:
@@ -375,21 +375,21 @@ Disable CMP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     cmp_profile_uuid = 'cmp_profile_uuid_example' # str | CMP Profile UUID
 
     try:
@@ -443,25 +443,25 @@ Edit CMP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.cmp_profile_detail_dto import CmpProfileDetailDto
-from openapi_client.models.cmp_profile_edit_request_dto import CmpProfileEditRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.cmp_profile_detail_dto import CmpProfileDetailDto
+from pyCZERTAINLY.models.cmp_profile_edit_request_dto import CmpProfileEditRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     cmp_profile_uuid = 'cmp_profile_uuid_example' # str | CMP Profile UUID
-    cmp_profile_edit_request_dto = openapi_client.CmpProfileEditRequestDto() # CmpProfileEditRequestDto | 
+    cmp_profile_edit_request_dto = pyCZERTAINLY.CmpProfileEditRequestDto() # CmpProfileEditRequestDto | 
 
     try:
         # Edit CMP Profile
@@ -517,21 +517,21 @@ Enable CMP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     cmp_profile_uuid = 'cmp_profile_uuid_example' # str | CMP Profile UUID
 
     try:
@@ -585,22 +585,22 @@ Force delete multiple CMP Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | CMP Profile UUIDs
 
     try:
@@ -657,22 +657,22 @@ Get details of CMP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.cmp_profile_detail_dto import CmpProfileDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.cmp_profile_detail_dto import CmpProfileDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     cmp_profile_uuid = 'cmp_profile_uuid_example' # str | CMP Profile UUID
 
     try:
@@ -728,22 +728,22 @@ Get list of CMP Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.cmp_profile_dto import CmpProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.cmp_profile_dto import CmpProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
 
     try:
         # Get list of CMP Profiles
@@ -795,22 +795,22 @@ Get list of certificates eligible for signing of CMP responses
 
 
 ```python
-import openapi_client
-from openapi_client.models.certificate_dto import CertificateDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.certificate_dto import CertificateDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
 
     try:
         # Get list of certificates eligible for signing of CMP responses
@@ -862,21 +862,21 @@ Update RA Profile for CMP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CMPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CMPProfileManagementApi(api_client)
     cmp_profile_uuid = 'cmp_profile_uuid_example' # str | CMP Profile UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 

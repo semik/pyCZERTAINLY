@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.push_to_location_request_dto import PushToLocationRequestDto
+from pyCZERTAINLY.models.push_to_location_request_dto import PushToLocationRequestDto
 
 # TODO update the JSON string below
 json = "{}"

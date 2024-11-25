@@ -1,4 +1,4 @@
-# openapi_client.ConnectorAuthenticationApi
+# pyCZERTAINLY.ConnectorAuthenticationApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -24,22 +24,22 @@ Get API Key auth Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
 
     try:
         # Get API Key auth Attributes
@@ -91,21 +91,21 @@ Get list of Authentication Types
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
 
     try:
         # Get list of Authentication Types
@@ -157,22 +157,22 @@ Get basic auth Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
 
     try:
         # Get basic auth Attributes
@@ -224,22 +224,22 @@ Get Attributes for certificate auth
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
 
     try:
         # Get Attributes for certificate auth
@@ -291,22 +291,22 @@ Get JWT auth Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
 
     try:
         # Get JWT auth Attributes
@@ -358,23 +358,23 @@ Validate API Key Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate API Key Attributes
@@ -427,23 +427,23 @@ Validate basic auth Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate basic auth Attributes
@@ -496,23 +496,23 @@ Validate certificate auth Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate certificate auth Attributes
@@ -565,23 +565,23 @@ Validate JWT auth Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorAuthenticationApi(api_client)
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    api_instance = pyCZERTAINLY.ConnectorAuthenticationApi(api_client)
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate JWT auth Attributes

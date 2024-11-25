@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.update_condition_request_dto import UpdateConditionRequestDto
+from pyCZERTAINLY.models.update_condition_request_dto import UpdateConditionRequestDto
 
 # TODO update the JSON string below
 json = "{}"

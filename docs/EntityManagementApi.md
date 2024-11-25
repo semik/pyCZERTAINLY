@@ -1,4 +1,4 @@
-# openapi_client.EntityManagementApi
+# pyCZERTAINLY.EntityManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -23,24 +23,24 @@ Add Entity instance
 
 
 ```python
-import openapi_client
-from openapi_client.models.entity_instance_request_dto import EntityInstanceRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.entity_instance_request_dto import EntityInstanceRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EntityManagementApi(api_client)
-    entity_instance_request_dto = openapi_client.EntityInstanceRequestDto() # EntityInstanceRequestDto | 
+    api_instance = pyCZERTAINLY.EntityManagementApi(api_client)
+    entity_instance_request_dto = pyCZERTAINLY.EntityInstanceRequestDto() # EntityInstanceRequestDto | 
 
     try:
         # Add Entity instance
@@ -96,21 +96,21 @@ Delete Entity instance
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EntityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.EntityManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity instance UUID
 
     try:
@@ -164,25 +164,25 @@ Edit Entity instance
 
 
 ```python
-import openapi_client
-from openapi_client.models.entity_instance_dto import EntityInstanceDto
-from openapi_client.models.entity_instance_update_request_dto import EntityInstanceUpdateRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.entity_instance_dto import EntityInstanceDto
+from pyCZERTAINLY.models.entity_instance_update_request_dto import EntityInstanceUpdateRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EntityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.EntityManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity instance UUID
-    entity_instance_update_request_dto = openapi_client.EntityInstanceUpdateRequestDto() # EntityInstanceUpdateRequestDto | 
+    entity_instance_update_request_dto = pyCZERTAINLY.EntityInstanceUpdateRequestDto() # EntityInstanceUpdateRequestDto | 
 
     try:
         # Edit Entity instance
@@ -239,22 +239,22 @@ Get Entity instance details
 
 
 ```python
-import openapi_client
-from openapi_client.models.entity_instance_dto import EntityInstanceDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.entity_instance_dto import EntityInstanceDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EntityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.EntityManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity instance UUID
 
     try:
@@ -310,22 +310,22 @@ Get Entities searchable fields information
 
 
 ```python
-import openapi_client
-from openapi_client.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EntityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.EntityManagementApi(api_client)
 
     try:
         # Get Entities searchable fields information
@@ -377,24 +377,24 @@ List Entity instances
 
 
 ```python
-import openapi_client
-from openapi_client.models.entity_instance_response_dto import EntityInstanceResponseDto
-from openapi_client.models.search_request_dto import SearchRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.entity_instance_response_dto import EntityInstanceResponseDto
+from pyCZERTAINLY.models.search_request_dto import SearchRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EntityManagementApi(api_client)
-    search_request_dto = openapi_client.SearchRequestDto() # SearchRequestDto | 
+    api_instance = pyCZERTAINLY.EntityManagementApi(api_client)
+    search_request_dto = pyCZERTAINLY.SearchRequestDto() # SearchRequestDto | 
 
     try:
         # List Entity instances
@@ -449,22 +449,22 @@ List Location Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EntityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.EntityManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity instance UUID
 
     try:
@@ -520,24 +520,24 @@ Validate Location Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EntityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.EntityManagementApi(api_client)
     entity_uuid = 'entity_uuid_example' # str | Entity instance UUID
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate Location Attributes

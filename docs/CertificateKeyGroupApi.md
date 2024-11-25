@@ -1,4 +1,4 @@
-# openapi_client.CertificateKeyGroupApi
+# pyCZERTAINLY.CertificateKeyGroupApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -21,21 +21,21 @@ Delete multiple Groups
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CertificateKeyGroupApi(api_client)
+    api_instance = pyCZERTAINLY.CertificateKeyGroupApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Group UUIDs
 
     try:
@@ -89,24 +89,24 @@ Create Group
 
 
 ```python
-import openapi_client
-from openapi_client.models.group_request_dto import GroupRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.group_request_dto import GroupRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CertificateKeyGroupApi(api_client)
-    group_request_dto = openapi_client.GroupRequestDto() # GroupRequestDto | 
+    api_instance = pyCZERTAINLY.CertificateKeyGroupApi(api_client)
+    group_request_dto = pyCZERTAINLY.GroupRequestDto() # GroupRequestDto | 
 
     try:
         # Create Group
@@ -161,21 +161,21 @@ Delete Group
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CertificateKeyGroupApi(api_client)
+    api_instance = pyCZERTAINLY.CertificateKeyGroupApi(api_client)
     uuid = 'uuid_example' # str | Group UUID
 
     try:
@@ -229,25 +229,25 @@ Edit Group
 
 
 ```python
-import openapi_client
-from openapi_client.models.group_dto import GroupDto
-from openapi_client.models.group_request_dto import GroupRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.group_dto import GroupDto
+from pyCZERTAINLY.models.group_request_dto import GroupRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CertificateKeyGroupApi(api_client)
+    api_instance = pyCZERTAINLY.CertificateKeyGroupApi(api_client)
     uuid = 'uuid_example' # str | Group UUID
-    group_request_dto = openapi_client.GroupRequestDto() # GroupRequestDto | 
+    group_request_dto = pyCZERTAINLY.GroupRequestDto() # GroupRequestDto | 
 
     try:
         # Edit Group
@@ -303,22 +303,22 @@ Group details
 
 
 ```python
-import openapi_client
-from openapi_client.models.group_dto import GroupDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.group_dto import GroupDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CertificateKeyGroupApi(api_client)
+    api_instance = pyCZERTAINLY.CertificateKeyGroupApi(api_client)
     uuid = 'uuid_example' # str | 
 
     try:
@@ -374,22 +374,22 @@ List Groups
 
 
 ```python
-import openapi_client
-from openapi_client.models.group_dto import GroupDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.group_dto import GroupDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CertificateKeyGroupApi(api_client)
+    api_instance = pyCZERTAINLY.CertificateKeyGroupApi(api_client)
 
     try:
         # List Groups

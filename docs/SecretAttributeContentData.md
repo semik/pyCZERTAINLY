@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.secret_attribute_content_data import SecretAttributeContentData
+from pyCZERTAINLY.models.secret_attribute_content_data import SecretAttributeContentData
 
 # TODO update the JSON string below
 json = "{}"

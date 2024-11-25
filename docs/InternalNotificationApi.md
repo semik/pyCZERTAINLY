@@ -1,4 +1,4 @@
-# openapi_client.InternalNotificationApi
+# pyCZERTAINLY.InternalNotificationApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -20,21 +20,21 @@ Delete a list of notifications for logged user
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InternalNotificationApi(api_client)
+    api_instance = pyCZERTAINLY.InternalNotificationApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Notifications UUIDs
 
     try:
@@ -88,21 +88,21 @@ Mark a list of notifications as read for logged user
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InternalNotificationApi(api_client)
+    api_instance = pyCZERTAINLY.InternalNotificationApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Notifications UUIDs
 
     try:
@@ -156,21 +156,21 @@ Delete a notification for logged user
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InternalNotificationApi(api_client)
+    api_instance = pyCZERTAINLY.InternalNotificationApi(api_client)
     uuid = 'uuid_example' # str | Notification UUID
 
     try:
@@ -224,24 +224,24 @@ List notifications for logged user
 
 
 ```python
-import openapi_client
-from openapi_client.models.notification_request_dto import NotificationRequestDto
-from openapi_client.models.notification_response_dto import NotificationResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.notification_request_dto import NotificationRequestDto
+from pyCZERTAINLY.models.notification_response_dto import NotificationResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InternalNotificationApi(api_client)
-    request = openapi_client.NotificationRequestDto() # NotificationRequestDto | Show only unread notifications
+    api_instance = pyCZERTAINLY.InternalNotificationApi(api_client)
+    request = pyCZERTAINLY.NotificationRequestDto() # NotificationRequestDto | Show only unread notifications
 
     try:
         # List notifications for logged user
@@ -296,21 +296,21 @@ Mark notification as read for logged user
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.InternalNotificationApi(api_client)
+    api_instance = pyCZERTAINLY.InternalNotificationApi(api_client)
     uuid = 'uuid_example' # str | Notification UUID
 
     try:

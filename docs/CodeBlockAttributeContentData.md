@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.code_block_attribute_content_data import CodeBlockAttributeContentData
+from pyCZERTAINLY.models.code_block_attribute_content_data import CodeBlockAttributeContentData
 
 # TODO update the JSON string below
 json = "{}"

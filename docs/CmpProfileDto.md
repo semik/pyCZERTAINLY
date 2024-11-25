@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.cmp_profile_dto import CmpProfileDto
+from pyCZERTAINLY.models.cmp_profile_dto import CmpProfileDto
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# openapi_client.WorkflowTriggersManagementApi
+# pyCZERTAINLY.WorkflowTriggersManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -22,24 +22,24 @@ Create Trigger
 
 
 ```python
-import openapi_client
-from openapi_client.models.trigger_detail_dto import TriggerDetailDto
-from openapi_client.models.trigger_request_dto import TriggerRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.trigger_detail_dto import TriggerDetailDto
+from pyCZERTAINLY.models.trigger_request_dto import TriggerRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowTriggersManagementApi(api_client)
-    trigger_request_dto = openapi_client.TriggerRequestDto() # TriggerRequestDto | 
+    api_instance = pyCZERTAINLY.WorkflowTriggersManagementApi(api_client)
+    trigger_request_dto = pyCZERTAINLY.TriggerRequestDto() # TriggerRequestDto | 
 
     try:
         # Create Trigger
@@ -93,21 +93,21 @@ Delete Trigger
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowTriggersManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowTriggersManagementApi(api_client)
     trigger_uuid = 'trigger_uuid_example' # str | Trigger UUID
 
     try:
@@ -160,22 +160,22 @@ Get Trigger details
 
 
 ```python
-import openapi_client
-from openapi_client.models.trigger_detail_dto import TriggerDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.trigger_detail_dto import TriggerDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowTriggersManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowTriggersManagementApi(api_client)
     trigger_uuid = 'trigger_uuid_example' # str | Trigger UUID
 
     try:
@@ -230,22 +230,22 @@ Get Trigger History
 
 
 ```python
-import openapi_client
-from openapi_client.models.trigger_history_dto import TriggerHistoryDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.trigger_history_dto import TriggerHistoryDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowTriggersManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowTriggersManagementApi(api_client)
     trigger_uuid = 'trigger_uuid_example' # str | Trigger UUID
     association_object_uuid = 'association_object_uuid_example' # str | Trigger Association Object UUID
 
@@ -302,22 +302,22 @@ Get Trigger History Summary
 
 
 ```python
-import openapi_client
-from openapi_client.models.trigger_history_summary_dto import TriggerHistorySummaryDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.trigger_history_summary_dto import TriggerHistorySummaryDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowTriggersManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowTriggersManagementApi(api_client)
     association_object_uuid = 'association_object_uuid_example' # str | Trigger Association Object UUID
 
     try:
@@ -372,25 +372,25 @@ List Triggers
 
 
 ```python
-import openapi_client
-from openapi_client.models.resource import Resource
-from openapi_client.models.trigger_dto import TriggerDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.models.trigger_dto import TriggerDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowTriggersManagementApi(api_client)
-    resource = openapi_client.Resource() # Resource |  (optional)
-    event_resource = openapi_client.Resource() # Resource |  (optional)
+    api_instance = pyCZERTAINLY.WorkflowTriggersManagementApi(api_client)
+    resource = pyCZERTAINLY.Resource() # Resource |  (optional)
+    event_resource = pyCZERTAINLY.Resource() # Resource |  (optional)
 
     try:
         # List Triggers
@@ -445,25 +445,25 @@ Update Trigger
 
 
 ```python
-import openapi_client
-from openapi_client.models.trigger_detail_dto import TriggerDetailDto
-from openapi_client.models.update_trigger_request_dto import UpdateTriggerRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.trigger_detail_dto import TriggerDetailDto
+from pyCZERTAINLY.models.update_trigger_request_dto import UpdateTriggerRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowTriggersManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowTriggersManagementApi(api_client)
     trigger_uuid = 'trigger_uuid_example' # str | Trigger UUID
-    update_trigger_request_dto = openapi_client.UpdateTriggerRequestDto() # UpdateTriggerRequestDto | 
+    update_trigger_request_dto = pyCZERTAINLY.UpdateTriggerRequestDto() # UpdateTriggerRequestDto | 
 
     try:
         # Update Trigger

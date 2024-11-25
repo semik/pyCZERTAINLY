@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.verify_data_response_dto import VerifyDataResponseDto
+from pyCZERTAINLY.models.verify_data_response_dto import VerifyDataResponseDto
 
 # TODO update the JSON string below
 json = "{}"

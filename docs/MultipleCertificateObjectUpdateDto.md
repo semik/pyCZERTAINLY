@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.multiple_certificate_object_update_dto import MultipleCertificateObjectUpdateDto
+from pyCZERTAINLY.models.multiple_certificate_object_update_dto import MultipleCertificateObjectUpdateDto
 
 # TODO update the JSON string below
 json = "{}"

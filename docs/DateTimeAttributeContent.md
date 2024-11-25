@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.date_time_attribute_content import DateTimeAttributeContent
+from pyCZERTAINLY.models.date_time_attribute_content import DateTimeAttributeContent
 
 # TODO update the JSON string below
 json = "{}"

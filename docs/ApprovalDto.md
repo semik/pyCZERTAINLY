@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.approval_dto import ApprovalDto
+from pyCZERTAINLY.models.approval_dto import ApprovalDto
 
 # TODO update the JSON string below
 json = "{}"

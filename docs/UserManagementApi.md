@@ -1,4 +1,4 @@
-# openapi_client.UserManagementApi
+# pyCZERTAINLY.UserManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -28,22 +28,22 @@ Add role to User
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
     role_uuid = 'role_uuid_example' # str | Role UUID
 
@@ -101,24 +101,24 @@ Create User
 
 
 ```python
-import openapi_client
-from openapi_client.models.add_user_request_dto import AddUserRequestDto
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.add_user_request_dto import AddUserRequestDto
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
-    add_user_request_dto = openapi_client.AddUserRequestDto() # AddUserRequestDto | 
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
+    add_user_request_dto = pyCZERTAINLY.AddUserRequestDto() # AddUserRequestDto | 
 
     try:
         # Create User
@@ -173,21 +173,21 @@ Delete User
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
 
     try:
@@ -241,22 +241,22 @@ Disable User
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
 
     try:
@@ -312,22 +312,22 @@ Enable User
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
 
     try:
@@ -383,22 +383,22 @@ Get User permissions
 
 
 ```python
-import openapi_client
-from openapi_client.models.subject_permissions_dto import SubjectPermissionsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.subject_permissions_dto import SubjectPermissionsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
 
     try:
@@ -454,22 +454,22 @@ Get user details
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
 
     try:
@@ -525,22 +525,22 @@ Get User Roles
 
 
 ```python
-import openapi_client
-from openapi_client.models.role_dto import RoleDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.role_dto import RoleDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
 
     try:
@@ -596,24 +596,24 @@ Identify User
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.models.user_identification_request_dto import UserIdentificationRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.models.user_identification_request_dto import UserIdentificationRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
-    user_identification_request_dto = openapi_client.UserIdentificationRequestDto() # UserIdentificationRequestDto | 
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
+    user_identification_request_dto = pyCZERTAINLY.UserIdentificationRequestDto() # UserIdentificationRequestDto | 
 
     try:
         # Identify User
@@ -668,22 +668,22 @@ List Users
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_dto import UserDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_dto import UserDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
 
     try:
         # List Users
@@ -735,22 +735,22 @@ Remove role from User
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
     role_uuid = 'role_uuid_example' # str | Role UUID
 
@@ -808,22 +808,22 @@ Add roles to User
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Role UUIDs
 
@@ -881,25 +881,25 @@ Update User
 
 
 ```python
-import openapi_client
-from openapi_client.models.update_user_request_dto import UpdateUserRequestDto
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.update_user_request_dto import UpdateUserRequestDto
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UserManagementApi(api_client)
+    api_instance = pyCZERTAINLY.UserManagementApi(api_client)
     user_uuid = 'user_uuid_example' # str | User UUID
-    update_user_request_dto = openapi_client.UpdateUserRequestDto() # UpdateUserRequestDto | 
+    update_user_request_dto = pyCZERTAINLY.UpdateUserRequestDto() # UpdateUserRequestDto | 
 
     try:
         # Update User

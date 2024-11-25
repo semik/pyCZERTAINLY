@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.float_attribute_content import FloatAttributeContent
+from pyCZERTAINLY.models.float_attribute_content import FloatAttributeContent
 
 # TODO update the JSON string below
 json = "{}"

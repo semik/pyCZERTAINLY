@@ -1,4 +1,4 @@
-# openapi_client.RAProfileManagementApi
+# pyCZERTAINLY.RAProfileManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -44,27 +44,27 @@ Activate ACME for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.activate_acme_for_ra_profile_request_dto import ActivateAcmeForRaProfileRequestDto
-from openapi_client.models.ra_profile_acme_detail_response_dto import RaProfileAcmeDetailResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.activate_acme_for_ra_profile_request_dto import ActivateAcmeForRaProfileRequestDto
+from pyCZERTAINLY.models.ra_profile_acme_detail_response_dto import RaProfileAcmeDetailResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
     acme_profile_uuid = 'acme_profile_uuid_example' # str | ACME Profile UUID
-    activate_acme_for_ra_profile_request_dto = openapi_client.ActivateAcmeForRaProfileRequestDto() # ActivateAcmeForRaProfileRequestDto | 
+    activate_acme_for_ra_profile_request_dto = pyCZERTAINLY.ActivateAcmeForRaProfileRequestDto() # ActivateAcmeForRaProfileRequestDto | 
 
     try:
         # Activate ACME for RA Profile
@@ -125,27 +125,27 @@ Activate CMP for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.activate_cmp_for_ra_profile_request_dto import ActivateCmpForRaProfileRequestDto
-from openapi_client.models.ra_profile_cmp_detail_response_dto import RaProfileCmpDetailResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.activate_cmp_for_ra_profile_request_dto import ActivateCmpForRaProfileRequestDto
+from pyCZERTAINLY.models.ra_profile_cmp_detail_response_dto import RaProfileCmpDetailResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
     cmp_profile_uuid = 'cmp_profile_uuid_example' # str | CMP Profile UUID
-    activate_cmp_for_ra_profile_request_dto = openapi_client.ActivateCmpForRaProfileRequestDto() # ActivateCmpForRaProfileRequestDto | 
+    activate_cmp_for_ra_profile_request_dto = pyCZERTAINLY.ActivateCmpForRaProfileRequestDto() # ActivateCmpForRaProfileRequestDto | 
 
     try:
         # Activate CMP for RA Profile
@@ -206,27 +206,27 @@ Activate SCEP for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.activate_scep_for_ra_profile_request_dto import ActivateScepForRaProfileRequestDto
-from openapi_client.models.ra_profile_scep_detail_response_dto import RaProfileScepDetailResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.activate_scep_for_ra_profile_request_dto import ActivateScepForRaProfileRequestDto
+from pyCZERTAINLY.models.ra_profile_scep_detail_response_dto import RaProfileScepDetailResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
     scep_profile_uuid = 'scep_profile_uuid_example' # str | SCEP Profile UUID
-    activate_scep_for_ra_profile_request_dto = openapi_client.ActivateScepForRaProfileRequestDto() # ActivateScepForRaProfileRequestDto | 
+    activate_scep_for_ra_profile_request_dto = pyCZERTAINLY.ActivateScepForRaProfileRequestDto() # ActivateScepForRaProfileRequestDto | 
 
     try:
         # Activate SCEP for RA Profile
@@ -287,21 +287,21 @@ Associated RA profile with the Approval profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA profile UUID
     approval_profile_uuid = 'approval_profile_uuid_example' # str | Approval profile UUID
@@ -361,21 +361,21 @@ Delete multiple RA Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | RA Profile UUIDs
 
     try:
@@ -432,21 +432,21 @@ Disable multiple RA Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | RA Profile UUIDs
 
     try:
@@ -502,21 +502,21 @@ Enable multiple RA Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | RA Profile UUIDs
 
     try:
@@ -572,21 +572,21 @@ Initiate Certificate Compliance Check
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | RA Profile UUIDs
 
     try:
@@ -642,25 +642,25 @@ Create RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.add_ra_profile_request_dto import AddRaProfileRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.add_ra_profile_request_dto import AddRaProfileRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
-    add_ra_profile_request_dto = openapi_client.AddRaProfileRequestDto() # AddRaProfileRequestDto | 
+    add_ra_profile_request_dto = pyCZERTAINLY.AddRaProfileRequestDto() # AddRaProfileRequestDto | 
 
     try:
         # Create RA Profile
@@ -719,21 +719,21 @@ Deactivate ACME for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -792,21 +792,21 @@ Deactivate CMP for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -865,21 +865,21 @@ Deactivate SCEP for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -938,21 +938,21 @@ Delete RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -1010,21 +1010,21 @@ Delete RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
     try:
@@ -1080,21 +1080,21 @@ Disable RA Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -1152,21 +1152,21 @@ Disassociated RA profile with the Approval profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA profile UUID
     approval_profile_uuid = 'approval_profile_uuid_example' # str | Approval profile UUID
@@ -1226,26 +1226,26 @@ Edit RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.edit_ra_profile_request_dto import EditRaProfileRequestDto
-from openapi_client.models.ra_profile_dto import RaProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.edit_ra_profile_request_dto import EditRaProfileRequestDto
+from pyCZERTAINLY.models.ra_profile_dto import RaProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
-    edit_ra_profile_request_dto = openapi_client.EditRaProfileRequestDto() # EditRaProfileRequestDto | 
+    edit_ra_profile_request_dto = pyCZERTAINLY.EditRaProfileRequestDto() # EditRaProfileRequestDto | 
 
     try:
         # Edit RA Profile
@@ -1305,21 +1305,21 @@ Enable RA Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -1377,22 +1377,22 @@ Get ACME details for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.ra_profile_acme_detail_response_dto import RaProfileAcmeDetailResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.ra_profile_acme_detail_response_dto import RaProfileAcmeDetailResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -1453,22 +1453,22 @@ List of Approval profiles associated with the RAProfile
 
 
 ```python
-import openapi_client
-from openapi_client.models.approval_profile_dto import ApprovalProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.approval_profile_dto import ApprovalProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA profile UUID
 
@@ -1528,22 +1528,22 @@ Get Compliance Profiles for an RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.simplified_compliance_profile_dto import SimplifiedComplianceProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.simplified_compliance_profile_dto import SimplifiedComplianceProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -1603,22 +1603,22 @@ Retrieve certificates of authority belonging to RA profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.certificate_detail_dto import CertificateDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.certificate_detail_dto import CertificateDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA profile UUID
 
@@ -1678,22 +1678,22 @@ Get CMP details for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.ra_profile_cmp_detail_response_dto import RaProfileCmpDetailResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.ra_profile_cmp_detail_response_dto import RaProfileCmpDetailResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -1754,22 +1754,22 @@ Details of RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.ra_profile_dto import RaProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.ra_profile_dto import RaProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -1829,22 +1829,22 @@ Details of RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.ra_profile_dto import RaProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.ra_profile_dto import RaProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
     try:
@@ -1902,22 +1902,22 @@ Get SCEP details for RA Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.ra_profile_scep_detail_response_dto import RaProfileScepDetailResponseDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.ra_profile_scep_detail_response_dto import RaProfileScepDetailResponseDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -1978,22 +1978,22 @@ Get issue Certificate Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -2053,22 +2053,22 @@ Get revocation Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     authority_uuid = 'authority_uuid_example' # str | Authority Instance UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 
@@ -2128,22 +2128,22 @@ List of available RA Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.ra_profile_dto import RaProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.ra_profile_dto import RaProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RAProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RAProfileManagementApi(api_client)
     enabled = True # bool |  (optional)
 
     try:

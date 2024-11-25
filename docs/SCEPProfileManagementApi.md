@@ -1,4 +1,4 @@
-# openapi_client.SCEPProfileManagementApi
+# pyCZERTAINLY.SCEPProfileManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -28,22 +28,22 @@ Delete multiple SCEP Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | SCEP Profile UUIDs
 
     try:
@@ -99,21 +99,21 @@ Disable multiple SCEP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | SCEP Profile UUIDs
 
     try:
@@ -167,21 +167,21 @@ Enable multiple SCEP Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | SCEP Profile UUIDs
 
     try:
@@ -235,24 +235,24 @@ Create SCEP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.scep_profile_detail_dto import ScepProfileDetailDto
-from openapi_client.models.scep_profile_request_dto import ScepProfileRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.scep_profile_detail_dto import ScepProfileDetailDto
+from pyCZERTAINLY.models.scep_profile_request_dto import ScepProfileRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
-    scep_profile_request_dto = openapi_client.ScepProfileRequestDto() # ScepProfileRequestDto | 
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
+    scep_profile_request_dto = pyCZERTAINLY.ScepProfileRequestDto() # ScepProfileRequestDto | 
 
     try:
         # Create SCEP Profile
@@ -307,21 +307,21 @@ Delete SCEP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | SCEP Profile UUID
 
     try:
@@ -375,21 +375,21 @@ Disable SCEP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | SCEP Profile UUID
 
     try:
@@ -443,25 +443,25 @@ Edit SCEP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.scep_profile_detail_dto import ScepProfileDetailDto
-from openapi_client.models.scep_profile_edit_request_dto import ScepProfileEditRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.scep_profile_detail_dto import ScepProfileDetailDto
+from pyCZERTAINLY.models.scep_profile_edit_request_dto import ScepProfileEditRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | SCEP Profile UUID
-    scep_profile_edit_request_dto = openapi_client.ScepProfileEditRequestDto() # ScepProfileEditRequestDto | 
+    scep_profile_edit_request_dto = pyCZERTAINLY.ScepProfileEditRequestDto() # ScepProfileEditRequestDto | 
 
     try:
         # Edit SCEP Profile
@@ -517,21 +517,21 @@ Enable SCEP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | SCEP Profile UUID
 
     try:
@@ -585,22 +585,22 @@ Force delete multiple SCEP Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | SCEP Profile UUIDs
 
     try:
@@ -657,22 +657,22 @@ Get details of SCEP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.scep_profile_detail_dto import ScepProfileDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.scep_profile_detail_dto import ScepProfileDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | SCEP Profile UUID
 
     try:
@@ -728,22 +728,22 @@ Get list of certificates eligible for CA certificate of SCEP requests
 
 
 ```python
-import openapi_client
-from openapi_client.models.certificate_dto import CertificateDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.certificate_dto import CertificateDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     intune_enabled = True # bool | flag to return certificates that are eligible for Intune integration
 
     try:
@@ -799,22 +799,22 @@ Get list of SCEP Profiles
 
 
 ```python
-import openapi_client
-from openapi_client.models.scep_profile_dto import ScepProfileDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.scep_profile_dto import ScepProfileDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
 
     try:
         # Get list of SCEP Profiles
@@ -866,21 +866,21 @@ Update RA Profile for SCEP Profile
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SCEPProfileManagementApi(api_client)
+    api_instance = pyCZERTAINLY.SCEPProfileManagementApi(api_client)
     uuid = 'uuid_example' # str | SCEP Profile UUID
     ra_profile_uuid = 'ra_profile_uuid_example' # str | RA Profile UUID
 

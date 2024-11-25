@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.trigger_history_dto import TriggerHistoryDto
+from pyCZERTAINLY.models.trigger_history_dto import TriggerHistoryDto
 
 # TODO update the JSON string below
 json = "{}"

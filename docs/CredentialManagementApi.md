@@ -1,4 +1,4 @@
-# openapi_client.CredentialManagementApi
+# pyCZERTAINLY.CredentialManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -23,21 +23,21 @@ Delete multiple Credentials
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CredentialManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CredentialManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Credential UUIDs
 
     try:
@@ -95,24 +95,24 @@ Add Credential
 
 
 ```python
-import openapi_client
-from openapi_client.models.credential_request_dto import CredentialRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.credential_request_dto import CredentialRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CredentialManagementApi(api_client)
-    credential_request_dto = openapi_client.CredentialRequestDto() # CredentialRequestDto | 
+    api_instance = pyCZERTAINLY.CredentialManagementApi(api_client)
+    credential_request_dto = pyCZERTAINLY.CredentialRequestDto() # CredentialRequestDto | 
 
     try:
         # Add Credential
@@ -170,21 +170,21 @@ Delete Credential
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CredentialManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CredentialManagementApi(api_client)
     uuid = 'uuid_example' # str | Credential UUID
 
     try:
@@ -241,21 +241,21 @@ Disable Credential
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CredentialManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CredentialManagementApi(api_client)
     uuid = 'uuid_example' # str | Credential UUID
 
     try:
@@ -311,25 +311,25 @@ Edit Credential
 
 
 ```python
-import openapi_client
-from openapi_client.models.credential_dto import CredentialDto
-from openapi_client.models.credential_update_request_dto import CredentialUpdateRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.credential_dto import CredentialDto
+from pyCZERTAINLY.models.credential_update_request_dto import CredentialUpdateRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CredentialManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CredentialManagementApi(api_client)
     uuid = 'uuid_example' # str | Credential UUID
-    credential_update_request_dto = openapi_client.CredentialUpdateRequestDto() # CredentialUpdateRequestDto | 
+    credential_update_request_dto = pyCZERTAINLY.CredentialUpdateRequestDto() # CredentialUpdateRequestDto | 
 
     try:
         # Edit Credential
@@ -388,21 +388,21 @@ Enable Credential
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CredentialManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CredentialManagementApi(api_client)
     uuid = 'uuid_example' # str | Credential UUID
 
     try:
@@ -458,22 +458,22 @@ Details of a Credentials
 
 
 ```python
-import openapi_client
-from openapi_client.models.credential_dto import CredentialDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.credential_dto import CredentialDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CredentialManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CredentialManagementApi(api_client)
     uuid = 'uuid_example' # str | Credential UUID
 
     try:
@@ -531,22 +531,22 @@ List of All Credentials
 
 
 ```python
-import openapi_client
-from openapi_client.models.credential_dto import CredentialDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.credential_dto import CredentialDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CredentialManagementApi(api_client)
+    api_instance = pyCZERTAINLY.CredentialManagementApi(api_client)
 
     try:
         # List of All Credentials

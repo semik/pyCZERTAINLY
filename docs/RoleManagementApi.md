@@ -1,4 +1,4 @@
-# openapi_client.RoleManagementApi
+# pyCZERTAINLY.RoleManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -29,25 +29,25 @@ Add Resource Objects to a Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.object_permissions_request_dto import ObjectPermissionsRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.object_permissions_request_dto import ObjectPermissionsRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
     resource_uuid = 'resource_uuid_example' # str | Resource UUID
-    object_permissions_request_dto = [openapi_client.ObjectPermissionsRequestDto()] # List[ObjectPermissionsRequestDto] | 
+    object_permissions_request_dto = [pyCZERTAINLY.ObjectPermissionsRequestDto()] # List[ObjectPermissionsRequestDto] | 
 
     try:
         # Add Resource Objects to a Role
@@ -102,24 +102,24 @@ Create Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.role_detail_dto import RoleDetailDto
-from openapi_client.models.role_request_dto import RoleRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.role_detail_dto import RoleDetailDto
+from pyCZERTAINLY.models.role_request_dto import RoleRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
-    role_request_dto = openapi_client.RoleRequestDto() # RoleRequestDto | 
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
+    role_request_dto = pyCZERTAINLY.RoleRequestDto() # RoleRequestDto | 
 
     try:
         # Create Role
@@ -174,21 +174,21 @@ Delete Role
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
 
     try:
@@ -242,22 +242,22 @@ Get Resource Objects of a Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.object_permissions_dto import ObjectPermissionsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.object_permissions_dto import ObjectPermissionsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
     resource_uuid = 'resource_uuid_example' # str | Resource UUID
 
@@ -315,22 +315,22 @@ Get role details
 
 
 ```python
-import openapi_client
-from openapi_client.models.role_detail_dto import RoleDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.role_detail_dto import RoleDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
 
     try:
@@ -386,22 +386,22 @@ Get Permissions of a Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.subject_permissions_dto import SubjectPermissionsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.subject_permissions_dto import SubjectPermissionsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
 
     try:
@@ -457,22 +457,22 @@ Get Resources of a Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.resource_permissions_dto import ResourcePermissionsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.resource_permissions_dto import ResourcePermissionsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
     resource_uuid = 'resource_uuid_example' # str | Resource UUID
 
@@ -530,22 +530,22 @@ Get Role Users
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_dto import UserDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_dto import UserDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
 
     try:
@@ -601,22 +601,22 @@ List Roles
 
 
 ```python
-import openapi_client
-from openapi_client.models.role_dto import RoleDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.role_dto import RoleDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
 
     try:
         # List Roles
@@ -668,21 +668,21 @@ Update Resource Objects to a Role
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
     resource_uuid = 'resource_uuid_example' # str | Resource UUID
     object_uuid = 'object_uuid_example' # str | Object UUID
@@ -740,25 +740,25 @@ Add permissions to Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.role_permissions_request_dto import RolePermissionsRequestDto
-from openapi_client.models.subject_permissions_dto import SubjectPermissionsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.role_permissions_request_dto import RolePermissionsRequestDto
+from pyCZERTAINLY.models.subject_permissions_dto import SubjectPermissionsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
-    role_permissions_request_dto = openapi_client.RolePermissionsRequestDto() # RolePermissionsRequestDto | 
+    role_permissions_request_dto = pyCZERTAINLY.RolePermissionsRequestDto() # RolePermissionsRequestDto | 
 
     try:
         # Add permissions to Role
@@ -814,26 +814,26 @@ Update Resource Objects to a Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.object_permissions_request_dto import ObjectPermissionsRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.object_permissions_request_dto import ObjectPermissionsRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
     resource_uuid = 'resource_uuid_example' # str | Resource UUID
     object_uuid = 'object_uuid_example' # str | Object UUID
-    object_permissions_request_dto = openapi_client.ObjectPermissionsRequestDto() # ObjectPermissionsRequestDto | 
+    object_permissions_request_dto = pyCZERTAINLY.ObjectPermissionsRequestDto() # ObjectPermissionsRequestDto | 
 
     try:
         # Update Resource Objects to a Role
@@ -889,25 +889,25 @@ Update Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.role_detail_dto import RoleDetailDto
-from openapi_client.models.role_request_dto import RoleRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.role_detail_dto import RoleDetailDto
+from pyCZERTAINLY.models.role_request_dto import RoleRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
-    role_request_dto = openapi_client.RoleRequestDto() # RoleRequestDto | 
+    role_request_dto = pyCZERTAINLY.RoleRequestDto() # RoleRequestDto | 
 
     try:
         # Update Role
@@ -963,22 +963,22 @@ Add users to Role
 
 
 ```python
-import openapi_client
-from openapi_client.models.role_detail_dto import RoleDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.role_detail_dto import RoleDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RoleManagementApi(api_client)
+    api_instance = pyCZERTAINLY.RoleManagementApi(api_client)
     role_uuid = 'role_uuid_example' # str | Role UUID
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | User UUIDs
 

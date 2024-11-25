@@ -1,4 +1,4 @@
-# openapi_client.AuthorityManagementApi
+# pyCZERTAINLY.AuthorityManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -27,22 +27,22 @@ Delete multiple Authority instances
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Authority Instance UUIDs
 
     try:
@@ -101,24 +101,24 @@ Add Authority instance
 
 
 ```python
-import openapi_client
-from openapi_client.models.authority_instance_request_dto import AuthorityInstanceRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.authority_instance_request_dto import AuthorityInstanceRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
-    authority_instance_request_dto = openapi_client.AuthorityInstanceRequestDto() # AuthorityInstanceRequestDto | 
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
+    authority_instance_request_dto = pyCZERTAINLY.AuthorityInstanceRequestDto() # AuthorityInstanceRequestDto | 
 
     try:
         # Add Authority instance
@@ -176,21 +176,21 @@ Delete Authority instance
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     uuid = 'uuid_example' # str | Authority instance UUID
 
     try:
@@ -246,25 +246,25 @@ Edit Authority instance
 
 
 ```python
-import openapi_client
-from openapi_client.models.authority_instance_dto import AuthorityInstanceDto
-from openapi_client.models.authority_instance_update_request_dto import AuthorityInstanceUpdateRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.authority_instance_dto import AuthorityInstanceDto
+from pyCZERTAINLY.models.authority_instance_update_request_dto import AuthorityInstanceUpdateRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     uuid = 'uuid_example' # str | Authority instance UUID
-    authority_instance_update_request_dto = openapi_client.AuthorityInstanceUpdateRequestDto() # AuthorityInstanceUpdateRequestDto | 
+    authority_instance_update_request_dto = pyCZERTAINLY.AuthorityInstanceUpdateRequestDto() # AuthorityInstanceUpdateRequestDto | 
 
     try:
         # Edit Authority instance
@@ -323,22 +323,22 @@ Force delete multiple Authority instances
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     request_body = ['request_body_example'] # List[str] | 
 
     try:
@@ -397,22 +397,22 @@ Details of an Authority instance
 
 
 ```python
-import openapi_client
-from openapi_client.models.authority_instance_dto import AuthorityInstanceDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.authority_instance_dto import AuthorityInstanceDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     uuid = 'uuid_example' # str | Authority instance UUID
 
     try:
@@ -470,22 +470,22 @@ List of available Authority instances
 
 
 ```python
-import openapi_client
-from openapi_client.models.authority_instance_dto import AuthorityInstanceDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.authority_instance_dto import AuthorityInstanceDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
 
     try:
         # List of available Authority instances
@@ -539,22 +539,22 @@ No authorization required
 
 
 ```python
-import openapi_client
-from openapi_client.models.name_and_id_dto import NameAndIdDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.name_and_id_dto import NameAndIdDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     uuid = 'uuid_example' # str | Authority instance UUID
     end_entity_profile_id = 56 # int | 
 
@@ -613,22 +613,22 @@ No authorization required
 
 
 ```python
-import openapi_client
-from openapi_client.models.name_and_id_dto import NameAndIdDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.name_and_id_dto import NameAndIdDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     uuid = 'uuid_example' # str | Authority instance UUID
     end_entity_profile_id = 56 # int | 
 
@@ -687,22 +687,22 @@ No authorization required
 
 
 ```python
-import openapi_client
-from openapi_client.models.name_and_id_dto import NameAndIdDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.name_and_id_dto import NameAndIdDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     uuid = 'uuid_example' # str | Authority instance UUID
 
     try:
@@ -759,22 +759,22 @@ List RA Profile Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     uuid = 'uuid_example' # str | Authority instance UUID
 
     try:
@@ -832,24 +832,24 @@ Validate RA Profile Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthorityManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthorityManagementApi(api_client)
     uuid = 'uuid_example' # str | Authority instance UUID
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate RA Profile Attributes

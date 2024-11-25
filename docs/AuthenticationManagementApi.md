@@ -1,4 +1,4 @@
-# openapi_client.AuthenticationManagementApi
+# pyCZERTAINLY.AuthenticationManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -19,22 +19,22 @@ Get Auth Resources
 
 
 ```python
-import openapi_client
-from openapi_client.models.auth_resource_dto import AuthResourceDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.auth_resource_dto import AuthResourceDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthenticationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthenticationManagementApi(api_client)
 
     try:
         # Get Auth Resources
@@ -86,24 +86,24 @@ Get List of objects for Object Access
 
 
 ```python
-import openapi_client
-from openapi_client.models.name_and_uuid_dto import NameAndUuidDto
-from openapi_client.models.resource import Resource
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.name_and_uuid_dto import NameAndUuidDto
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthenticationManagementApi(api_client)
-    resource_name = openapi_client.Resource() # Resource | Resource Name
+    api_instance = pyCZERTAINLY.AuthenticationManagementApi(api_client)
+    resource_name = pyCZERTAINLY.Resource() # Resource | Resource Name
 
     try:
         # Get List of objects for Object Access
@@ -158,22 +158,22 @@ Profile Authorization
 
 
 ```python
-import openapi_client
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthenticationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.AuthenticationManagementApi(api_client)
 
     try:
         # Profile Authorization
@@ -225,24 +225,24 @@ Update User Profile
 
 
 ```python
-import openapi_client
-from openapi_client.models.update_user_request_dto import UpdateUserRequestDto
-from openapi_client.models.user_detail_dto import UserDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.update_user_request_dto import UpdateUserRequestDto
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthenticationManagementApi(api_client)
-    update_user_request_dto = openapi_client.UpdateUserRequestDto() # UpdateUserRequestDto | 
+    api_instance = pyCZERTAINLY.AuthenticationManagementApi(api_client)
+    update_user_request_dto = pyCZERTAINLY.UpdateUserRequestDto() # UpdateUserRequestDto | 
 
     try:
         # Update User Profile

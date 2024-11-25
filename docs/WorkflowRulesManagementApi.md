@@ -1,4 +1,4 @@
-# openapi_client.WorkflowRulesManagementApi
+# pyCZERTAINLY.WorkflowRulesManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -25,24 +25,24 @@ Create Condition
 
 
 ```python
-import openapi_client
-from openapi_client.models.condition_dto import ConditionDto
-from openapi_client.models.condition_request_dto import ConditionRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.condition_dto import ConditionDto
+from pyCZERTAINLY.models.condition_request_dto import ConditionRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
-    condition_request_dto = openapi_client.ConditionRequestDto() # ConditionRequestDto | 
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
+    condition_request_dto = pyCZERTAINLY.ConditionRequestDto() # ConditionRequestDto | 
 
     try:
         # Create Condition
@@ -96,24 +96,24 @@ Create Rule
 
 
 ```python
-import openapi_client
-from openapi_client.models.rule_detail_dto import RuleDetailDto
-from openapi_client.models.rule_request_dto import RuleRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.rule_detail_dto import RuleDetailDto
+from pyCZERTAINLY.models.rule_request_dto import RuleRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
-    rule_request_dto = openapi_client.RuleRequestDto() # RuleRequestDto | 
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
+    rule_request_dto = pyCZERTAINLY.RuleRequestDto() # RuleRequestDto | 
 
     try:
         # Create Rule
@@ -167,21 +167,21 @@ Delete Condition
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
     condition_uuid = 'condition_uuid_example' # str | Condition UUID
 
     try:
@@ -234,21 +234,21 @@ Delete Rule
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
     rule_uuid = 'rule_uuid_example' # str | Rule UUID
 
     try:
@@ -301,22 +301,22 @@ Get Condition details
 
 
 ```python
-import openapi_client
-from openapi_client.models.condition_dto import ConditionDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.condition_dto import ConditionDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
     condition_uuid = 'condition_uuid_example' # str | Condition UUID
 
     try:
@@ -371,22 +371,22 @@ Get Rule details
 
 
 ```python
-import openapi_client
-from openapi_client.models.rule_detail_dto import RuleDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.rule_detail_dto import RuleDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
     rule_uuid = 'rule_uuid_example' # str | Rule UUID
 
     try:
@@ -441,24 +441,24 @@ List Conditions
 
 
 ```python
-import openapi_client
-from openapi_client.models.condition_dto import ConditionDto
-from openapi_client.models.resource import Resource
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.condition_dto import ConditionDto
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
-    resource = openapi_client.Resource() # Resource |  (optional)
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
+    resource = pyCZERTAINLY.Resource() # Resource |  (optional)
 
     try:
         # List Conditions
@@ -512,24 +512,24 @@ List Rules
 
 
 ```python
-import openapi_client
-from openapi_client.models.resource import Resource
-from openapi_client.models.rule_dto import RuleDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.resource import Resource
+from pyCZERTAINLY.models.rule_dto import RuleDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
-    resource = openapi_client.Resource() # Resource |  (optional)
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
+    resource = pyCZERTAINLY.Resource() # Resource |  (optional)
 
     try:
         # List Rules
@@ -583,25 +583,25 @@ Update Condition
 
 
 ```python
-import openapi_client
-from openapi_client.models.condition_dto import ConditionDto
-from openapi_client.models.update_condition_request_dto import UpdateConditionRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.condition_dto import ConditionDto
+from pyCZERTAINLY.models.update_condition_request_dto import UpdateConditionRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
     condition_uuid = 'condition_uuid_example' # str | Condition UUID
-    update_condition_request_dto = openapi_client.UpdateConditionRequestDto() # UpdateConditionRequestDto | 
+    update_condition_request_dto = pyCZERTAINLY.UpdateConditionRequestDto() # UpdateConditionRequestDto | 
 
     try:
         # Update Condition
@@ -656,25 +656,25 @@ Update Rule
 
 
 ```python
-import openapi_client
-from openapi_client.models.rule_detail_dto import RuleDetailDto
-from openapi_client.models.update_rule_request_dto import UpdateRuleRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.rule_detail_dto import RuleDetailDto
+from pyCZERTAINLY.models.update_rule_request_dto import UpdateRuleRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WorkflowRulesManagementApi(api_client)
+    api_instance = pyCZERTAINLY.WorkflowRulesManagementApi(api_client)
     rule_uuid = 'rule_uuid_example' # str | Rule UUID
-    update_rule_request_dto = openapi_client.UpdateRuleRequestDto() # UpdateRuleRequestDto | 
+    update_rule_request_dto = pyCZERTAINLY.UpdateRuleRequestDto() # UpdateRuleRequestDto | 
 
     try:
         # Update Rule

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.regexp_attribute_constraint import RegexpAttributeConstraint
+from pyCZERTAINLY.models.regexp_attribute_constraint import RegexpAttributeConstraint
 
 # TODO update the JSON string below
 json = "{}"

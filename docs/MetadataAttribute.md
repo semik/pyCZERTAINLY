@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.metadata_attribute import MetadataAttribute
+from pyCZERTAINLY.models.metadata_attribute import MetadataAttribute
 
 # TODO update the JSON string below
 json = "{}"

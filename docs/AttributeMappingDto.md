@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.attribute_mapping_dto import AttributeMappingDto
+from pyCZERTAINLY.models.attribute_mapping_dto import AttributeMappingDto
 
 # TODO update the JSON string below
 json = "{}"

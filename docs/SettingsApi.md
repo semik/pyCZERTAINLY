@@ -1,4 +1,4 @@
-# openapi_client.SettingsApi
+# pyCZERTAINLY.SettingsApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -19,22 +19,22 @@ Get notification settings
 
 
 ```python
-import openapi_client
-from openapi_client.models.notification_settings_dto import NotificationSettingsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.notification_settings_dto import NotificationSettingsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingsApi(api_client)
+    api_instance = pyCZERTAINLY.SettingsApi(api_client)
 
     try:
         # Get notification settings
@@ -86,22 +86,22 @@ Get platform settings
 
 
 ```python
-import openapi_client
-from openapi_client.models.platform_settings_dto import PlatformSettingsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.platform_settings_dto import PlatformSettingsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingsApi(api_client)
+    api_instance = pyCZERTAINLY.SettingsApi(api_client)
 
     try:
         # Get platform settings
@@ -153,23 +153,23 @@ Update notifications setting
 
 
 ```python
-import openapi_client
-from openapi_client.models.notification_settings_dto import NotificationSettingsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.notification_settings_dto import NotificationSettingsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingsApi(api_client)
-    notification_settings_dto = openapi_client.NotificationSettingsDto() # NotificationSettingsDto | 
+    api_instance = pyCZERTAINLY.SettingsApi(api_client)
+    notification_settings_dto = pyCZERTAINLY.NotificationSettingsDto() # NotificationSettingsDto | 
 
     try:
         # Update notifications setting
@@ -222,23 +222,23 @@ Update platform setting
 
 
 ```python
-import openapi_client
-from openapi_client.models.platform_settings_dto import PlatformSettingsDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.platform_settings_dto import PlatformSettingsDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SettingsApi(api_client)
-    platform_settings_dto = openapi_client.PlatformSettingsDto() # PlatformSettingsDto | 
+    api_instance = pyCZERTAINLY.SettingsApi(api_client)
+    platform_settings_dto = pyCZERTAINLY.PlatformSettingsDto() # PlatformSettingsDto | 
 
     try:
         # Update platform setting

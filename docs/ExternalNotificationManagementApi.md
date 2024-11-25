@@ -1,4 +1,4 @@
-# openapi_client.ExternalNotificationManagementApi
+# pyCZERTAINLY.ExternalNotificationManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -21,24 +21,24 @@ Add Notification instance
 
 
 ```python
-import openapi_client
-from openapi_client.models.notification_instance_request_dto import NotificationInstanceRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.notification_instance_request_dto import NotificationInstanceRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ExternalNotificationManagementApi(api_client)
-    notification_instance_request_dto = openapi_client.NotificationInstanceRequestDto() # NotificationInstanceRequestDto | 
+    api_instance = pyCZERTAINLY.ExternalNotificationManagementApi(api_client)
+    notification_instance_request_dto = pyCZERTAINLY.NotificationInstanceRequestDto() # NotificationInstanceRequestDto | 
 
     try:
         # Add Notification instance
@@ -96,21 +96,21 @@ Delete Notification instance
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ExternalNotificationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ExternalNotificationManagementApi(api_client)
     uuid = 'uuid_example' # str | Notification instance UUID
 
     try:
@@ -166,25 +166,25 @@ Edit Notification instance
 
 
 ```python
-import openapi_client
-from openapi_client.models.notification_instance_dto import NotificationInstanceDto
-from openapi_client.models.notification_instance_update_request_dto import NotificationInstanceUpdateRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.notification_instance_dto import NotificationInstanceDto
+from pyCZERTAINLY.models.notification_instance_update_request_dto import NotificationInstanceUpdateRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ExternalNotificationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ExternalNotificationManagementApi(api_client)
     uuid = 'uuid_example' # str | Notification instance UUID
-    notification_instance_update_request_dto = openapi_client.NotificationInstanceUpdateRequestDto() # NotificationInstanceUpdateRequestDto | 
+    notification_instance_update_request_dto = pyCZERTAINLY.NotificationInstanceUpdateRequestDto() # NotificationInstanceUpdateRequestDto | 
 
     try:
         # Edit Notification instance
@@ -243,22 +243,22 @@ Details of an Notification instance
 
 
 ```python
-import openapi_client
-from openapi_client.models.notification_instance_dto import NotificationInstanceDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.notification_instance_dto import NotificationInstanceDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ExternalNotificationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ExternalNotificationManagementApi(api_client)
     uuid = 'uuid_example' # str | Notification instance UUID
 
     try:
@@ -316,22 +316,22 @@ List of mapping attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.data_attribute import DataAttribute
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.data_attribute import DataAttribute
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ExternalNotificationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ExternalNotificationManagementApi(api_client)
     connector_uuid = 'connector_uuid_example' # str | Connector UUID
     kind = 'kind_example' # str | Kind
 
@@ -391,22 +391,22 @@ List of available Notification instances
 
 
 ```python
-import openapi_client
-from openapi_client.models.notification_instance_dto import NotificationInstanceDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.notification_instance_dto import NotificationInstanceDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ExternalNotificationManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ExternalNotificationManagementApi(api_client)
 
     try:
         # List of available Notification instances

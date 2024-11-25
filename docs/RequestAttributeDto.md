@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
 
 # TODO update the JSON string below
 json = "{}"

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.compliance_rules_list_response_dto import ComplianceRulesListResponseDto
+from pyCZERTAINLY.models.compliance_rules_list_response_dto import ComplianceRulesListResponseDto
 
 # TODO update the JSON string below
 json = "{}"

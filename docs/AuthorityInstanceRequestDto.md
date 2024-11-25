@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.authority_instance_request_dto import AuthorityInstanceRequestDto
+from pyCZERTAINLY.models.authority_instance_request_dto import AuthorityInstanceRequestDto
 
 # TODO update the JSON string below
 json = "{}"

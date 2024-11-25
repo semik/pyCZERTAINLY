@@ -1,4 +1,4 @@
-# openapi_client.ConnectorManagementApi
+# pyCZERTAINLY.ConnectorManagementApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -31,21 +31,21 @@ Approve a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
 
     try:
@@ -102,21 +102,21 @@ Approve multiple Connector
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Connector UUIDs
 
     try:
@@ -173,22 +173,22 @@ Delete multiple Connectors
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Connector UUIDs
 
     try:
@@ -247,21 +247,21 @@ Reconnect multiple Connectors
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Connector UUIDs
 
     try:
@@ -317,22 +317,22 @@ Check Health of a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.models.health_dto import HealthDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.health_dto import HealthDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
 
     try:
@@ -390,24 +390,24 @@ Connect to a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.models.connect_dto import ConnectDto
-from openapi_client.models.connect_request_dto import ConnectRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connect_dto import ConnectDto
+from pyCZERTAINLY.models.connect_request_dto import ConnectRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
-    connect_request_dto = openapi_client.ConnectRequestDto() # ConnectRequestDto | 
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
+    connect_request_dto = pyCZERTAINLY.ConnectRequestDto() # ConnectRequestDto | 
 
     try:
         # Connect to a Connector
@@ -465,24 +465,24 @@ Create a new Connector
 
 
 ```python
-import openapi_client
-from openapi_client.models.connector_request_dto import ConnectorRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connector_request_dto import ConnectorRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
-    connector_request_dto = openapi_client.ConnectorRequestDto() # ConnectorRequestDto | 
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
+    connector_request_dto = pyCZERTAINLY.ConnectorRequestDto() # ConnectorRequestDto | 
 
     try:
         # Create a new Connector
@@ -540,21 +540,21 @@ Delete a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
 
     try:
@@ -610,25 +610,25 @@ Edit a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.models.connector_dto import ConnectorDto
-from openapi_client.models.connector_update_request_dto import ConnectorUpdateRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connector_dto import ConnectorDto
+from pyCZERTAINLY.models.connector_update_request_dto import ConnectorUpdateRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
-    connector_update_request_dto = openapi_client.ConnectorUpdateRequestDto() # ConnectorUpdateRequestDto | 
+    connector_update_request_dto = pyCZERTAINLY.ConnectorUpdateRequestDto() # ConnectorUpdateRequestDto | 
 
     try:
         # Edit a Connector
@@ -687,22 +687,22 @@ Force Delete multiple Connectors
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Connector UUIDs
 
     try:
@@ -761,25 +761,25 @@ Get Attributes from a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.models.function_group_code import FunctionGroupCode
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.models.function_group_code import FunctionGroupCode
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
-    function_group = openapi_client.FunctionGroupCode() # FunctionGroupCode | Function Group name
+    function_group = pyCZERTAINLY.FunctionGroupCode() # FunctionGroupCode | Function Group name
     kind = 'kind_example' # str | Kind
 
     try:
@@ -839,22 +839,22 @@ Get attributes of all Function Groups
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
 
     try:
@@ -912,22 +912,22 @@ Get details of a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.models.connector_dto import ConnectorDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connector_dto import ConnectorDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
 
     try:
@@ -985,27 +985,27 @@ List Connectors by Function Group and Kind
 
 
 ```python
-import openapi_client
-from openapi_client.models.connector_dto import ConnectorDto
-from openapi_client.models.connector_status import ConnectorStatus
-from openapi_client.models.function_group_code import FunctionGroupCode
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connector_dto import ConnectorDto
+from pyCZERTAINLY.models.connector_status import ConnectorStatus
+from pyCZERTAINLY.models.function_group_code import FunctionGroupCode
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
-    function_group = openapi_client.FunctionGroupCode() # FunctionGroupCode |  (optional)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
+    function_group = pyCZERTAINLY.FunctionGroupCode() # FunctionGroupCode |  (optional)
     kind = 'kind_example' # str |  (optional)
-    status = openapi_client.ConnectorStatus() # ConnectorStatus |  (optional)
+    status = pyCZERTAINLY.ConnectorStatus() # ConnectorStatus |  (optional)
 
     try:
         # List Connectors by Function Group and Kind
@@ -1064,22 +1064,22 @@ Reconnect to a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.models.connect_dto import ConnectDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connect_dto import ConnectDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
 
     try:
@@ -1138,26 +1138,26 @@ Validate Attributes
 
 
 ```python
-import openapi_client
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorManagementApi(api_client)
+    api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     uuid = 'uuid_example' # str | Connector UUID
     function_group = 'function_group_example' # str | Function Group name
     kind = 'kind_example' # str | Kind
-    request_attribute_dto = [openapi_client.RequestAttributeDto()] # List[RequestAttributeDto] | 
+    request_attribute_dto = [pyCZERTAINLY.RequestAttributeDto()] # List[RequestAttributeDto] | 
 
     try:
         # Validate Attributes

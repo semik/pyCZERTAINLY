@@ -1,4 +1,4 @@
-# openapi_client.ConnectorRegistrationApi
+# pyCZERTAINLY.ConnectorRegistrationApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -16,24 +16,24 @@ Register a Connector
 
 
 ```python
-import openapi_client
-from openapi_client.models.connector_request_dto import ConnectorRequestDto
-from openapi_client.models.uuid_dto import UuidDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.connector_request_dto import ConnectorRequestDto
+from pyCZERTAINLY.models.uuid_dto import UuidDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ConnectorRegistrationApi(api_client)
-    connector_request_dto = openapi_client.ConnectorRequestDto() # ConnectorRequestDto | 
+    api_instance = pyCZERTAINLY.ConnectorRegistrationApi(api_client)
+    connector_request_dto = pyCZERTAINLY.ConnectorRequestDto() # ConnectorRequestDto | 
 
     try:
         # Register a Connector

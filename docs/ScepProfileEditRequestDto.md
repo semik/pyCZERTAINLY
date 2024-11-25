@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.scep_profile_edit_request_dto import ScepProfileEditRequestDto
+from pyCZERTAINLY.models.scep_profile_edit_request_dto import ScepProfileEditRequestDto
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# openapi_client.CryptographicKeyControllerApi
+# pyCZERTAINLY.CryptographicKeyControllerApi
 
 All URIs are relative to *http://localhost:45309*
 
@@ -45,25 +45,25 @@ If the request body is provided with the UUID of the items of Key, then only tho
 
 
 ```python
-import openapi_client
-from openapi_client.models.compromise_key_request_dto import CompromiseKeyRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.compromise_key_request_dto import CompromiseKeyRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Key UUID
-    compromise_key_request_dto = openapi_client.CompromiseKeyRequestDto() # CompromiseKeyRequestDto | 
+    compromise_key_request_dto = pyCZERTAINLY.CompromiseKeyRequestDto() # CompromiseKeyRequestDto | 
 
     try:
         # Mark Key and its Items as Compromised
@@ -120,23 +120,23 @@ This API can be used to mark multiple keys items to be marked as compromised.
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_compromise_key_item_request_dto import BulkCompromiseKeyItemRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_compromise_key_item_request_dto import BulkCompromiseKeyItemRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
-    bulk_compromise_key_item_request_dto = openapi_client.BulkCompromiseKeyItemRequestDto() # BulkCompromiseKeyItemRequestDto | 
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
+    bulk_compromise_key_item_request_dto = pyCZERTAINLY.BulkCompromiseKeyItemRequestDto() # BulkCompromiseKeyItemRequestDto | 
 
     try:
         # Mark Multiple Key Items as Compromised
@@ -191,23 +191,23 @@ This API can be used to mark multiple keys and its sub items to be marked as com
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_compromise_key_request_dto import BulkCompromiseKeyRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_compromise_key_request_dto import BulkCompromiseKeyRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
-    bulk_compromise_key_request_dto = openapi_client.BulkCompromiseKeyRequestDto() # BulkCompromiseKeyRequestDto | 
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
+    bulk_compromise_key_request_dto = pyCZERTAINLY.BulkCompromiseKeyRequestDto() # BulkCompromiseKeyRequestDto | 
 
     try:
         # Mark Multiple Key and all its Items as Compromised
@@ -260,28 +260,28 @@ Create a new Cryptographic Key
 
 
 ```python
-import openapi_client
-from openapi_client.models.key_detail_dto import KeyDetailDto
-from openapi_client.models.key_request_dto import KeyRequestDto
-from openapi_client.models.key_request_type import KeyRequestType
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.key_detail_dto import KeyDetailDto
+from pyCZERTAINLY.models.key_request_dto import KeyRequestDto
+from pyCZERTAINLY.models.key_request_type import KeyRequestType
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | UUID of the Token Instance
     token_profile_uuid = 'token_profile_uuid_example' # str | UUID of the Token Profile
-    type = openapi_client.KeyRequestType() # KeyRequestType | Type of the key to be created
-    key_request_dto = openapi_client.KeyRequestDto() # KeyRequestDto | 
+    type = pyCZERTAINLY.KeyRequestType() # KeyRequestType | Type of the key to be created
+    key_request_dto = pyCZERTAINLY.KeyRequestDto() # KeyRequestDto | 
 
     try:
         # Create a new Cryptographic Key
@@ -342,21 +342,21 @@ If the request body provided, only those key items will be deleted. If the reque
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Key UUID
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key Item UUIDs (optional)
@@ -414,21 +414,21 @@ Delete Multiple Cryptographic Key Items
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key Items UUIDs
 
     try:
@@ -482,21 +482,21 @@ Delete Multiple Cryptographic Key
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key UUIDs
 
     try:
@@ -552,21 +552,21 @@ If the request body provided, only those key items will be destroyed. If the req
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Key UUID
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key UUIDs (optional)
@@ -624,21 +624,21 @@ Destroy Multiple Cryptographic Key items
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key Item UUIDs
 
     try:
@@ -692,21 +692,21 @@ Destroy Multiple Cryptographic Key and its items
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key UUIDs
 
     try:
@@ -762,21 +762,21 @@ If the request body provided, only those key items will be disabled. If the requ
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Key UUID
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key Item UUIDs (optional)
@@ -834,21 +834,21 @@ Disable multiple Key Items
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key Item UUIDs
 
     try:
@@ -902,21 +902,21 @@ Disable multiple Keys
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key UUIDs
 
     try:
@@ -970,26 +970,26 @@ Edit Key
 
 
 ```python
-import openapi_client
-from openapi_client.models.edit_key_request_dto import EditKeyRequestDto
-from openapi_client.models.key_detail_dto import KeyDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.edit_key_request_dto import EditKeyRequestDto
+from pyCZERTAINLY.models.key_detail_dto import KeyDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Key UUID
-    edit_key_request_dto = openapi_client.EditKeyRequestDto() # EditKeyRequestDto | 
+    edit_key_request_dto = pyCZERTAINLY.EditKeyRequestDto() # EditKeyRequestDto | 
 
     try:
         # Edit Key
@@ -1049,21 +1049,21 @@ If the request body provided, only those key items will be enabled. If the reque
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Key UUID
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key Item UUIDs (optional)
@@ -1121,21 +1121,21 @@ Enable multiple Key Items
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key Item UUIDs
 
     try:
@@ -1189,21 +1189,21 @@ Enable multiple Keys
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     request_body = ["c2f685d4-6a3e-11ec-90d6-0242ac120003","b9b09548-a97c-4c6a-a06a-e4ee6fc2da98"] # List[str] | Key UUIDs
 
     try:
@@ -1257,22 +1257,22 @@ Get Key Item event history
 
 
 ```python
-import openapi_client
-from openapi_client.models.key_event_history_dto import KeyEventHistoryDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.key_event_history_dto import KeyEventHistoryDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Key UUID
     key_item_uuid = 'key_item_uuid_example' # str | Key Item UUID
@@ -1332,22 +1332,22 @@ Get Cryptographic Key Detail
 
 
 ```python
-import openapi_client
-from openapi_client.models.key_detail_dto import KeyDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.key_detail_dto import KeyDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | UUID of the Token Instance
     uuid = 'uuid_example' # str | UUID of the Key
 
@@ -1405,22 +1405,22 @@ Get Cryptographic Key Detail
 
 
 ```python
-import openapi_client
-from openapi_client.models.key_item_detail_dto import KeyItemDetailDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.key_item_detail_dto import KeyItemDetailDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | UUID of the Token Instance
     uuid = 'uuid_example' # str | UUID of the Key
     key_item_uuid = 'key_item_uuid_example' # str | UUID of the Key Item
@@ -1480,22 +1480,22 @@ Get CryptographicKey searchable fields information
 
 
 ```python
-import openapi_client
-from openapi_client.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
 
     try:
         # Get CryptographicKey searchable fields information
@@ -1547,26 +1547,26 @@ List of Attributes to create a Key
 
 
 ```python
-import openapi_client
-from openapi_client.models.base_attribute_dto import BaseAttributeDto
-from openapi_client.models.key_request_type import KeyRequestType
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.base_attribute_dto import BaseAttributeDto
+from pyCZERTAINLY.models.key_request_type import KeyRequestType
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     token_profile_uuid = 'token_profile_uuid_example' # str | Token Profile UUID
-    type = openapi_client.KeyRequestType() # KeyRequestType | Type of the key to be created
+    type = pyCZERTAINLY.KeyRequestType() # KeyRequestType | Type of the key to be created
 
     try:
         # List of Attributes to create a Key
@@ -1623,24 +1623,24 @@ List cryptographic keys
 
 
 ```python
-import openapi_client
-from openapi_client.models.cryptographic_key_response_dto import CryptographicKeyResponseDto
-from openapi_client.models.search_request_dto import SearchRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.cryptographic_key_response_dto import CryptographicKeyResponseDto
+from pyCZERTAINLY.models.search_request_dto import SearchRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
-    search_request_dto = openapi_client.SearchRequestDto() # SearchRequestDto | 
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
+    search_request_dto = pyCZERTAINLY.SearchRequestDto() # SearchRequestDto | 
 
     try:
         # List cryptographic keys
@@ -1697,22 +1697,22 @@ This API contains the logic to get the keys that contains the full key pair (pri
 
 
 ```python
-import openapi_client
-from openapi_client.models.key_dto import KeyDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.key_dto import KeyDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_profile_uuid = 'token_profile_uuid_example' # str |  (optional)
 
     try:
@@ -1768,21 +1768,21 @@ Sync Keys from connector
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
 
     try:
@@ -1838,23 +1838,23 @@ Update the key usages for multiple keys Items
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_key_item_usage_request_dto import BulkKeyItemUsageRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_key_item_usage_request_dto import BulkKeyItemUsageRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
-    bulk_key_item_usage_request_dto = openapi_client.BulkKeyItemUsageRequestDto() # BulkKeyItemUsageRequestDto | 
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
+    bulk_key_item_usage_request_dto = pyCZERTAINLY.BulkKeyItemUsageRequestDto() # BulkKeyItemUsageRequestDto | 
 
     try:
         # Update Key Usages for Multiple Key Items
@@ -1909,25 +1909,25 @@ If the request body provided, only those key items will be updated. If the reque
 
 
 ```python
-import openapi_client
-from openapi_client.models.update_key_usage_request_dto import UpdateKeyUsageRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.update_key_usage_request_dto import UpdateKeyUsageRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
     token_instance_uuid = 'token_instance_uuid_example' # str | Token Instance UUID
     uuid = 'uuid_example' # str | Key UUID
-    update_key_usage_request_dto = openapi_client.UpdateKeyUsageRequestDto() # UpdateKeyUsageRequestDto | 
+    update_key_usage_request_dto = pyCZERTAINLY.UpdateKeyUsageRequestDto() # UpdateKeyUsageRequestDto | 
 
     try:
         # Update Key Usage
@@ -1984,23 +1984,23 @@ Update the key usages for multiple keys and all the items inside it
 
 
 ```python
-import openapi_client
-from openapi_client.models.bulk_key_usage_request_dto import BulkKeyUsageRequestDto
-from openapi_client.rest import ApiException
+import pyCZERTAINLY
+from pyCZERTAINLY.models.bulk_key_usage_request_dto import BulkKeyUsageRequestDto
+from pyCZERTAINLY.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:45309
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = pyCZERTAINLY.Configuration(
     host = "http://localhost:45309"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CryptographicKeyControllerApi(api_client)
-    bulk_key_usage_request_dto = openapi_client.BulkKeyUsageRequestDto() # BulkKeyUsageRequestDto | 
+    api_instance = pyCZERTAINLY.CryptographicKeyControllerApi(api_client)
+    bulk_key_usage_request_dto = pyCZERTAINLY.BulkKeyUsageRequestDto() # BulkKeyUsageRequestDto | 
 
     try:
         # Update Key Usages for Multiple Keys

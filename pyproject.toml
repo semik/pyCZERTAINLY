@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "openapi_client"
+name = "pyCZERTAINLY"
 version = "1.0.0"
 description = "CZERTAINLY Core API"
 authors = ["CZERTAINLY <info@czertainly.com>"]
@@ -7,7 +7,7 @@ license = "MIT License"
 readme = "README.md"
 repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
 keywords = ["OpenAPI", "OpenAPI-Generator", "CZERTAINLY Core API"]
-include = ["openapi_client/py.typed"]
+include = ["pyCZERTAINLY/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -35,7 +35,7 @@ extension-pkg-whitelist = "pydantic"
 
 [tool.mypy]
 files = [
-  "openapi_client",
+  "pyCZERTAINLY",
   #"test",  # auto-generated tests
   "tests", # hand-written tests
 ]

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.range_attribute_constraint import RangeAttributeConstraint
+from pyCZERTAINLY.models.range_attribute_constraint import RangeAttributeConstraint
 
 # TODO update the JSON string below
 json = "{}"
