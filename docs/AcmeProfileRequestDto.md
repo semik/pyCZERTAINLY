@@ -1,0 +1,42 @@
+# AcmeProfileRequestDto
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **str** | Name of the ACME Profile | 
+**description** | **str** | Description of the ACME Profile | [optional] 
+**terms_of_service_url** | **str** | Terms of Service URL | [optional] 
+**website_url** | **str** | Website URL | [optional] 
+**dns_resolver_ip** | **str** | DNS Resolver IP address | [optional] [default to 'System Default']
+**dns_resolver_port** | **str** | DNS Resolver port number | [optional] [default to '53']
+**ra_profile_uuid** | **str** | RA Profile UUID | [optional] 
+**retry_interval** | **int** | Retry interval for the Orders | [optional] [default to 30]
+**validity** | **int** | Order Validity | [optional] [default to 36000]
+**issue_certificate_attributes** | [**List[RequestAttributeDto]**](RequestAttributeDto.md) | List of Attributes to issue Certificate | 
+**revoke_certificate_attributes** | [**List[RequestAttributeDto]**](RequestAttributeDto.md) | List of Attributes to revoke Certificate | 
+**require_contact** | **bool** | Require contact information for new Account | [optional] [default to False]
+**require_terms_of_service** | **bool** | Require new Account to agree on Terms of Service | [optional] [default to False]
+**custom_attributes** | [**List[RequestAttributeDto]**](RequestAttributeDto.md) | List of Custom Attributes | [optional] 
+
+## Example
+
+```python
+from openapi_client.models.acme_profile_request_dto import AcmeProfileRequestDto
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of AcmeProfileRequestDto from a JSON string
+acme_profile_request_dto_instance = AcmeProfileRequestDto.from_json(json)
+# print the JSON string representation of the object
+print(AcmeProfileRequestDto.to_json())
+
+# convert the object into a dict
+acme_profile_request_dto_dict = acme_profile_request_dto_instance.to_dict()
+# create an instance of AcmeProfileRequestDto from a dict
+acme_profile_request_dto_from_dict = AcmeProfileRequestDto.from_dict(acme_profile_request_dto_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
