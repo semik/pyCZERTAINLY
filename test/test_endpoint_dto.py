@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.endpoint_dto import EndpointDto
+from pyCZERTAINLY.models.endpoint_dto import EndpointDto
 
 class TestEndpointDto(unittest.TestCase):
     """EndpointDto unit test stubs"""

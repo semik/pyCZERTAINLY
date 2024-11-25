@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.base_attribute_content_dto import BaseAttributeContentDto
+from pyCZERTAINLY.models.base_attribute_content_dto import BaseAttributeContentDto
 
 class TestBaseAttributeContentDto(unittest.TestCase):
     """BaseAttributeContentDto unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_connector_and_groups_dto import ComplianceConnectorAndGroupsDto
+from pyCZERTAINLY.models.compliance_connector_and_groups_dto import ComplianceConnectorAndGroupsDto
 
 class TestComplianceConnectorAndGroupsDto(unittest.TestCase):
     """ComplianceConnectorAndGroupsDto unit test stubs"""
@@ -40,7 +40,7 @@ class TestComplianceConnectorAndGroupsDto(unittest.TestCase):
                 connector_uuid = '',
                 kind = '',
                 groups = [
-                    openapi_client.models.compliance_groups_dto.ComplianceGroupsDto(
+                    pyCZERTAINLY.models.compliance_groups_dto.ComplianceGroupsDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = 'Sample group description', )

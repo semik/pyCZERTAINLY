@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.random_data_response_dto import RandomDataResponseDto
+from pyCZERTAINLY.models.random_data_response_dto import RandomDataResponseDto
 
 class TestRandomDataResponseDto(unittest.TestCase):
     """RandomDataResponseDto unit test stubs"""

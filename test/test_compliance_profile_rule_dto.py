@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_profile_rule_dto import ComplianceProfileRuleDto
+from pyCZERTAINLY.models.compliance_profile_rule_dto import ComplianceProfileRuleDto
 
 class TestComplianceProfileRuleDto(unittest.TestCase):
     """ComplianceProfileRuleDto unit test stubs"""
@@ -45,16 +45,16 @@ class TestComplianceProfileRuleDto(unittest.TestCase):
                 group_uuid = '',
                 certificate_type = 'X.509',
                 attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 compliance_profile_uuid = '',
@@ -69,16 +69,16 @@ class TestComplianceProfileRuleDto(unittest.TestCase):
                 kind = '',
                 certificate_type = 'X.509',
                 attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 compliance_profile_uuid = '',

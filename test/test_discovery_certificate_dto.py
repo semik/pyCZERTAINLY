@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.discovery_certificate_dto import DiscoveryCertificateDto
+from pyCZERTAINLY.models.discovery_certificate_dto import DiscoveryCertificateDto
 
 class TestDiscoveryCertificateDto(unittest.TestCase):
     """DiscoveryCertificateDto unit test stubs"""

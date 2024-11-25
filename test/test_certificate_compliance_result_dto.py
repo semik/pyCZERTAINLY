@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_compliance_result_dto import CertificateComplianceResultDto
+from pyCZERTAINLY.models.certificate_compliance_result_dto import CertificateComplianceResultDto
 
 class TestCertificateComplianceResultDto(unittest.TestCase):
     """CertificateComplianceResultDto unit test stubs"""
@@ -41,16 +41,16 @@ class TestCertificateComplianceResultDto(unittest.TestCase):
                 rule_description = 'Description sample',
                 status = 'nok',
                 attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )

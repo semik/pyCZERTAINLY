@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.connect_request_dto import ConnectRequestDto
+from pyCZERTAINLY.models.connect_request_dto import ConnectRequestDto
 
 class TestConnectRequestDto(unittest.TestCase):
     """ConnectRequestDto unit test stubs"""
@@ -40,14 +40,14 @@ class TestConnectRequestDto(unittest.TestCase):
                 uuid = '',
                 auth_type = 'none',
                 auth_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_state import KeyState
+from pyCZERTAINLY.models.key_state import KeyState
 
 class TestKeyState(unittest.TestCase):
     """KeyState unit test stubs"""

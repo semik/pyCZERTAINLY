@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.string_attribute_content import StringAttributeContent
+from pyCZERTAINLY.models.string_attribute_content import StringAttributeContent
 
 class TestStringAttributeContent(unittest.TestCase):
     """StringAttributeContent unit test stubs"""

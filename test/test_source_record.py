@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.source_record import SourceRecord
+from pyCZERTAINLY.models.source_record import SourceRecord
 
 class TestSourceRecord(unittest.TestCase):
     """SourceRecord unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.attribute_callback_mapping import AttributeCallbackMapping
+from pyCZERTAINLY.models.attribute_callback_mapping import AttributeCallbackMapping
 
 class TestAttributeCallbackMapping(unittest.TestCase):
     """AttributeCallbackMapping unit test stubs"""
@@ -43,7 +43,7 @@ class TestAttributeCallbackMapping(unittest.TestCase):
                 targets = [
                     'pathVariable'
                     ],
-                value = openapi_client.models.value.value()
+                value = pyCZERTAINLY.models.value.value()
             )
         else:
             return AttributeCallbackMapping(

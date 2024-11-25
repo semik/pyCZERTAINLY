@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.token_profile_management_api import TokenProfileManagementApi
+from pyCZERTAINLY.api.token_profile_management_api import TokenProfileManagementApi
 
 
 class TestTokenProfileManagementApi(unittest.TestCase):

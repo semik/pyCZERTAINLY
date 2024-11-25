@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.client_certificate_renew_request_dto import ClientCertificateRenewRequestDto
+from pyCZERTAINLY.models.client_certificate_renew_request_dto import ClientCertificateRenewRequestDto
 
 class TestClientCertificateRenewRequestDto(unittest.TestCase):
     """ClientCertificateRenewRequestDto unit test stubs"""

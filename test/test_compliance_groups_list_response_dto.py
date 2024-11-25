@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_groups_list_response_dto import ComplianceGroupsListResponseDto
+from pyCZERTAINLY.models.compliance_groups_list_response_dto import ComplianceGroupsListResponseDto
 
 class TestComplianceGroupsListResponseDto(unittest.TestCase):
     """ComplianceGroupsListResponseDto unit test stubs"""
@@ -40,7 +40,7 @@ class TestComplianceGroupsListResponseDto(unittest.TestCase):
                 connector_uuid = 'c35bc88c-d0ef-11ec-9d64-0242ac120003',
                 kind = 'Kind1',
                 groups = [
-                    openapi_client.models.compliance_groups_response_dto.ComplianceGroupsResponseDto(
+                    pyCZERTAINLY.models.compliance_groups_response_dto.ComplianceGroupsResponseDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'RFC', 
                         description = 'Sample description of the group', )
@@ -52,7 +52,7 @@ class TestComplianceGroupsListResponseDto(unittest.TestCase):
                 connector_uuid = 'c35bc88c-d0ef-11ec-9d64-0242ac120003',
                 kind = 'Kind1',
                 groups = [
-                    openapi_client.models.compliance_groups_response_dto.ComplianceGroupsResponseDto(
+                    pyCZERTAINLY.models.compliance_groups_response_dto.ComplianceGroupsResponseDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'RFC', 
                         description = 'Sample description of the group', )

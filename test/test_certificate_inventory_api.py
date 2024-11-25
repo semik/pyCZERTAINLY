@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.certificate_inventory_api import CertificateInventoryApi
+from pyCZERTAINLY.api.certificate_inventory_api import CertificateInventoryApi
 
 
 class TestCertificateInventoryApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.schedule_discovery_dto import ScheduleDiscoveryDto
+from pyCZERTAINLY.models.schedule_discovery_dto import ScheduleDiscoveryDto
 
 class TestScheduleDiscoveryDto(unittest.TestCase):
     """ScheduleDiscoveryDto unit test stubs"""
@@ -39,28 +39,28 @@ class TestScheduleDiscoveryDto(unittest.TestCase):
                 job_name = '',
                 cron_expression = '',
                 one_time = True,
-                request = openapi_client.models.discovery_dto.DiscoveryDto(
+                request = pyCZERTAINLY.models.discovery_dto.DiscoveryDto(
                     name = '', 
                     attributes = [
-                        openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                        pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                             uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                             name = 'Attribute', 
                             content_type = 'string', 
                             content = [
-                                openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                     reference = '', 
-                                    data = openapi_client.models.data.data(), )
+                                    data = pyCZERTAINLY.models.data.data(), )
                                 ], )
                         ], 
                     custom_attributes = [
-                        openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                        pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                             uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                             name = 'Attribute', 
                             content_type = 'string', 
                             content = [
-                                openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                     reference = '', 
-                                    data = openapi_client.models.data.data(), )
+                                    data = pyCZERTAINLY.models.data.data(), )
                                 ], )
                         ], 
                     connector_uuid = '', 

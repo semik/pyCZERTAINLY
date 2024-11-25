@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.external_notification_management_api import ExternalNotificationManagementApi
+from pyCZERTAINLY.api.external_notification_management_api import ExternalNotificationManagementApi
 
 
 class TestExternalNotificationManagementApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.scep_profile_edit_request_dto import ScepProfileEditRequestDto
+from pyCZERTAINLY.models.scep_profile_edit_request_dto import ScepProfileEditRequestDto
 
 class TestScepProfileEditRequestDto(unittest.TestCase):
     """ScepProfileEditRequestDto unit test stubs"""
@@ -39,26 +39,26 @@ class TestScepProfileEditRequestDto(unittest.TestCase):
                 description = 'Sample description',
                 ra_profile_uuid = '6b55de1c-844f-11ec-a8a3-0242ac120002',
                 issue_certificate_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 ca_certificate_uuid = '',
                 custom_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 renewal_threshold = 56,
@@ -73,14 +73,14 @@ class TestScepProfileEditRequestDto(unittest.TestCase):
         else:
             return ScepProfileEditRequestDto(
                 issue_certificate_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 ca_certificate_uuid = '',

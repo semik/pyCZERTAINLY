@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.approval_dto import ApprovalDto
+from pyCZERTAINLY.models.approval_dto import ApprovalDto
 
 class TestApprovalDto(unittest.TestCase):
     """ApprovalDto unit test stubs"""

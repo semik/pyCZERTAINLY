@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_association_dto import KeyAssociationDto
+from pyCZERTAINLY.models.key_association_dto import KeyAssociationDto
 
 class TestKeyAssociationDto(unittest.TestCase):
     """KeyAssociationDto unit test stubs"""

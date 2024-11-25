@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.range_attribute_constraint_data import RangeAttributeConstraintData
+from pyCZERTAINLY.models.range_attribute_constraint_data import RangeAttributeConstraintData
 
 class TestRangeAttributeConstraintData(unittest.TestCase):
     """RangeAttributeConstraintData unit test stubs"""

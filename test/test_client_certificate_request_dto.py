@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.client_certificate_request_dto import ClientCertificateRequestDto
+from pyCZERTAINLY.models.client_certificate_request_dto import ClientCertificateRequestDto
 
 class TestClientCertificateRequestDto(unittest.TestCase):
     """ClientCertificateRequestDto unit test stubs"""
@@ -39,25 +39,25 @@ class TestClientCertificateRequestDto(unittest.TestCase):
                 ra_profile_uuid = '',
                 source_certificate_uuid = '',
                 csr_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 signature_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 request = '',
@@ -65,25 +65,25 @@ class TestClientCertificateRequestDto(unittest.TestCase):
                 token_profile_uuid = '',
                 key_uuid = '',
                 issue_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 custom_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )
@@ -91,14 +91,14 @@ class TestClientCertificateRequestDto(unittest.TestCase):
             return ClientCertificateRequestDto(
                 ra_profile_uuid = '',
                 issue_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
         )

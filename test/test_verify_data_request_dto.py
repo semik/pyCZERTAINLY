@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.verify_data_request_dto import VerifyDataRequestDto
+from pyCZERTAINLY.models.verify_data_request_dto import VerifyDataRequestDto
 
 class TestVerifyDataRequestDto(unittest.TestCase):
     """VerifyDataRequestDto unit test stubs"""
@@ -37,23 +37,23 @@ class TestVerifyDataRequestDto(unittest.TestCase):
         if include_optional:
             return VerifyDataRequestDto(
                 signature_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 data = [
-                    openapi_client.models.signature_request_data.SignatureRequestData(
+                    pyCZERTAINLY.models.signature_request_data.SignatureRequestData(
                         data = '', 
                         identifier = 'customId', )
                     ],
                 signatures = [
-                    openapi_client.models.signature_request_data.SignatureRequestData(
+                    pyCZERTAINLY.models.signature_request_data.SignatureRequestData(
                         data = '', 
                         identifier = 'customId', )
                     ]
@@ -61,23 +61,23 @@ class TestVerifyDataRequestDto(unittest.TestCase):
         else:
             return VerifyDataRequestDto(
                 signature_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 data = [
-                    openapi_client.models.signature_request_data.SignatureRequestData(
+                    pyCZERTAINLY.models.signature_request_data.SignatureRequestData(
                         data = '', 
                         identifier = 'customId', )
                     ],
                 signatures = [
-                    openapi_client.models.signature_request_data.SignatureRequestData(
+                    pyCZERTAINLY.models.signature_request_data.SignatureRequestData(
                         data = '', 
                         identifier = 'customId', )
                     ],

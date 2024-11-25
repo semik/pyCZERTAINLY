@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.ra_profile_management_api import RAProfileManagementApi
+from pyCZERTAINLY.api.ra_profile_management_api import RAProfileManagementApi
 
 
 class TestRAProfileManagementApi(unittest.TestCase):

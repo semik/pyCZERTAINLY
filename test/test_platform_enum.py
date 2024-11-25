@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.platform_enum import PlatformEnum
+from pyCZERTAINLY.models.platform_enum import PlatformEnum
 
 class TestPlatformEnum(unittest.TestCase):
     """PlatformEnum unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.resource_permissions_dto import ResourcePermissionsDto
+from pyCZERTAINLY.models.resource_permissions_dto import ResourcePermissionsDto
 
 class TestResourcePermissionsDto(unittest.TestCase):
     """ResourcePermissionsDto unit test stubs"""
@@ -42,7 +42,7 @@ class TestResourcePermissionsDto(unittest.TestCase):
                     ''
                     ],
                 objects = [
-                    openapi_client.models.object_permissions_dto.ObjectPermissionsDto(
+                    pyCZERTAINLY.models.object_permissions_dto.ObjectPermissionsDto(
                         uuid = '', 
                         name = '', 
                         allow = [
@@ -61,7 +61,7 @@ class TestResourcePermissionsDto(unittest.TestCase):
                     ''
                     ],
                 objects = [
-                    openapi_client.models.object_permissions_dto.ObjectPermissionsDto(
+                    pyCZERTAINLY.models.object_permissions_dto.ObjectPermissionsDto(
                         uuid = '', 
                         name = '', 
                         allow = [

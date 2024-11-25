@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.discovery_response_dto import DiscoveryResponseDto
+from pyCZERTAINLY.models.discovery_response_dto import DiscoveryResponseDto
 
 class TestDiscoveryResponseDto(unittest.TestCase):
     """DiscoveryResponseDto unit test stubs"""
@@ -37,7 +37,7 @@ class TestDiscoveryResponseDto(unittest.TestCase):
         if include_optional:
             return DiscoveryResponseDto(
                 discoveries = [
-                    openapi_client.models.discovery_history_dto.DiscoveryHistoryDto(
+                    pyCZERTAINLY.models.discovery_history_dto.DiscoveryHistoryDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         kind = 'IP-HostName', 
@@ -56,7 +56,7 @@ class TestDiscoveryResponseDto(unittest.TestCase):
         else:
             return DiscoveryResponseDto(
                 discoveries = [
-                    openapi_client.models.discovery_history_dto.DiscoveryHistoryDto(
+                    pyCZERTAINLY.models.discovery_history_dto.DiscoveryHistoryDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         kind = 'IP-HostName', 

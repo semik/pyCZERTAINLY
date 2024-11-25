@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.connect_dto import ConnectDto
+from pyCZERTAINLY.models.connect_dto import ConnectDto
 
 class TestConnectDto(unittest.TestCase):
     """ConnectDto unit test stubs"""
@@ -36,11 +36,11 @@ class TestConnectDto(unittest.TestCase):
         model = ConnectDto()
         if include_optional:
             return ConnectDto(
-                function_group = openapi_client.models.function_group_dto.FunctionGroupDto(
+                function_group = pyCZERTAINLY.models.function_group_dto.FunctionGroupDto(
                     function_group_code = 'credentialProvider', 
                     kinds = ["SoftKeyStore","Basic","ApiKey"], 
                     end_points = [
-                        openapi_client.models.endpoint_dto.EndpointDto(
+                        pyCZERTAINLY.models.endpoint_dto.EndpointDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             context = '/v1', 
@@ -52,11 +52,11 @@ class TestConnectDto(unittest.TestCase):
             )
         else:
             return ConnectDto(
-                function_group = openapi_client.models.function_group_dto.FunctionGroupDto(
+                function_group = pyCZERTAINLY.models.function_group_dto.FunctionGroupDto(
                     function_group_code = 'credentialProvider', 
                     kinds = ["SoftKeyStore","Basic","ApiKey"], 
                     end_points = [
-                        openapi_client.models.endpoint_dto.EndpointDto(
+                        pyCZERTAINLY.models.endpoint_dto.EndpointDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             context = '/v1', 

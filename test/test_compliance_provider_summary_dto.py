@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_provider_summary_dto import ComplianceProviderSummaryDto
+from pyCZERTAINLY.models.compliance_provider_summary_dto import ComplianceProviderSummaryDto
 
 class TestComplianceProviderSummaryDto(unittest.TestCase):
     """ComplianceProviderSummaryDto unit test stubs"""

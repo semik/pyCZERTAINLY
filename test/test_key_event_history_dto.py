@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_event_history_dto import KeyEventHistoryDto
+from pyCZERTAINLY.models.key_event_history_dto import KeyEventHistoryDto
 
 class TestKeyEventHistoryDto(unittest.TestCase):
     """KeyEventHistoryDto unit test stubs"""

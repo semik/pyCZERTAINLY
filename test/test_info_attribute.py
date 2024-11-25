@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.info_attribute import InfoAttribute
+from pyCZERTAINLY.models.info_attribute import InfoAttribute
 
 class TestInfoAttribute(unittest.TestCase):
     """InfoAttribute unit test stubs"""
@@ -40,13 +40,13 @@ class TestInfoAttribute(unittest.TestCase):
                 name = 'Attribute',
                 description = '',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
                 type = 'data',
                 content_type = 'string',
-                properties = openapi_client.models.info_attribute_properties.InfoAttributeProperties(
+                properties = pyCZERTAINLY.models.info_attribute_properties.InfoAttributeProperties(
                     label = 'Attribute Name', 
                     visible = True, 
                     group = 'requiredAttributes', )
@@ -56,13 +56,13 @@ class TestInfoAttribute(unittest.TestCase):
                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003',
                 name = 'Attribute',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
                 type = 'data',
                 content_type = 'string',
-                properties = openapi_client.models.info_attribute_properties.InfoAttributeProperties(
+                properties = pyCZERTAINLY.models.info_attribute_properties.InfoAttributeProperties(
                     label = 'Attribute Name', 
                     visible = True, 
                     group = 'requiredAttributes', ),

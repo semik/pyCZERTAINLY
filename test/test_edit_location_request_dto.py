@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.edit_location_request_dto import EditLocationRequestDto
+from pyCZERTAINLY.models.edit_location_request_dto import EditLocationRequestDto
 
 class TestEditLocationRequestDto(unittest.TestCase):
     """EditLocationRequestDto unit test stubs"""
@@ -38,25 +38,25 @@ class TestEditLocationRequestDto(unittest.TestCase):
             return EditLocationRequestDto(
                 description = '',
                 attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 custom_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 enabled = True
@@ -64,14 +64,14 @@ class TestEditLocationRequestDto(unittest.TestCase):
         else:
             return EditLocationRequestDto(
                 attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
         )

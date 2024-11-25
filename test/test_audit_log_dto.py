@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.audit_log_dto import AuditLogDto
+from pyCZERTAINLY.models.audit_log_dto import AuditLogDto
 
 class TestAuditLogDto(unittest.TestCase):
     """AuditLogDto unit test stubs"""
@@ -40,18 +40,18 @@ class TestAuditLogDto(unittest.TestCase):
                 version = '',
                 logged_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 module = 'approvals',
-                actor = openapi_client.models.actor_record.ActorRecord(
+                actor = pyCZERTAINLY.models.actor_record.ActorRecord(
                     type = 'anonymous', 
                     auth_method = 'none', 
                     uuid = '', 
                     name = '', ),
-                source = openapi_client.models.source_record.SourceRecord(
+                source = pyCZERTAINLY.models.source_record.SourceRecord(
                     method = '', 
                     path = '', 
                     content_type = '', 
                     ip_address = '', 
                     user_agent = '', ),
-                resource = openapi_client.models.resource_record.ResourceRecord(
+                resource = pyCZERTAINLY.models.resource_record.ResourceRecord(
                     type = 'NONE', 
                     uuids = [
                         ''
@@ -59,7 +59,7 @@ class TestAuditLogDto(unittest.TestCase):
                     names = [
                         ''
                         ], ),
-                affiliated_resource = openapi_client.models.resource_record.ResourceRecord(
+                affiliated_resource = pyCZERTAINLY.models.resource_record.ResourceRecord(
                     type = 'NONE', 
                     uuids = [
                         ''
@@ -81,12 +81,12 @@ class TestAuditLogDto(unittest.TestCase):
                 version = '',
                 logged_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 module = 'approvals',
-                actor = openapi_client.models.actor_record.ActorRecord(
+                actor = pyCZERTAINLY.models.actor_record.ActorRecord(
                     type = 'anonymous', 
                     auth_method = 'none', 
                     uuid = '', 
                     name = '', ),
-                resource = openapi_client.models.resource_record.ResourceRecord(
+                resource = pyCZERTAINLY.models.resource_record.ResourceRecord(
                     type = 'NONE', 
                     uuids = [
                         ''

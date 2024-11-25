@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.remove_certificate_dto import RemoveCertificateDto
+from pyCZERTAINLY.models.remove_certificate_dto import RemoveCertificateDto
 
 class TestRemoveCertificateDto(unittest.TestCase):
     """RemoveCertificateDto unit test stubs"""
@@ -40,11 +40,11 @@ class TestRemoveCertificateDto(unittest.TestCase):
                     ''
                     ],
                 filters = [
-                    openapi_client.models.search_filter_request_dto.SearchFilterRequestDto(
+                    pyCZERTAINLY.models.search_filter_request_dto.SearchFilterRequestDto(
                         field_source = 'meta', 
                         field_identifier = '', 
                         condition = 'EQUALS', 
-                        value = openapi_client.models.value.value(), )
+                        value = pyCZERTAINLY.models.value.value(), )
                     ]
             )
         else:

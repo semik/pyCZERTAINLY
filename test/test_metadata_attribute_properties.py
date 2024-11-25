@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.metadata_attribute_properties import MetadataAttributeProperties
+from pyCZERTAINLY.models.metadata_attribute_properties import MetadataAttributeProperties
 
 class TestMetadataAttributeProperties(unittest.TestCase):
     """MetadataAttributeProperties unit test stubs"""

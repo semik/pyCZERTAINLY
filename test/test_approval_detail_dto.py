@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.approval_detail_dto import ApprovalDetailDto
+from pyCZERTAINLY.models.approval_detail_dto import ApprovalDetailDto
 
 class TestApprovalDetailDto(unittest.TestCase):
     """ApprovalDetailDto unit test stubs"""
@@ -52,7 +52,7 @@ class TestApprovalDetailDto(unittest.TestCase):
                 expiry = 56,
                 description = '',
                 approval_steps = [
-                    openapi_client.models.approval_detail_step_dto.ApprovalDetailStepDto(
+                    pyCZERTAINLY.models.approval_detail_step_dto.ApprovalDetailStepDto(
                         user_uuid = '', 
                         role_uuid = '', 
                         group_uuid = '', 
@@ -64,7 +64,7 @@ class TestApprovalDetailDto(unittest.TestCase):
                         role_name = '', 
                         group_name = '', 
                         approval_step_recipients = [
-                            openapi_client.models.approval_step_recipient_dto.ApprovalStepRecipientDto(
+                            pyCZERTAINLY.models.approval_step_recipient_dto.ApprovalStepRecipientDto(
                                 approval_recipient_uuid = '', 
                                 user_uuid = '', 
                                 username = '', 
@@ -90,7 +90,7 @@ class TestApprovalDetailDto(unittest.TestCase):
                 approval_profile_uuid = '',
                 expiry = 56,
                 approval_steps = [
-                    openapi_client.models.approval_detail_step_dto.ApprovalDetailStepDto(
+                    pyCZERTAINLY.models.approval_detail_step_dto.ApprovalDetailStepDto(
                         user_uuid = '', 
                         role_uuid = '', 
                         group_uuid = '', 
@@ -102,7 +102,7 @@ class TestApprovalDetailDto(unittest.TestCase):
                         role_name = '', 
                         group_name = '', 
                         approval_step_recipients = [
-                            openapi_client.models.approval_step_recipient_dto.ApprovalStepRecipientDto(
+                            pyCZERTAINLY.models.approval_step_recipient_dto.ApprovalStepRecipientDto(
                                 approval_recipient_uuid = '', 
                                 user_uuid = '', 
                                 username = '', 

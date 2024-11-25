@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.health_dto import HealthDto
+from pyCZERTAINLY.models.health_dto import HealthDto
 
 class TestHealthDto(unittest.TestCase):
     """HealthDto unit test stubs"""
@@ -39,11 +39,11 @@ class TestHealthDto(unittest.TestCase):
                 status = 'ok',
                 description = '',
                 parts = {
-                    'key' : openapi_client.models.health_dto.HealthDto(
+                    'key' : pyCZERTAINLY.models.health_dto.HealthDto(
                         status = 'ok', 
                         description = '', 
                         parts = {
-                            'key' : openapi_client.models.health_dto.HealthDto(
+                            'key' : pyCZERTAINLY.models.health_dto.HealthDto(
                                 status = 'ok', 
                                 description = '', )
                             }, )

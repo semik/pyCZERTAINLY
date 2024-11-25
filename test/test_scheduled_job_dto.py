@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.scheduled_job_dto import ScheduledJobDto
+from pyCZERTAINLY.models.scheduled_job_dto import ScheduledJobDto
 
 class TestScheduledJobDto(unittest.TestCase):
     """ScheduledJobDto unit test stubs"""

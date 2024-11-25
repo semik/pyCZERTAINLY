@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.date_time_attribute_constraint import DateTimeAttributeConstraint
+from pyCZERTAINLY.models.date_time_attribute_constraint import DateTimeAttributeConstraint
 
 class TestDateTimeAttributeConstraint(unittest.TestCase):
     """DateTimeAttributeConstraint unit test stubs"""
@@ -39,7 +39,7 @@ class TestDateTimeAttributeConstraint(unittest.TestCase):
                 description = '',
                 error_message = '',
                 type = 'regExp',
-                data = openapi_client.models.date_time_attribute_constraint_data.DateTimeAttributeConstraintData(
+                data = pyCZERTAINLY.models.date_time_attribute_constraint_data.DateTimeAttributeConstraintData(
                     from = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     to = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
             )

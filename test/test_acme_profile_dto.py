@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.acme_profile_dto import AcmeProfileDto
+from pyCZERTAINLY.models.acme_profile_dto import AcmeProfileDto
 
 class TestAcmeProfileDto(unittest.TestCase):
     """AcmeProfileDto unit test stubs"""
@@ -44,7 +44,7 @@ class TestAcmeProfileDto(unittest.TestCase):
                 website_url = 'https://sample-company.com',
                 dns_resolver_ip = '8.8.8.8',
                 dns_resolver_port = '53',
-                ra_profile = openapi_client.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
+                ra_profile = pyCZERTAINLY.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                     name = 'Name', 
                     enabled = True, 
@@ -57,42 +57,42 @@ class TestAcmeProfileDto(unittest.TestCase):
                 require_contact = True,
                 require_terms_of_service = True,
                 issue_certificate_attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 revoke_certificate_attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 custom_attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )

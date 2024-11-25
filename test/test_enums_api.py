@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.enums_api import EnumsApi
+from pyCZERTAINLY.api.enums_api import EnumsApi
 
 
 class TestEnumsApi(unittest.TestCase):

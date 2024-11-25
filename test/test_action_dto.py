@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.action_dto import ActionDto
+from pyCZERTAINLY.models.action_dto import ActionDto
 
 class TestActionDto(unittest.TestCase):
     """ActionDto unit test stubs"""

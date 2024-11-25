@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.notification_response_dto import NotificationResponseDto
+from pyCZERTAINLY.models.notification_response_dto import NotificationResponseDto
 
 class TestNotificationResponseDto(unittest.TestCase):
     """NotificationResponseDto unit test stubs"""
@@ -41,7 +41,7 @@ class TestNotificationResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 items = [
-                    openapi_client.models.notification_dto.NotificationDto(
+                    pyCZERTAINLY.models.notification_dto.NotificationDto(
                         uuid = '', 
                         message = '', 
                         detail = '', 
@@ -60,7 +60,7 @@ class TestNotificationResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 items = [
-                    openapi_client.models.notification_dto.NotificationDto(
+                    pyCZERTAINLY.models.notification_dto.NotificationDto(
                         uuid = '', 
                         message = '', 
                         detail = '', 

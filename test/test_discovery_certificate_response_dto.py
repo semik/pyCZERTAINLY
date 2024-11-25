@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.discovery_certificate_response_dto import DiscoveryCertificateResponseDto
+from pyCZERTAINLY.models.discovery_certificate_response_dto import DiscoveryCertificateResponseDto
 
 class TestDiscoveryCertificateResponseDto(unittest.TestCase):
     """DiscoveryCertificateResponseDto unit test stubs"""
@@ -37,7 +37,7 @@ class TestDiscoveryCertificateResponseDto(unittest.TestCase):
         if include_optional:
             return DiscoveryCertificateResponseDto(
                 certificates = [
-                    openapi_client.models.discovery_certificate_dto.DiscoveryCertificateDto(
+                    pyCZERTAINLY.models.discovery_certificate_dto.DiscoveryCertificateDto(
                         uuid = '', 
                         inventory_uuid = '', 
                         common_name = '', 
@@ -59,7 +59,7 @@ class TestDiscoveryCertificateResponseDto(unittest.TestCase):
         else:
             return DiscoveryCertificateResponseDto(
                 certificates = [
-                    openapi_client.models.discovery_certificate_dto.DiscoveryCertificateDto(
+                    pyCZERTAINLY.models.discovery_certificate_dto.DiscoveryCertificateDto(
                         uuid = '', 
                         inventory_uuid = '', 
                         common_name = '', 

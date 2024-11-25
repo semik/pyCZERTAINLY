@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.actor_record import ActorRecord
+from pyCZERTAINLY.models.actor_record import ActorRecord
 
 class TestActorRecord(unittest.TestCase):
     """ActorRecord unit test stubs"""

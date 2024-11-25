@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.file_attribute_content_data import FileAttributeContentData
+from pyCZERTAINLY.models.file_attribute_content_data import FileAttributeContentData
 
 class TestFileAttributeContentData(unittest.TestCase):
     """FileAttributeContentData unit test stubs"""

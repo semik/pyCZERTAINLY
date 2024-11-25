@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.global_metadata_definition_detail_dto import GlobalMetadataDefinitionDetailDto
+from pyCZERTAINLY.models.global_metadata_definition_detail_dto import GlobalMetadataDefinitionDetailDto
 
 class TestGlobalMetadataDefinitionDetailDto(unittest.TestCase):
     """GlobalMetadataDefinitionDetailDto unit test stubs"""

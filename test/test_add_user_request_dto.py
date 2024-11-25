@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.add_user_request_dto import AddUserRequestDto
+from pyCZERTAINLY.models.add_user_request_dto import AddUserRequestDto
 
 class TestAddUserRequestDto(unittest.TestCase):
     """AddUserRequestDto unit test stubs"""
@@ -48,14 +48,14 @@ class TestAddUserRequestDto(unittest.TestCase):
                 certificate_data = '',
                 certificate_uuid = '',
                 custom_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 name = ''

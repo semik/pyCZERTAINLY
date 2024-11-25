@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.audit_log_response_dto import AuditLogResponseDto
+from pyCZERTAINLY.models.audit_log_response_dto import AuditLogResponseDto
 
 class TestAuditLogResponseDto(unittest.TestCase):
     """AuditLogResponseDto unit test stubs"""
@@ -41,23 +41,23 @@ class TestAuditLogResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 items = [
-                    openapi_client.models.audit_log_dto.AuditLogDto(
+                    pyCZERTAINLY.models.audit_log_dto.AuditLogDto(
                         id = 56, 
                         version = '', 
                         logged_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         module = 'approvals', 
-                        actor = openapi_client.models.actor_record.ActorRecord(
+                        actor = pyCZERTAINLY.models.actor_record.ActorRecord(
                             type = 'anonymous', 
                             auth_method = 'none', 
                             uuid = '', 
                             name = '', ), 
-                        source = openapi_client.models.source_record.SourceRecord(
+                        source = pyCZERTAINLY.models.source_record.SourceRecord(
                             method = '', 
                             path = '', 
                             content_type = '', 
                             ip_address = '', 
                             user_agent = '', ), 
-                        resource = openapi_client.models.resource_record.ResourceRecord(
+                        resource = pyCZERTAINLY.models.resource_record.ResourceRecord(
                             type = 'NONE', 
                             uuids = [
                                 ''
@@ -65,12 +65,12 @@ class TestAuditLogResponseDto(unittest.TestCase):
                             names = [
                                 ''
                                 ], ), 
-                        affiliated_resource = openapi_client.models.resource_record.ResourceRecord(
+                        affiliated_resource = pyCZERTAINLY.models.resource_record.ResourceRecord(
                             type = 'NONE', ), 
                         operation = 'unknown', 
                         operation_result = 'success', 
                         message = '', 
-                        operation_data = openapi_client.models.operation_data.operationData(), 
+                        operation_data = pyCZERTAINLY.models.operation_data.operationData(), 
                         additional_data = {
                             'key' : None
                             }, )
@@ -83,23 +83,23 @@ class TestAuditLogResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 items = [
-                    openapi_client.models.audit_log_dto.AuditLogDto(
+                    pyCZERTAINLY.models.audit_log_dto.AuditLogDto(
                         id = 56, 
                         version = '', 
                         logged_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         module = 'approvals', 
-                        actor = openapi_client.models.actor_record.ActorRecord(
+                        actor = pyCZERTAINLY.models.actor_record.ActorRecord(
                             type = 'anonymous', 
                             auth_method = 'none', 
                             uuid = '', 
                             name = '', ), 
-                        source = openapi_client.models.source_record.SourceRecord(
+                        source = pyCZERTAINLY.models.source_record.SourceRecord(
                             method = '', 
                             path = '', 
                             content_type = '', 
                             ip_address = '', 
                             user_agent = '', ), 
-                        resource = openapi_client.models.resource_record.ResourceRecord(
+                        resource = pyCZERTAINLY.models.resource_record.ResourceRecord(
                             type = 'NONE', 
                             uuids = [
                                 ''
@@ -107,12 +107,12 @@ class TestAuditLogResponseDto(unittest.TestCase):
                             names = [
                                 ''
                                 ], ), 
-                        affiliated_resource = openapi_client.models.resource_record.ResourceRecord(
+                        affiliated_resource = pyCZERTAINLY.models.resource_record.ResourceRecord(
                             type = 'NONE', ), 
                         operation = 'unknown', 
                         operation_result = 'success', 
                         message = '', 
-                        operation_data = openapi_client.models.operation_data.operationData(), 
+                        operation_data = pyCZERTAINLY.models.operation_data.operationData(), 
                         additional_data = {
                             'key' : None
                             }, )

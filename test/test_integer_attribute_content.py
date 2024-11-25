@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.integer_attribute_content import IntegerAttributeContent
+from pyCZERTAINLY.models.integer_attribute_content import IntegerAttributeContent
 
 class TestIntegerAttributeContent(unittest.TestCase):
     """IntegerAttributeContent unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.role_dto import RoleDto
+from pyCZERTAINLY.models.role_dto import RoleDto
 
 class TestRoleDto(unittest.TestCase):
     """RoleDto unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.request_attribute_callback import RequestAttributeCallback
+from pyCZERTAINLY.models.request_attribute_callback import RequestAttributeCallback
 
 class TestRequestAttributeCallback(unittest.TestCase):
     """RequestAttributeCallback unit test stubs"""

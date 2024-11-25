@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.execution_dto import ExecutionDto
+from pyCZERTAINLY.models.execution_dto import ExecutionDto
 
 class TestExecutionDto(unittest.TestCase):
     """ExecutionDto unit test stubs"""
@@ -42,10 +42,10 @@ class TestExecutionDto(unittest.TestCase):
                 type = 'setField',
                 resource = 'NONE',
                 items = [
-                    openapi_client.models.execution_item_dto.ExecutionItemDto(
+                    pyCZERTAINLY.models.execution_item_dto.ExecutionItemDto(
                         field_source = 'meta', 
                         field_identifier = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ]
             )
         else:
@@ -55,10 +55,10 @@ class TestExecutionDto(unittest.TestCase):
                 type = 'setField',
                 resource = 'NONE',
                 items = [
-                    openapi_client.models.execution_item_dto.ExecutionItemDto(
+                    pyCZERTAINLY.models.execution_item_dto.ExecutionItemDto(
                         field_source = 'meta', 
                         field_identifier = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
         )
         """

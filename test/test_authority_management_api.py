@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.authority_management_api import AuthorityManagementApi
+from pyCZERTAINLY.api.authority_management_api import AuthorityManagementApi
 
 
 class TestAuthorityManagementApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.location_management_api import LocationManagementApi
+from pyCZERTAINLY.api.location_management_api import LocationManagementApi
 
 
 class TestLocationManagementApi(unittest.TestCase):

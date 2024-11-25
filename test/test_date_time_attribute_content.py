@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.date_time_attribute_content import DateTimeAttributeContent
+from pyCZERTAINLY.models.date_time_attribute_content import DateTimeAttributeContent
 
 class TestDateTimeAttributeContent(unittest.TestCase):
     """DateTimeAttributeContent unit test stubs"""

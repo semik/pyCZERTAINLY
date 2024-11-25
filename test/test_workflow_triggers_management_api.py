@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.workflow_triggers_management_api import WorkflowTriggersManagementApi
+from pyCZERTAINLY.api.workflow_triggers_management_api import WorkflowTriggersManagementApi
 
 
 class TestWorkflowTriggersManagementApi(unittest.TestCase):

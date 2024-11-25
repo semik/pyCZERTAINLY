@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.client_operations_v2_api import ClientOperationsV2Api
+from pyCZERTAINLY.api.client_operations_v2_api import ClientOperationsV2Api
 
 
 class TestClientOperationsV2Api(unittest.TestCase):

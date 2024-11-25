@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.signature_request_data import SignatureRequestData
+from pyCZERTAINLY.models.signature_request_data import SignatureRequestData
 
 class TestSignatureRequestData(unittest.TestCase):
     """SignatureRequestData unit test stubs"""

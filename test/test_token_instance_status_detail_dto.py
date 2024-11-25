@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.token_instance_status_detail_dto import TokenInstanceStatusDetailDto
+from pyCZERTAINLY.models.token_instance_status_detail_dto import TokenInstanceStatusDetailDto
 
 class TestTokenInstanceStatusDetailDto(unittest.TestCase):
     """TokenInstanceStatusDetailDto unit test stubs"""
@@ -38,7 +38,7 @@ class TestTokenInstanceStatusDetailDto(unittest.TestCase):
             return TokenInstanceStatusDetailDto(
                 status = 'Connected',
                 components = {
-                    'key' : openapi_client.models.token_instance_status_component.TokenInstanceStatusComponent(
+                    'key' : pyCZERTAINLY.models.token_instance_status_component.TokenInstanceStatusComponent(
                         status = 'Connected', 
                         details = {
                             'key' : None

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.user_management_api import UserManagementApi
+from pyCZERTAINLY.api.user_management_api import UserManagementApi
 
 
 class TestUserManagementApi(unittest.TestCase):

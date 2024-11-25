@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_revocation_reason import CertificateRevocationReason
+from pyCZERTAINLY.models.certificate_revocation_reason import CertificateRevocationReason
 
 class TestCertificateRevocationReason(unittest.TestCase):
     """CertificateRevocationReason unit test stubs"""

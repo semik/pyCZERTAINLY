@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.authentication_service_exception_dto import AuthenticationServiceExceptionDto
+from pyCZERTAINLY.models.authentication_service_exception_dto import AuthenticationServiceExceptionDto
 
 class TestAuthenticationServiceExceptionDto(unittest.TestCase):
     """AuthenticationServiceExceptionDto unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.ra_profile_scep_detail_response_dto import RaProfileScepDetailResponseDto
+from pyCZERTAINLY.models.ra_profile_scep_detail_response_dto import RaProfileScepDetailResponseDto
 
 class TestRaProfileScepDetailResponseDto(unittest.TestCase):
     """RaProfileScepDetailResponseDto unit test stubs"""
@@ -41,16 +41,16 @@ class TestRaProfileScepDetailResponseDto(unittest.TestCase):
                 scep_available = True,
                 url = '',
                 issue_certificate_attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )

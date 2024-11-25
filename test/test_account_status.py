@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.account_status import AccountStatus
+from pyCZERTAINLY.models.account_status import AccountStatus
 
 class TestAccountStatus(unittest.TestCase):
     """AccountStatus unit test stubs"""

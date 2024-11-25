@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.cryptographic_key_response_dto import CryptographicKeyResponseDto
+from pyCZERTAINLY.models.cryptographic_key_response_dto import CryptographicKeyResponseDto
 
 class TestCryptographicKeyResponseDto(unittest.TestCase):
     """CryptographicKeyResponseDto unit test stubs"""
@@ -37,7 +37,7 @@ class TestCryptographicKeyResponseDto(unittest.TestCase):
         if include_optional:
             return CryptographicKeyResponseDto(
                 cryptographic_keys = [
-                    openapi_client.models.key_item_dto.KeyItemDto(
+                    pyCZERTAINLY.models.key_item_dto.KeyItemDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
@@ -50,22 +50,22 @@ class TestCryptographicKeyResponseDto(unittest.TestCase):
                         owner = '', 
                         owner_uuid = '', 
                         groups = [
-                            openapi_client.models.group_dto.GroupDto(
+                            pyCZERTAINLY.models.group_dto.GroupDto(
                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                 name = 'Name', 
                                 description = '', 
                                 email = '', 
                                 custom_attributes = [
-                                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
                                         type = 'data', 
                                         content_type = 'string', 
                                         content = [
-                                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                                 reference = '', 
-                                                data = openapi_client.models.data.data(), )
+                                                data = pyCZERTAINLY.models.data.data(), )
                                             ], )
                                     ], )
                             ], 
@@ -89,7 +89,7 @@ class TestCryptographicKeyResponseDto(unittest.TestCase):
         else:
             return CryptographicKeyResponseDto(
                 cryptographic_keys = [
-                    openapi_client.models.key_item_dto.KeyItemDto(
+                    pyCZERTAINLY.models.key_item_dto.KeyItemDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
@@ -102,22 +102,22 @@ class TestCryptographicKeyResponseDto(unittest.TestCase):
                         owner = '', 
                         owner_uuid = '', 
                         groups = [
-                            openapi_client.models.group_dto.GroupDto(
+                            pyCZERTAINLY.models.group_dto.GroupDto(
                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                 name = 'Name', 
                                 description = '', 
                                 email = '', 
                                 custom_attributes = [
-                                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
                                         type = 'data', 
                                         content_type = 'string', 
                                         content = [
-                                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                                 reference = '', 
-                                                data = openapi_client.models.data.data(), )
+                                                data = pyCZERTAINLY.models.data.data(), )
                                             ], )
                                     ], )
                             ], 

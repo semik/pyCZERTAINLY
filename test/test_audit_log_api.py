@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.audit_log_api import AuditLogApi
+from pyCZERTAINLY.api.audit_log_api import AuditLogApi
 
 
 class TestAuditLogApi(unittest.TestCase):

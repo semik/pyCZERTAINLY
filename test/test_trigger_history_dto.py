@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.trigger_history_dto import TriggerHistoryDto
+from pyCZERTAINLY.models.trigger_history_dto import TriggerHistoryDto
 
 class TestTriggerHistoryDto(unittest.TestCase):
     """TriggerHistoryDto unit test stubs"""
@@ -45,32 +45,32 @@ class TestTriggerHistoryDto(unittest.TestCase):
                 triggered_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 message = '',
                 records = [
-                    openapi_client.models.trigger_history_record_dto.TriggerHistoryRecordDto(
+                    pyCZERTAINLY.models.trigger_history_record_dto.TriggerHistoryRecordDto(
                         message = '', 
-                        condition = openapi_client.models.condition_dto.ConditionDto(
+                        condition = pyCZERTAINLY.models.condition_dto.ConditionDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             description = '', 
                             type = 'checkField', 
                             resource = 'NONE', 
                             items = [
-                                openapi_client.models.condition_item_dto.ConditionItemDto(
+                                pyCZERTAINLY.models.condition_item_dto.ConditionItemDto(
                                     field_source = 'meta', 
                                     field_identifier = '', 
                                     operator = 'EQUALS', 
-                                    value = openapi_client.models.value.value(), )
+                                    value = pyCZERTAINLY.models.value.value(), )
                                 ], ), 
-                        execution = openapi_client.models.execution_dto.ExecutionDto(
+                        execution = pyCZERTAINLY.models.execution_dto.ExecutionDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             description = '', 
                             type = 'setField', 
                             resource = 'NONE', 
                             items = [
-                                openapi_client.models.execution_item_dto.ExecutionItemDto(
+                                pyCZERTAINLY.models.execution_item_dto.ExecutionItemDto(
                                     field_source = 'meta', 
                                     field_identifier = '', 
-                                    data = openapi_client.models.data.data(), )
+                                    data = pyCZERTAINLY.models.data.data(), )
                                 ], ), )
                     ]
             )
@@ -82,32 +82,32 @@ class TestTriggerHistoryDto(unittest.TestCase):
                 actions_performed = True,
                 triggered_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 records = [
-                    openapi_client.models.trigger_history_record_dto.TriggerHistoryRecordDto(
+                    pyCZERTAINLY.models.trigger_history_record_dto.TriggerHistoryRecordDto(
                         message = '', 
-                        condition = openapi_client.models.condition_dto.ConditionDto(
+                        condition = pyCZERTAINLY.models.condition_dto.ConditionDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             description = '', 
                             type = 'checkField', 
                             resource = 'NONE', 
                             items = [
-                                openapi_client.models.condition_item_dto.ConditionItemDto(
+                                pyCZERTAINLY.models.condition_item_dto.ConditionItemDto(
                                     field_source = 'meta', 
                                     field_identifier = '', 
                                     operator = 'EQUALS', 
-                                    value = openapi_client.models.value.value(), )
+                                    value = pyCZERTAINLY.models.value.value(), )
                                 ], ), 
-                        execution = openapi_client.models.execution_dto.ExecutionDto(
+                        execution = pyCZERTAINLY.models.execution_dto.ExecutionDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             description = '', 
                             type = 'setField', 
                             resource = 'NONE', 
                             items = [
-                                openapi_client.models.execution_item_dto.ExecutionItemDto(
+                                pyCZERTAINLY.models.execution_item_dto.ExecutionItemDto(
                                     field_source = 'meta', 
                                     field_identifier = '', 
-                                    data = openapi_client.models.data.data(), )
+                                    data = pyCZERTAINLY.models.data.data(), )
                                 ], ), )
                     ],
         )

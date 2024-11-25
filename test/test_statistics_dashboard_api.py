@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.statistics_dashboard_api import StatisticsDashboardApi
+from pyCZERTAINLY.api.statistics_dashboard_api import StatisticsDashboardApi
 
 
 class TestStatisticsDashboardApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.execution_type import ExecutionType
+from pyCZERTAINLY.models.execution_type import ExecutionType
 
 class TestExecutionType(unittest.TestCase):
     """ExecutionType unit test stubs"""

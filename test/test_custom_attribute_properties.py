@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.custom_attribute_properties import CustomAttributeProperties
+from pyCZERTAINLY.models.custom_attribute_properties import CustomAttributeProperties
 
 class TestCustomAttributeProperties(unittest.TestCase):
     """CustomAttributeProperties unit test stubs"""

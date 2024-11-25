@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.metadata_attribute import MetadataAttribute
+from pyCZERTAINLY.models.metadata_attribute import MetadataAttribute
 
 class TestMetadataAttribute(unittest.TestCase):
     """MetadataAttribute unit test stubs"""
@@ -40,13 +40,13 @@ class TestMetadataAttribute(unittest.TestCase):
                 name = 'Attribute',
                 description = '',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
                 type = 'data',
                 content_type = 'string',
-                properties = openapi_client.models.metadata_attribute_properties.MetadataAttributeProperties(
+                properties = pyCZERTAINLY.models.metadata_attribute_properties.MetadataAttributeProperties(
                     label = 'Attribute Name', 
                     visible = True, 
                     group = 'requiredAttributes', 
@@ -58,13 +58,13 @@ class TestMetadataAttribute(unittest.TestCase):
                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003',
                 name = 'Attribute',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
                 type = 'data',
                 content_type = 'string',
-                properties = openapi_client.models.metadata_attribute_properties.MetadataAttributeProperties(
+                properties = pyCZERTAINLY.models.metadata_attribute_properties.MetadataAttributeProperties(
                     label = 'Attribute Name', 
                     visible = True, 
                     group = 'requiredAttributes', 

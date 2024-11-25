@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_validation_result_dto import CertificateValidationResultDto
+from pyCZERTAINLY.models.certificate_validation_result_dto import CertificateValidationResultDto
 
 class TestCertificateValidationResultDto(unittest.TestCase):
     """CertificateValidationResultDto unit test stubs"""
@@ -38,7 +38,7 @@ class TestCertificateValidationResultDto(unittest.TestCase):
             return CertificateValidationResultDto(
                 result_status = 'not_checked',
                 validation_checks = {
-                    'key' : openapi_client.models.certificate_validation_check_dto.CertificateValidationCheckDto(
+                    'key' : pyCZERTAINLY.models.certificate_validation_check_dto.CertificateValidationCheckDto(
                         validation_check = 'certificate_chain', 
                         status = 'not_checked', 
                         message = '', )

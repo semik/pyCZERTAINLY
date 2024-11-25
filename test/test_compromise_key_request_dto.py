@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compromise_key_request_dto import CompromiseKeyRequestDto
+from pyCZERTAINLY.models.compromise_key_request_dto import CompromiseKeyRequestDto
 
 class TestCompromiseKeyRequestDto(unittest.TestCase):
     """CompromiseKeyRequestDto unit test stubs"""

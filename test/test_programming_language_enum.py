@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.programming_language_enum import ProgrammingLanguageEnum
+from pyCZERTAINLY.models.programming_language_enum import ProgrammingLanguageEnum
 
 class TestProgrammingLanguageEnum(unittest.TestCase):
     """ProgrammingLanguageEnum unit test stubs"""

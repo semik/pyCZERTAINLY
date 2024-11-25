@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.bulk_operation_response import BulkOperationResponse
+from pyCZERTAINLY.models.bulk_operation_response import BulkOperationResponse
 
 class TestBulkOperationResponse(unittest.TestCase):
     """BulkOperationResponse unit test stubs"""

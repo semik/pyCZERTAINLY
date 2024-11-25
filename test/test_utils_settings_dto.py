@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.utils_settings_dto import UtilsSettingsDto
+from pyCZERTAINLY.models.utils_settings_dto import UtilsSettingsDto
 
 class TestUtilsSettingsDto(unittest.TestCase):
     """UtilsSettingsDto unit test stubs"""

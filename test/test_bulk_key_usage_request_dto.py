@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.bulk_key_usage_request_dto import BulkKeyUsageRequestDto
+from pyCZERTAINLY.models.bulk_key_usage_request_dto import BulkKeyUsageRequestDto
 
 class TestBulkKeyUsageRequestDto(unittest.TestCase):
     """BulkKeyUsageRequestDto unit test stubs"""

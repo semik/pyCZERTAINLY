@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.approval_profile_update_request_dto import ApprovalProfileUpdateRequestDto
+from pyCZERTAINLY.models.approval_profile_update_request_dto import ApprovalProfileUpdateRequestDto
 
 class TestApprovalProfileUpdateRequestDto(unittest.TestCase):
     """ApprovalProfileUpdateRequestDto unit test stubs"""
@@ -39,7 +39,7 @@ class TestApprovalProfileUpdateRequestDto(unittest.TestCase):
                 description = 'Detail description of the approval profile',
                 expiry = 30,
                 approval_steps = [
-                    openapi_client.models.approval_step_request_dto.ApprovalStepRequestDto(
+                    pyCZERTAINLY.models.approval_step_request_dto.ApprovalStepRequestDto(
                         user_uuid = '', 
                         role_uuid = '', 
                         group_uuid = '', 
@@ -51,7 +51,7 @@ class TestApprovalProfileUpdateRequestDto(unittest.TestCase):
         else:
             return ApprovalProfileUpdateRequestDto(
                 approval_steps = [
-                    openapi_client.models.approval_step_request_dto.ApprovalStepRequestDto(
+                    pyCZERTAINLY.models.approval_step_request_dto.ApprovalStepRequestDto(
                         user_uuid = '', 
                         role_uuid = '', 
                         group_uuid = '', 

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.module import Module
+from pyCZERTAINLY.models.module import Module
 
 class TestModule(unittest.TestCase):
     """Module unit test stubs"""

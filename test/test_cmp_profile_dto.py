@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.cmp_profile_dto import CmpProfileDto
+from pyCZERTAINLY.models.cmp_profile_dto import CmpProfileDto
 
 class TestCmpProfileDto(unittest.TestCase):
     """CmpProfileDto unit test stubs"""
@@ -41,7 +41,7 @@ class TestCmpProfileDto(unittest.TestCase):
                 enabled = True,
                 variant = 'v2',
                 description = 'Sample text description',
-                ra_profile = openapi_client.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
+                ra_profile = pyCZERTAINLY.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                     name = 'Name', 
                     enabled = True, 

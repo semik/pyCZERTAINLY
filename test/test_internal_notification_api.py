@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.internal_notification_api import InternalNotificationApi
+from pyCZERTAINLY.api.internal_notification_api import InternalNotificationApi
 
 
 class TestInternalNotificationApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.custom_attribute import CustomAttribute
+from pyCZERTAINLY.models.custom_attribute import CustomAttribute
 
 class TestCustomAttribute(unittest.TestCase):
     """CustomAttribute unit test stubs"""
@@ -40,13 +40,13 @@ class TestCustomAttribute(unittest.TestCase):
                 name = 'Attribute',
                 description = '',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
                 type = 'data',
                 content_type = 'string',
-                properties = openapi_client.models.custom_attribute_properties.CustomAttributeProperties(
+                properties = pyCZERTAINLY.models.custom_attribute_properties.CustomAttributeProperties(
                     label = 'Attribute Name', 
                     visible = True, 
                     group = 'requiredAttributes', 
@@ -61,7 +61,7 @@ class TestCustomAttribute(unittest.TestCase):
                 name = 'Attribute',
                 type = 'data',
                 content_type = 'string',
-                properties = openapi_client.models.custom_attribute_properties.CustomAttributeProperties(
+                properties = pyCZERTAINLY.models.custom_attribute_properties.CustomAttributeProperties(
                     label = 'Attribute Name', 
                     visible = True, 
                     group = 'requiredAttributes', 

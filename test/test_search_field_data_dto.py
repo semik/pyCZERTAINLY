@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.search_field_data_dto import SearchFieldDataDto
+from pyCZERTAINLY.models.search_field_data_dto import SearchFieldDataDto
 
 class TestSearchFieldDataDto(unittest.TestCase):
     """SearchFieldDataDto unit test stubs"""
@@ -44,7 +44,7 @@ class TestSearchFieldDataDto(unittest.TestCase):
                     ],
                 platform_enum = 'Resource',
                 attribute_content_type = 'string',
-                value = openapi_client.models.value.value(),
+                value = pyCZERTAINLY.models.value.value(),
                 multi_value = True
             )
         else:

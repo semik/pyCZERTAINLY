@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.scheduled_job_history_response_dto import ScheduledJobHistoryResponseDto
+from pyCZERTAINLY.models.scheduled_job_history_response_dto import ScheduledJobHistoryResponseDto
 
 class TestScheduledJobHistoryResponseDto(unittest.TestCase):
     """ScheduledJobHistoryResponseDto unit test stubs"""
@@ -41,7 +41,7 @@ class TestScheduledJobHistoryResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 scheduled_job_history = [
-                    openapi_client.models.scheduled_job_history_dto.ScheduledJobHistoryDto(
+                    pyCZERTAINLY.models.scheduled_job_history_dto.ScheduledJobHistoryDto(
                         job_uuid = '', 
                         start_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         end_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
@@ -60,7 +60,7 @@ class TestScheduledJobHistoryResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 scheduled_job_history = [
-                    openapi_client.models.scheduled_job_history_dto.ScheduledJobHistoryDto(
+                    pyCZERTAINLY.models.scheduled_job_history_dto.ScheduledJobHistoryDto(
                         job_uuid = '', 
                         start_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         end_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 

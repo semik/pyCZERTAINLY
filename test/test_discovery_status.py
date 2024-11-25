@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.discovery_status import DiscoveryStatus
+from pyCZERTAINLY.models.discovery_status import DiscoveryStatus
 
 class TestDiscoveryStatus(unittest.TestCase):
     """DiscoveryStatus unit test stubs"""

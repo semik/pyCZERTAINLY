@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.data_attribute import DataAttribute
+from pyCZERTAINLY.models.data_attribute import DataAttribute
 
 class TestDataAttribute(unittest.TestCase):
     """DataAttribute unit test stubs"""
@@ -41,7 +41,7 @@ class TestDataAttribute(unittest.TestCase):
                 description = '',
                 type = 'data',
                 content_type = 'string',
-                properties = openapi_client.models.data_attribute_properties.DataAttributeProperties(
+                properties = pyCZERTAINLY.models.data_attribute_properties.DataAttributeProperties(
                     label = 'Attribute Name', 
                     visible = True, 
                     group = 'requiredAttributes', 
@@ -50,17 +50,17 @@ class TestDataAttribute(unittest.TestCase):
                     list = True, 
                     multi_select = True, ),
                 constraints = [
-                    openapi_client.models.base_attribute_constraint.BaseAttributeConstraint(
+                    pyCZERTAINLY.models.base_attribute_constraint.BaseAttributeConstraint(
                         description = '', 
                         error_message = '', 
                         type = 'regExp', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
-                attribute_callback = openapi_client.models.attribute_callback.AttributeCallback(
+                attribute_callback = pyCZERTAINLY.models.attribute_callback.AttributeCallback(
                     callback_context = '', 
                     callback_method = '', 
                     mappings = [
-                        openapi_client.models.attribute_callback_mapping.AttributeCallbackMapping(
+                        pyCZERTAINLY.models.attribute_callback_mapping.AttributeCallbackMapping(
                             from = '', 
                             attribute_type = 'data', 
                             attribute_content_type = 'string', 
@@ -68,7 +68,7 @@ class TestDataAttribute(unittest.TestCase):
                             targets = [
                                 'pathVariable'
                                 ], 
-                            value = openapi_client.models.value.value(), )
+                            value = pyCZERTAINLY.models.value.value(), )
                         ], )
             )
         else:
@@ -77,7 +77,7 @@ class TestDataAttribute(unittest.TestCase):
                 name = 'Attribute',
                 type = 'data',
                 content_type = 'string',
-                properties = openapi_client.models.data_attribute_properties.DataAttributeProperties(
+                properties = pyCZERTAINLY.models.data_attribute_properties.DataAttributeProperties(
                     label = 'Attribute Name', 
                     visible = True, 
                     group = 'requiredAttributes', 

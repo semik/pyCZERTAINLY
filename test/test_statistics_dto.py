@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.statistics_dto import StatisticsDto
+from pyCZERTAINLY.models.statistics_dto import StatisticsDto
 
 class TestStatisticsDto(unittest.TestCase):
     """StatisticsDto unit test stubs"""

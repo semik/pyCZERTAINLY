@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.authentication_management_api import AuthenticationManagementApi
+from pyCZERTAINLY.api.authentication_management_api import AuthenticationManagementApi
 
 
 class TestAuthenticationManagementApi(unittest.TestCase):

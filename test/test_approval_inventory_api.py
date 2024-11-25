@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.approval_inventory_api import ApprovalInventoryApi
+from pyCZERTAINLY.api.approval_inventory_api import ApprovalInventoryApi
 
 
 class TestApprovalInventoryApi(unittest.TestCase):

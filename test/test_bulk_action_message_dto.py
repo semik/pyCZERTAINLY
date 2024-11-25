@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.bulk_action_message_dto import BulkActionMessageDto
+from pyCZERTAINLY.models.bulk_action_message_dto import BulkActionMessageDto
 
 class TestBulkActionMessageDto(unittest.TestCase):
     """BulkActionMessageDto unit test stubs"""

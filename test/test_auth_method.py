@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.auth_method import AuthMethod
+from pyCZERTAINLY.models.auth_method import AuthMethod
 
 class TestAuthMethod(unittest.TestCase):
     """AuthMethod unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.global_metadata_api import GlobalMetadataApi
+from pyCZERTAINLY.api.global_metadata_api import GlobalMetadataApi
 
 
 class TestGlobalMetadataApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.bulk_compromise_key_request_dto import BulkCompromiseKeyRequestDto
+from pyCZERTAINLY.models.bulk_compromise_key_request_dto import BulkCompromiseKeyRequestDto
 
 class TestBulkCompromiseKeyRequestDto(unittest.TestCase):
     """BulkCompromiseKeyRequestDto unit test stubs"""

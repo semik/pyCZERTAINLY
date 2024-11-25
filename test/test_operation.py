@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.operation import Operation
+from pyCZERTAINLY.models.operation import Operation
 
 class TestOperation(unittest.TestCase):
     """Operation unit test stubs"""

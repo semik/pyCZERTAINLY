@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.approval_response_dto import ApprovalResponseDto
+from pyCZERTAINLY.models.approval_response_dto import ApprovalResponseDto
 
 class TestApprovalResponseDto(unittest.TestCase):
     """ApprovalResponseDto unit test stubs"""
@@ -41,7 +41,7 @@ class TestApprovalResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 approvals = [
-                    openapi_client.models.approval_dto.ApprovalDto(
+                    pyCZERTAINLY.models.approval_dto.ApprovalDto(
                         approval_uuid = '', 
                         creator_uuid = '', 
                         creator_username = '', 
@@ -64,7 +64,7 @@ class TestApprovalResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 approvals = [
-                    openapi_client.models.approval_dto.ApprovalDto(
+                    pyCZERTAINLY.models.approval_dto.ApprovalDto(
                         approval_uuid = '', 
                         creator_uuid = '', 
                         creator_username = '', 

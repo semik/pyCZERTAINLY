@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.notification_request_dto import NotificationRequestDto
+from pyCZERTAINLY.models.notification_request_dto import NotificationRequestDto
 
 class TestNotificationRequestDto(unittest.TestCase):
     """NotificationRequestDto unit test stubs"""

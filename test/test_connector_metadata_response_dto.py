@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.connector_metadata_response_dto import ConnectorMetadataResponseDto
+from pyCZERTAINLY.models.connector_metadata_response_dto import ConnectorMetadataResponseDto
 
 class TestConnectorMetadataResponseDto(unittest.TestCase):
     """ConnectorMetadataResponseDto unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.group_attribute import GroupAttribute
+from pyCZERTAINLY.models.group_attribute import GroupAttribute
 
 class TestGroupAttribute(unittest.TestCase):
     """GroupAttribute unit test stubs"""
@@ -40,18 +40,18 @@ class TestGroupAttribute(unittest.TestCase):
                 name = 'Attribute',
                 description = '',
                 content = [
-                    openapi_client.models.base_attribute_dto.BaseAttributeDto(
+                    pyCZERTAINLY.models.base_attribute_dto.BaseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         description = '', 
                         type = 'data', )
                     ],
                 type = 'data',
-                attribute_callback = openapi_client.models.attribute_callback.AttributeCallback(
+                attribute_callback = pyCZERTAINLY.models.attribute_callback.AttributeCallback(
                     callback_context = '', 
                     callback_method = '', 
                     mappings = [
-                        openapi_client.models.attribute_callback_mapping.AttributeCallbackMapping(
+                        pyCZERTAINLY.models.attribute_callback_mapping.AttributeCallbackMapping(
                             from = '', 
                             attribute_type = 'data', 
                             attribute_content_type = 'string', 
@@ -59,7 +59,7 @@ class TestGroupAttribute(unittest.TestCase):
                             targets = [
                                 'pathVariable'
                                 ], 
-                            value = openapi_client.models.value.value(), )
+                            value = pyCZERTAINLY.models.value.value(), )
                         ], )
             )
         else:

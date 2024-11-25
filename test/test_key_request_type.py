@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_request_type import KeyRequestType
+from pyCZERTAINLY.models.key_request_type import KeyRequestType
 
 class TestKeyRequestType(unittest.TestCase):
     """KeyRequestType unit test stubs"""

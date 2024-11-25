@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.name_and_id_dto import NameAndIdDto
+from pyCZERTAINLY.models.name_and_id_dto import NameAndIdDto
 
 class TestNameAndIdDto(unittest.TestCase):
     """NameAndIdDto unit test stubs"""

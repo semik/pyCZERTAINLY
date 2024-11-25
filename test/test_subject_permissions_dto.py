@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.subject_permissions_dto import SubjectPermissionsDto
+from pyCZERTAINLY.models.subject_permissions_dto import SubjectPermissionsDto
 
 class TestSubjectPermissionsDto(unittest.TestCase):
     """SubjectPermissionsDto unit test stubs"""
@@ -38,14 +38,14 @@ class TestSubjectPermissionsDto(unittest.TestCase):
             return SubjectPermissionsDto(
                 allow_all_resources = True,
                 resources = [
-                    openapi_client.models.resource_permissions_dto.ResourcePermissionsDto(
+                    pyCZERTAINLY.models.resource_permissions_dto.ResourcePermissionsDto(
                         name = '', 
                         allow_all_actions = True, 
                         actions = [
                             ''
                             ], 
                         objects = [
-                            openapi_client.models.object_permissions_dto.ObjectPermissionsDto(
+                            pyCZERTAINLY.models.object_permissions_dto.ObjectPermissionsDto(
                                 uuid = '', 
                                 name = '', 
                                 allow = [
@@ -61,14 +61,14 @@ class TestSubjectPermissionsDto(unittest.TestCase):
             return SubjectPermissionsDto(
                 allow_all_resources = True,
                 resources = [
-                    openapi_client.models.resource_permissions_dto.ResourcePermissionsDto(
+                    pyCZERTAINLY.models.resource_permissions_dto.ResourcePermissionsDto(
                         name = '', 
                         allow_all_actions = True, 
                         actions = [
                             ''
                             ], 
                         objects = [
-                            openapi_client.models.object_permissions_dto.ObjectPermissionsDto(
+                            pyCZERTAINLY.models.object_permissions_dto.ObjectPermissionsDto(
                                 uuid = '', 
                                 name = '', 
                                 allow = [

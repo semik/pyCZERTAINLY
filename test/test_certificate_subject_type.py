@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_subject_type import CertificateSubjectType
+from pyCZERTAINLY.models.certificate_subject_type import CertificateSubjectType
 
 class TestCertificateSubjectType(unittest.TestCase):
     """CertificateSubjectType unit test stubs"""

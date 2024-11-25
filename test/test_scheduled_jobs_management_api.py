@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.scheduled_jobs_management_api import ScheduledJobsManagementApi
+from pyCZERTAINLY.api.scheduled_jobs_management_api import ScheduledJobsManagementApi
 
 
 class TestScheduledJobsManagementApi(unittest.TestCase):

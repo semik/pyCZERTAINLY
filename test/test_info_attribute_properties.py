@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.info_attribute_properties import InfoAttributeProperties
+from pyCZERTAINLY.models.info_attribute_properties import InfoAttributeProperties
 
 class TestInfoAttributeProperties(unittest.TestCase):
     """InfoAttributeProperties unit test stubs"""

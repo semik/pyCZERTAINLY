@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.acme_profile_management_api import ACMEProfileManagementApi
+from pyCZERTAINLY.api.acme_profile_management_api import ACMEProfileManagementApi
 
 
 class TestACMEProfileManagementApi(unittest.TestCase):

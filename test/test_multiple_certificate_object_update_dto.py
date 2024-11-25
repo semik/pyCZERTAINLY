@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.multiple_certificate_object_update_dto import MultipleCertificateObjectUpdateDto
+from pyCZERTAINLY.models.multiple_certificate_object_update_dto import MultipleCertificateObjectUpdateDto
 
 class TestMultipleCertificateObjectUpdateDto(unittest.TestCase):
     """MultipleCertificateObjectUpdateDto unit test stubs"""
@@ -45,11 +45,11 @@ class TestMultipleCertificateObjectUpdateDto(unittest.TestCase):
                     ''
                     ],
                 filters = [
-                    openapi_client.models.search_filter_request_dto.SearchFilterRequestDto(
+                    pyCZERTAINLY.models.search_filter_request_dto.SearchFilterRequestDto(
                         field_source = 'meta', 
                         field_identifier = '', 
                         condition = 'EQUALS', 
-                        value = openapi_client.models.value.value(), )
+                        value = pyCZERTAINLY.models.value.value(), )
                     ]
             )
         else:

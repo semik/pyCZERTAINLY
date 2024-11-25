@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.scheduled_jobs_response_dto import ScheduledJobsResponseDto
+from pyCZERTAINLY.models.scheduled_jobs_response_dto import ScheduledJobsResponseDto
 
 class TestScheduledJobsResponseDto(unittest.TestCase):
     """ScheduledJobsResponseDto unit test stubs"""
@@ -41,7 +41,7 @@ class TestScheduledJobsResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 scheduled_jobs = [
-                    openapi_client.models.scheduled_job_dto.ScheduledJobDto(
+                    pyCZERTAINLY.models.scheduled_job_dto.ScheduledJobDto(
                         uuid = '', 
                         job_name = '', 
                         job_type = '', 
@@ -59,7 +59,7 @@ class TestScheduledJobsResponseDto(unittest.TestCase):
                 total_pages = 56,
                 total_items = 56,
                 scheduled_jobs = [
-                    openapi_client.models.scheduled_job_dto.ScheduledJobDto(
+                    pyCZERTAINLY.models.scheduled_job_dto.ScheduledJobDto(
                         uuid = '', 
                         job_name = '', 
                         job_type = '', 

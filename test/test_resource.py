@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.resource import Resource
+from pyCZERTAINLY.models.resource import Resource
 
 class TestResource(unittest.TestCase):
     """Resource unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.pagination_request_dto import PaginationRequestDto
+from pyCZERTAINLY.models.pagination_request_dto import PaginationRequestDto
 
 class TestPaginationRequestDto(unittest.TestCase):
     """PaginationRequestDto unit test stubs"""

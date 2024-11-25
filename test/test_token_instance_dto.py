@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.token_instance_dto import TokenInstanceDto
+from pyCZERTAINLY.models.token_instance_dto import TokenInstanceDto
 
 class TestTokenInstanceDto(unittest.TestCase):
     """TokenInstanceDto unit test stubs"""

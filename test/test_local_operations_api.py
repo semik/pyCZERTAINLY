@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.local_operations_api import LocalOperationsApi
+from pyCZERTAINLY.api.local_operations_api import LocalOperationsApi
 
 
 class TestLocalOperationsApi(unittest.TestCase):

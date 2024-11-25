@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.credential_management_api import CredentialManagementApi
+from pyCZERTAINLY.api.credential_management_api import CredentialManagementApi
 
 
 class TestCredentialManagementApi(unittest.TestCase):

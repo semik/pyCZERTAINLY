@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.function_group_dto import FunctionGroupDto
+from pyCZERTAINLY.models.function_group_dto import FunctionGroupDto
 
 class TestFunctionGroupDto(unittest.TestCase):
     """FunctionGroupDto unit test stubs"""
@@ -39,7 +39,7 @@ class TestFunctionGroupDto(unittest.TestCase):
                 function_group_code = 'credentialProvider',
                 kinds = ["SoftKeyStore","Basic","ApiKey"],
                 end_points = [
-                    openapi_client.models.endpoint_dto.EndpointDto(
+                    pyCZERTAINLY.models.endpoint_dto.EndpointDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         context = '/v1', 
@@ -54,7 +54,7 @@ class TestFunctionGroupDto(unittest.TestCase):
                 function_group_code = 'credentialProvider',
                 kinds = ["SoftKeyStore","Basic","ApiKey"],
                 end_points = [
-                    openapi_client.models.endpoint_dto.EndpointDto(
+                    pyCZERTAINLY.models.endpoint_dto.EndpointDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         context = '/v1', 

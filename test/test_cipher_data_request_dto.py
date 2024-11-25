@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.cipher_data_request_dto import CipherDataRequestDto
+from pyCZERTAINLY.models.cipher_data_request_dto import CipherDataRequestDto
 
 class TestCipherDataRequestDto(unittest.TestCase):
     """CipherDataRequestDto unit test stubs"""
@@ -37,18 +37,18 @@ class TestCipherDataRequestDto(unittest.TestCase):
         if include_optional:
             return CipherDataRequestDto(
                 cipher_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 cipher_data = [
-                    openapi_client.models.cipher_request_data.CipherRequestData(
+                    pyCZERTAINLY.models.cipher_request_data.CipherRequestData(
                         data = '', 
                         identifier = 'customId', )
                     ]
@@ -56,18 +56,18 @@ class TestCipherDataRequestDto(unittest.TestCase):
         else:
             return CipherDataRequestDto(
                 cipher_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 cipher_data = [
-                    openapi_client.models.cipher_request_data.CipherRequestData(
+                    pyCZERTAINLY.models.cipher_request_data.CipherRequestData(
                         data = '', 
                         identifier = 'customId', )
                     ],

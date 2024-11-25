@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_validation_check_dto import CertificateValidationCheckDto
+from pyCZERTAINLY.models.certificate_validation_check_dto import CertificateValidationCheckDto
 
 class TestCertificateValidationCheckDto(unittest.TestCase):
     """CertificateValidationCheckDto unit test stubs"""

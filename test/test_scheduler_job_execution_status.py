@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.scheduler_job_execution_status import SchedulerJobExecutionStatus
+from pyCZERTAINLY.models.scheduler_job_execution_status import SchedulerJobExecutionStatus
 
 class TestSchedulerJobExecutionStatus(unittest.TestCase):
     """SchedulerJobExecutionStatus unit test stubs"""

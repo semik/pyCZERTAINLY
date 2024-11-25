@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.custom_attribute_definition_dto import CustomAttributeDefinitionDto
+from pyCZERTAINLY.models.custom_attribute_definition_dto import CustomAttributeDefinitionDto
 
 class TestCustomAttributeDefinitionDto(unittest.TestCase):
     """CustomAttributeDefinitionDto unit test stubs"""

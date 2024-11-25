@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.entity_management_api import EntityManagementApi
+from pyCZERTAINLY.api.entity_management_api import EntityManagementApi
 
 
 class TestEntityManagementApi(unittest.TestCase):

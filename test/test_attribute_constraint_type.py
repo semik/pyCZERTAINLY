@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.attribute_constraint_type import AttributeConstraintType
+from pyCZERTAINLY.models.attribute_constraint_type import AttributeConstraintType
 
 class TestAttributeConstraintType(unittest.TestCase):
     """AttributeConstraintType unit test stubs"""

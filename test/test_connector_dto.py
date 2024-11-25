@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.connector_dto import ConnectorDto
+from pyCZERTAINLY.models.connector_dto import ConnectorDto
 
 class TestConnectorDto(unittest.TestCase):
     """ConnectorDto unit test stubs"""
@@ -39,11 +39,11 @@ class TestConnectorDto(unittest.TestCase):
                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002',
                 name = 'Name',
                 function_groups = [
-                    openapi_client.models.function_group_dto.FunctionGroupDto(
+                    pyCZERTAINLY.models.function_group_dto.FunctionGroupDto(
                         function_group_code = 'credentialProvider', 
                         kinds = ["SoftKeyStore","Basic","ApiKey"], 
                         end_points = [
-                            openapi_client.models.endpoint_dto.EndpointDto(
+                            pyCZERTAINLY.models.endpoint_dto.EndpointDto(
                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                 name = 'Name', 
                                 context = '/v1', 
@@ -56,30 +56,30 @@ class TestConnectorDto(unittest.TestCase):
                 url = 'http://network-discovery-provider:8080',
                 auth_type = 'none',
                 auth_attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 status = 'CONNECTED',
                 custom_attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )
@@ -88,11 +88,11 @@ class TestConnectorDto(unittest.TestCase):
                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002',
                 name = 'Name',
                 function_groups = [
-                    openapi_client.models.function_group_dto.FunctionGroupDto(
+                    pyCZERTAINLY.models.function_group_dto.FunctionGroupDto(
                         function_group_code = 'credentialProvider', 
                         kinds = ["SoftKeyStore","Basic","ApiKey"], 
                         end_points = [
-                            openapi_client.models.endpoint_dto.EndpointDto(
+                            pyCZERTAINLY.models.endpoint_dto.EndpointDto(
                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                 name = 'Name', 
                                 context = '/v1', 

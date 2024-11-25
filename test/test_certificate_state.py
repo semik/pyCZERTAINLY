@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_state import CertificateState
+from pyCZERTAINLY.models.certificate_state import CertificateState
 
 class TestCertificateState(unittest.TestCase):
     """CertificateState unit test stubs"""

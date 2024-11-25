@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.filter_field_source import FilterFieldSource
+from pyCZERTAINLY.models.filter_field_source import FilterFieldSource
 
 class TestFilterFieldSource(unittest.TestCase):
     """FilterFieldSource unit test stubs"""

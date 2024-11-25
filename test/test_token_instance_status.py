@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.token_instance_status import TokenInstanceStatus
+from pyCZERTAINLY.models.token_instance_status import TokenInstanceStatus
 
 class TestTokenInstanceStatus(unittest.TestCase):
     """TokenInstanceStatus unit test stubs"""

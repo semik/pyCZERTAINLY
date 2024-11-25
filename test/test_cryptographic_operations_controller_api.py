@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.cryptographic_operations_controller_api import CryptographicOperationsControllerApi
+from pyCZERTAINLY.api.cryptographic_operations_controller_api import CryptographicOperationsControllerApi
 
 
 class TestCryptographicOperationsControllerApi(unittest.TestCase):

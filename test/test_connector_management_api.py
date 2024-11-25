@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.connector_management_api import ConnectorManagementApi
+from pyCZERTAINLY.api.connector_management_api import ConnectorManagementApi
 
 
 class TestConnectorManagementApi(unittest.TestCase):

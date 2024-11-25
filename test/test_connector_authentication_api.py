@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.connector_authentication_api import ConnectorAuthenticationApi
+from pyCZERTAINLY.api.connector_authentication_api import ConnectorAuthenticationApi
 
 
 class TestConnectorAuthenticationApi(unittest.TestCase):

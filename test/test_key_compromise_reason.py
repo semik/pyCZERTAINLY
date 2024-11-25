@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_compromise_reason import KeyCompromiseReason
+from pyCZERTAINLY.models.key_compromise_reason import KeyCompromiseReason
 
 class TestKeyCompromiseReason(unittest.TestCase):
     """KeyCompromiseReason unit test stubs"""

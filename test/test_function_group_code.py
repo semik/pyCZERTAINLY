@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.function_group_code import FunctionGroupCode
+from pyCZERTAINLY.models.function_group_code import FunctionGroupCode
 
 class TestFunctionGroupCode(unittest.TestCase):
     """FunctionGroupCode unit test stubs"""

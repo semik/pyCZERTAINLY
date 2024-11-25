@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.enum_item_dto import EnumItemDto
+from pyCZERTAINLY.models.enum_item_dto import EnumItemDto
 
 class TestEnumItemDto(unittest.TestCase):
     """EnumItemDto unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.custom_attributes_api import CustomAttributesApi
+from pyCZERTAINLY.api.custom_attributes_api import CustomAttributesApi
 
 
 class TestCustomAttributesApi(unittest.TestCase):

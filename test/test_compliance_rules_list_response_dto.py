@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_rules_list_response_dto import ComplianceRulesListResponseDto
+from pyCZERTAINLY.models.compliance_rules_list_response_dto import ComplianceRulesListResponseDto
 
 class TestComplianceRulesListResponseDto(unittest.TestCase):
     """ComplianceRulesListResponseDto unit test stubs"""
@@ -40,18 +40,18 @@ class TestComplianceRulesListResponseDto(unittest.TestCase):
                 connector_uuid = 'c35bc88c-d0ef-11ec-9d64-0242ac120003',
                 kind = 'Kind1',
                 rules = [
-                    openapi_client.models.compliance_rules_response_dto.ComplianceRulesResponseDto(
+                    pyCZERTAINLY.models.compliance_rules_response_dto.ComplianceRulesResponseDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         group_uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Rule1', 
                         certificate_type = 'X.509', 
                         attributes = [
-                            openapi_client.models.base_attribute_dto.BaseAttributeDto(
+                            pyCZERTAINLY.models.base_attribute_dto.BaseAttributeDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 description = '', 
                                 type = 'data', 
-                                content = openapi_client.models.content.content(), )
+                                content = pyCZERTAINLY.models.content.content(), )
                             ], 
                         description = 'Sample rule description', )
                     ]
@@ -62,18 +62,18 @@ class TestComplianceRulesListResponseDto(unittest.TestCase):
                 connector_uuid = 'c35bc88c-d0ef-11ec-9d64-0242ac120003',
                 kind = 'Kind1',
                 rules = [
-                    openapi_client.models.compliance_rules_response_dto.ComplianceRulesResponseDto(
+                    pyCZERTAINLY.models.compliance_rules_response_dto.ComplianceRulesResponseDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         group_uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Rule1', 
                         certificate_type = 'X.509', 
                         attributes = [
-                            openapi_client.models.base_attribute_dto.BaseAttributeDto(
+                            pyCZERTAINLY.models.base_attribute_dto.BaseAttributeDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 description = '', 
                                 type = 'data', 
-                                content = openapi_client.models.content.content(), )
+                                content = pyCZERTAINLY.models.content.content(), )
                             ], 
                         description = 'Sample rule description', )
                     ],

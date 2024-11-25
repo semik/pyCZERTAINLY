@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.attribute_mapping_dto import AttributeMappingDto
+from pyCZERTAINLY.models.attribute_mapping_dto import AttributeMappingDto
 
 class TestAttributeMappingDto(unittest.TestCase):
     """AttributeMappingDto unit test stubs"""

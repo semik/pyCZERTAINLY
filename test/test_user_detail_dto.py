@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.user_detail_dto import UserDetailDto
+from pyCZERTAINLY.models.user_detail_dto import UserDetailDto
 
 class TestUserDetailDto(unittest.TestCase):
     """UserDetailDto unit test stubs"""
@@ -43,17 +43,17 @@ class TestUserDetailDto(unittest.TestCase):
                 email = '',
                 description = '',
                 groups = [
-                    openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                    pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', )
                     ],
                 enabled = True,
                 system_user = True,
-                certificate = openapi_client.models.user_certificate_dto.UserCertificateDto(
+                certificate = pyCZERTAINLY.models.user_certificate_dto.UserCertificateDto(
                     uuid = '', 
                     fingerprint = '', ),
                 roles = [
-                    openapi_client.models.role_dto.RoleDto(
+                    pyCZERTAINLY.models.role_dto.RoleDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
@@ -61,16 +61,16 @@ class TestUserDetailDto(unittest.TestCase):
                         system_role = True, )
                     ],
                 custom_attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )
@@ -79,14 +79,14 @@ class TestUserDetailDto(unittest.TestCase):
                 uuid = '5b5f0784-2519-11ed-861d-0242ac120002',
                 username = 'user1',
                 groups = [
-                    openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                    pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', )
                     ],
                 enabled = True,
                 system_user = True,
                 roles = [
-                    openapi_client.models.role_dto.RoleDto(
+                    pyCZERTAINLY.models.role_dto.RoleDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.encrypt_data_response_dto import EncryptDataResponseDto
+from pyCZERTAINLY.models.encrypt_data_response_dto import EncryptDataResponseDto
 
 class TestEncryptDataResponseDto(unittest.TestCase):
     """EncryptDataResponseDto unit test stubs"""
@@ -37,19 +37,19 @@ class TestEncryptDataResponseDto(unittest.TestCase):
         if include_optional:
             return EncryptDataResponseDto(
                 encrypted_data = [
-                    openapi_client.models.cipher_response_data.CipherResponseData(
+                    pyCZERTAINLY.models.cipher_response_data.CipherResponseData(
                         data = '', 
                         identifier = 'customId', 
-                        details = openapi_client.models.details.details(), )
+                        details = pyCZERTAINLY.models.details.details(), )
                     ]
             )
         else:
             return EncryptDataResponseDto(
                 encrypted_data = [
-                    openapi_client.models.cipher_response_data.CipherResponseData(
+                    pyCZERTAINLY.models.cipher_response_data.CipherResponseData(
                         data = '', 
                         identifier = 'customId', 
-                        details = openapi_client.models.details.details(), )
+                        details = pyCZERTAINLY.models.details.details(), )
                     ],
         )
         """

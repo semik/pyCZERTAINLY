@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.role_permissions_request_dto import RolePermissionsRequestDto
+from pyCZERTAINLY.models.role_permissions_request_dto import RolePermissionsRequestDto
 
 class TestRolePermissionsRequestDto(unittest.TestCase):
     """RolePermissionsRequestDto unit test stubs"""
@@ -38,14 +38,14 @@ class TestRolePermissionsRequestDto(unittest.TestCase):
             return RolePermissionsRequestDto(
                 allow_all_resources = True,
                 resources = [
-                    openapi_client.models.resource_permissions_request_dto.ResourcePermissionsRequestDto(
+                    pyCZERTAINLY.models.resource_permissions_request_dto.ResourcePermissionsRequestDto(
                         name = '', 
                         allow_all_actions = True, 
                         actions = [
                             ''
                             ], 
                         objects = [
-                            openapi_client.models.object_permissions_request_dto.ObjectPermissionsRequestDto(
+                            pyCZERTAINLY.models.object_permissions_request_dto.ObjectPermissionsRequestDto(
                                 uuid = '', 
                                 name = '', 
                                 allow = [

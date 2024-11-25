@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_group_request_dto import ComplianceGroupRequestDto
+from pyCZERTAINLY.models.compliance_group_request_dto import ComplianceGroupRequestDto
 
 class TestComplianceGroupRequestDto(unittest.TestCase):
     """ComplianceGroupRequestDto unit test stubs"""

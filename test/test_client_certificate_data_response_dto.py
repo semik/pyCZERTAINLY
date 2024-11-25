@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
+from pyCZERTAINLY.models.client_certificate_data_response_dto import ClientCertificateDataResponseDto
 
 class TestClientCertificateDataResponseDto(unittest.TestCase):
     """ClientCertificateDataResponseDto unit test stubs"""

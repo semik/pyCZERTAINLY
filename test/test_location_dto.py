@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.location_dto import LocationDto
+from pyCZERTAINLY.models.location_dto import LocationDto
 
 class TestLocationDto(unittest.TestCase):
     """LocationDto unit test stubs"""
@@ -42,67 +42,67 @@ class TestLocationDto(unittest.TestCase):
                 entity_instance_uuid = '',
                 entity_instance_name = '',
                 attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 custom_attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 enabled = True,
                 support_multiple_entries = True,
                 support_key_management = True,
                 certificates = [
-                    openapi_client.models.certificate_in_location_dto.CertificateInLocationDto(
+                    pyCZERTAINLY.models.certificate_in_location_dto.CertificateInLocationDto(
                         certificate_uuid = '', 
                         state = 'requested', 
                         validation_status = 'not_checked', 
                         common_name = '', 
                         serial_number = '', 
                         metadata = [
-                            openapi_client.models.metadata_response_dto.MetadataResponseDto(
+                            pyCZERTAINLY.models.metadata_response_dto.MetadataResponseDto(
                                 connector_uuid = '', 
                                 connector_name = '', 
                                 source_object_type = 'NONE', 
                                 items = [
-                                    openapi_client.models.response_metadata_dto.ResponseMetadataDto(
+                                    pyCZERTAINLY.models.response_metadata_dto.ResponseMetadataDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
                                         type = 'data', 
                                         content_type = 'string', 
                                         content = [
-                                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                                 reference = '', 
-                                                data = openapi_client.models.data.data(), )
+                                                data = pyCZERTAINLY.models.data.data(), )
                                             ], 
                                         source_objects = [
-                                            openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                                            pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                                 name = 'Name', )
                                             ], )
                                     ], )
                             ], 
                         push_attributes = [
-                            openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                            pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 label = 'Attribute Name', 
@@ -110,7 +110,7 @@ class TestLocationDto(unittest.TestCase):
                                 content_type = 'string', )
                             ], 
                         csr_attributes = [
-                            openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                            pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 label = 'Attribute Name', 
@@ -120,24 +120,24 @@ class TestLocationDto(unittest.TestCase):
                         with_key = True, )
                     ],
                 metadata = [
-                    openapi_client.models.metadata_response_dto.MetadataResponseDto(
+                    pyCZERTAINLY.models.metadata_response_dto.MetadataResponseDto(
                         connector_uuid = '', 
                         connector_name = '', 
                         source_object_type = 'NONE', 
                         items = [
-                            openapi_client.models.response_metadata_dto.ResponseMetadataDto(
+                            pyCZERTAINLY.models.response_metadata_dto.ResponseMetadataDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 label = 'Attribute Name', 
                                 type = 'data', 
                                 content_type = 'string', 
                                 content = [
-                                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                         reference = '', 
-                                        data = openapi_client.models.data.data(), )
+                                        data = pyCZERTAINLY.models.data.data(), )
                                     ], 
                                 source_objects = [
-                                    openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                                    pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                         name = 'Name', )
                                     ], )
@@ -151,54 +151,54 @@ class TestLocationDto(unittest.TestCase):
                 entity_instance_uuid = '',
                 entity_instance_name = '',
                 attributes = [
-                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         label = 'Attribute Name', 
                         type = 'data', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 enabled = True,
                 support_multiple_entries = True,
                 support_key_management = True,
                 certificates = [
-                    openapi_client.models.certificate_in_location_dto.CertificateInLocationDto(
+                    pyCZERTAINLY.models.certificate_in_location_dto.CertificateInLocationDto(
                         certificate_uuid = '', 
                         state = 'requested', 
                         validation_status = 'not_checked', 
                         common_name = '', 
                         serial_number = '', 
                         metadata = [
-                            openapi_client.models.metadata_response_dto.MetadataResponseDto(
+                            pyCZERTAINLY.models.metadata_response_dto.MetadataResponseDto(
                                 connector_uuid = '', 
                                 connector_name = '', 
                                 source_object_type = 'NONE', 
                                 items = [
-                                    openapi_client.models.response_metadata_dto.ResponseMetadataDto(
+                                    pyCZERTAINLY.models.response_metadata_dto.ResponseMetadataDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
                                         type = 'data', 
                                         content_type = 'string', 
                                         content = [
-                                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                                 reference = '', 
-                                                data = openapi_client.models.data.data(), )
+                                                data = pyCZERTAINLY.models.data.data(), )
                                             ], 
                                         source_objects = [
-                                            openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                                            pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                                 name = 'Name', )
                                             ], )
                                     ], )
                             ], 
                         push_attributes = [
-                            openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                            pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 label = 'Attribute Name', 
@@ -206,7 +206,7 @@ class TestLocationDto(unittest.TestCase):
                                 content_type = 'string', )
                             ], 
                         csr_attributes = [
-                            openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                            pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 label = 'Attribute Name', 

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_algorithm import KeyAlgorithm
+from pyCZERTAINLY.models.key_algorithm import KeyAlgorithm
 
 class TestKeyAlgorithm(unittest.TestCase):
     """KeyAlgorithm unit test stubs"""

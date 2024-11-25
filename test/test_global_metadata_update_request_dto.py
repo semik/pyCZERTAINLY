@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.global_metadata_update_request_dto import GlobalMetadataUpdateRequestDto
+from pyCZERTAINLY.models.global_metadata_update_request_dto import GlobalMetadataUpdateRequestDto
 
 class TestGlobalMetadataUpdateRequestDto(unittest.TestCase):
     """GlobalMetadataUpdateRequestDto unit test stubs"""

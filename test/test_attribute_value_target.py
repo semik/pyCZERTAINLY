@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.attribute_value_target import AttributeValueTarget
+from pyCZERTAINLY.models.attribute_value_target import AttributeValueTarget
 
 class TestAttributeValueTarget(unittest.TestCase):
     """AttributeValueTarget unit test stubs"""

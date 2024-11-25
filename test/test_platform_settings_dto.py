@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.platform_settings_dto import PlatformSettingsDto
+from pyCZERTAINLY.models.platform_settings_dto import PlatformSettingsDto
 
 class TestPlatformSettingsDto(unittest.TestCase):
     """PlatformSettingsDto unit test stubs"""
@@ -36,12 +36,12 @@ class TestPlatformSettingsDto(unittest.TestCase):
         model = PlatformSettingsDto()
         if include_optional:
             return PlatformSettingsDto(
-                utils = openapi_client.models.utils_settings_dto.UtilsSettingsDto(
+                utils = pyCZERTAINLY.models.utils_settings_dto.UtilsSettingsDto(
                     utils_service_url = 'http://util-service:8080', )
             )
         else:
             return PlatformSettingsDto(
-                utils = openapi_client.models.utils_settings_dto.UtilsSettingsDto(
+                utils = pyCZERTAINLY.models.utils_settings_dto.UtilsSettingsDto(
                     utils_service_url = 'http://util-service:8080', ),
         )
         """

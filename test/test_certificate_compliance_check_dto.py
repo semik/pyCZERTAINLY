@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_compliance_check_dto import CertificateComplianceCheckDto
+from pyCZERTAINLY.models.certificate_compliance_check_dto import CertificateComplianceCheckDto
 
 class TestCertificateComplianceCheckDto(unittest.TestCase):
     """CertificateComplianceCheckDto unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.workflow_actions_management_api import WorkflowActionsManagementApi
+from pyCZERTAINLY.api.workflow_actions_management_api import WorkflowActionsManagementApi
 
 
 class TestWorkflowActionsManagementApi(unittest.TestCase):

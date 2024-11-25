@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.object_attribute_content import ObjectAttributeContent
+from pyCZERTAINLY.models.object_attribute_content import ObjectAttributeContent
 
 class TestObjectAttributeContent(unittest.TestCase):
     """ObjectAttributeContent unit test stubs"""
@@ -37,11 +37,11 @@ class TestObjectAttributeContent(unittest.TestCase):
         if include_optional:
             return ObjectAttributeContent(
                 reference = '',
-                data = openapi_client.models.data.data()
+                data = pyCZERTAINLY.models.data.data()
             )
         else:
             return ObjectAttributeContent(
-                data = openapi_client.models.data.data(),
+                data = pyCZERTAINLY.models.data.data(),
         )
         """
 

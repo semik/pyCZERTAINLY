@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.cmp_profile_management_api import CMPProfileManagementApi
+from pyCZERTAINLY.api.cmp_profile_management_api import CMPProfileManagementApi
 
 
 class TestCMPProfileManagementApi(unittest.TestCase):

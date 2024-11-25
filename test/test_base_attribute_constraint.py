@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.base_attribute_constraint import BaseAttributeConstraint
+from pyCZERTAINLY.models.base_attribute_constraint import BaseAttributeConstraint
 
 class TestBaseAttributeConstraint(unittest.TestCase):
     """BaseAttributeConstraint unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.certificate_key_group_api import CertificateKeyGroupApi
+from pyCZERTAINLY.api.certificate_key_group_api import CertificateKeyGroupApi
 
 
 class TestCertificateKeyGroupApi(unittest.TestCase):

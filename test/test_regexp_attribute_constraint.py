@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.regexp_attribute_constraint import RegexpAttributeConstraint
+from pyCZERTAINLY.models.regexp_attribute_constraint import RegexpAttributeConstraint
 
 class TestRegexpAttributeConstraint(unittest.TestCase):
     """RegexpAttributeConstraint unit test stubs"""

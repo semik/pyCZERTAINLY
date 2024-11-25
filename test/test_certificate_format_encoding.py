@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_format_encoding import CertificateFormatEncoding
+from pyCZERTAINLY.models.certificate_format_encoding import CertificateFormatEncoding
 
 class TestCertificateFormatEncoding(unittest.TestCase):
     """CertificateFormatEncoding unit test stubs"""

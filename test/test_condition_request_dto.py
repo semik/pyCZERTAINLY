@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.condition_request_dto import ConditionRequestDto
+from pyCZERTAINLY.models.condition_request_dto import ConditionRequestDto
 
 class TestConditionRequestDto(unittest.TestCase):
     """ConditionRequestDto unit test stubs"""
@@ -41,11 +41,11 @@ class TestConditionRequestDto(unittest.TestCase):
                 type = 'checkField',
                 resource = 'NONE',
                 items = [
-                    openapi_client.models.condition_item_request_dto.ConditionItemRequestDto(
+                    pyCZERTAINLY.models.condition_item_request_dto.ConditionItemRequestDto(
                         field_source = 'meta', 
                         field_identifier = '', 
                         operator = 'EQUALS', 
-                        value = openapi_client.models.value.value(), )
+                        value = pyCZERTAINLY.models.value.value(), )
                     ]
             )
         else:
@@ -54,11 +54,11 @@ class TestConditionRequestDto(unittest.TestCase):
                 type = 'checkField',
                 resource = 'NONE',
                 items = [
-                    openapi_client.models.condition_item_request_dto.ConditionItemRequestDto(
+                    pyCZERTAINLY.models.condition_item_request_dto.ConditionItemRequestDto(
                         field_source = 'meta', 
                         field_identifier = '', 
                         operator = 'EQUALS', 
-                        value = openapi_client.models.value.value(), )
+                        value = pyCZERTAINLY.models.value.value(), )
                     ],
         )
         """

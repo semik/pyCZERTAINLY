@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.error_message_dto import ErrorMessageDto
+from pyCZERTAINLY.models.error_message_dto import ErrorMessageDto
 
 class TestErrorMessageDto(unittest.TestCase):
     """ErrorMessageDto unit test stubs"""

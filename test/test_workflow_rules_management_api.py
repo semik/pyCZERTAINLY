@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.workflow_rules_management_api import WorkflowRulesManagementApi
+from pyCZERTAINLY.api.workflow_rules_management_api import WorkflowRulesManagementApi
 
 
 class TestWorkflowRulesManagementApi(unittest.TestCase):

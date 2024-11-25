@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_rules_response_dto import ComplianceRulesResponseDto
+from pyCZERTAINLY.models.compliance_rules_response_dto import ComplianceRulesResponseDto
 
 class TestComplianceRulesResponseDto(unittest.TestCase):
     """ComplianceRulesResponseDto unit test stubs"""
@@ -41,12 +41,12 @@ class TestComplianceRulesResponseDto(unittest.TestCase):
                 name = 'Rule1',
                 certificate_type = 'X.509',
                 attributes = [
-                    openapi_client.models.base_attribute_dto.BaseAttributeDto(
+                    pyCZERTAINLY.models.base_attribute_dto.BaseAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         description = '', 
                         type = 'data', 
-                        content = openapi_client.models.content.content(), )
+                        content = pyCZERTAINLY.models.content.content(), )
                     ],
                 description = 'Sample rule description'
             )

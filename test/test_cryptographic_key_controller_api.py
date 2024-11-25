@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.cryptographic_key_controller_api import CryptographicKeyControllerApi
+from pyCZERTAINLY.api.cryptographic_key_controller_api import CryptographicKeyControllerApi
 
 
 class TestCryptographicKeyControllerApi(unittest.TestCase):

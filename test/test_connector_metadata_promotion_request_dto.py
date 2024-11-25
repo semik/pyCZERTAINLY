@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.connector_metadata_promotion_request_dto import ConnectorMetadataPromotionRequestDto
+from pyCZERTAINLY.models.connector_metadata_promotion_request_dto import ConnectorMetadataPromotionRequestDto
 
 class TestConnectorMetadataPromotionRequestDto(unittest.TestCase):
     """ConnectorMetadataPromotionRequestDto unit test stubs"""

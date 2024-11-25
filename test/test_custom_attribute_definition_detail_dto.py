@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.custom_attribute_definition_detail_dto import CustomAttributeDefinitionDetailDto
+from pyCZERTAINLY.models.custom_attribute_definition_detail_dto import CustomAttributeDefinitionDetailDto
 
 class TestCustomAttributeDefinitionDetailDto(unittest.TestCase):
     """CustomAttributeDefinitionDetailDto unit test stubs"""
@@ -50,9 +50,9 @@ class TestCustomAttributeDefinitionDetailDto(unittest.TestCase):
                 list = True,
                 multi_select = True,
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
                 resources = [
                     'NONE'

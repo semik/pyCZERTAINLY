@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.search_filter_request_dto import SearchFilterRequestDto
+from pyCZERTAINLY.models.search_filter_request_dto import SearchFilterRequestDto
 
 class TestSearchFilterRequestDto(unittest.TestCase):
     """SearchFilterRequestDto unit test stubs"""

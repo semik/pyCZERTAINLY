@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.filter_condition_operator import FilterConditionOperator
+from pyCZERTAINLY.models.filter_condition_operator import FilterConditionOperator
 
 class TestFilterConditionOperator(unittest.TestCase):
     """FilterConditionOperator unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.trigger_type import TriggerType
+from pyCZERTAINLY.models.trigger_type import TriggerType
 
 class TestTriggerType(unittest.TestCase):
     """TriggerType unit test stubs"""

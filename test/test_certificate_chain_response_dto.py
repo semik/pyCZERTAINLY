@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_chain_response_dto import CertificateChainResponseDto
+from pyCZERTAINLY.models.certificate_chain_response_dto import CertificateChainResponseDto
 
 class TestCertificateChainResponseDto(unittest.TestCase):
     """CertificateChainResponseDto unit test stubs"""
@@ -38,7 +38,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
             return CertificateChainResponseDto(
                 complete_chain = True,
                 certificates = [
-                    openapi_client.models.certificate_detail_dto.CertificateDetailDto(
+                    pyCZERTAINLY.models.certificate_detail_dto.CertificateDetailDto(
                         uuid = '', 
                         common_name = '', 
                         serial_number = '', 
@@ -52,29 +52,29 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                         key_size = 56, 
                         state = 'requested', 
                         validation_status = 'not_checked', 
-                        ra_profile = openapi_client.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
+                        ra_profile = pyCZERTAINLY.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             enabled = True, 
                             authority_instance_uuid = '', ), 
                         fingerprint = '', 
                         groups = [
-                            openapi_client.models.group_dto.GroupDto(
+                            pyCZERTAINLY.models.group_dto.GroupDto(
                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                 name = 'Name', 
                                 description = '', 
                                 email = '', 
                                 custom_attributes = [
-                                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
                                         type = 'data', 
                                         content_type = 'string', 
                                         content = [
-                                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                                 reference = '', 
-                                                data = openapi_client.models.data.data(), )
+                                                data = pyCZERTAINLY.models.data.data(), )
                                             ], )
                                     ], )
                             ], 
@@ -94,19 +94,19 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                             ], 
                         subject_type = 'endEntity', 
                         metadata = [
-                            openapi_client.models.metadata_response_dto.MetadataResponseDto(
+                            pyCZERTAINLY.models.metadata_response_dto.MetadataResponseDto(
                                 connector_uuid = '', 
                                 connector_name = '', 
                                 source_object_type = 'NONE', 
                                 items = [
-                                    openapi_client.models.response_metadata_dto.ResponseMetadataDto(
+                                    pyCZERTAINLY.models.response_metadata_dto.ResponseMetadataDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
                                         type = 'data', 
                                         content_type = 'string', 
                                         source_objects = [
-                                            openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                                            pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                                 name = 'Name', )
                                             ], )
@@ -117,14 +117,14 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                             'key' : None
                             }, 
                         locations = [
-                            openapi_client.models.location_dto.LocationDto(
+                            pyCZERTAINLY.models.location_dto.LocationDto(
                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                 name = 'Name', 
                                 description = '', 
                                 entity_instance_uuid = '', 
                                 entity_instance_name = '', 
                                 attributes = [
-                                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
@@ -135,7 +135,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                                 support_multiple_entries = True, 
                                 support_key_management = True, 
                                 certificates = [
-                                    openapi_client.models.certificate_in_location_dto.CertificateInLocationDto(
+                                    pyCZERTAINLY.models.certificate_in_location_dto.CertificateInLocationDto(
                                         certificate_uuid = '', 
                                         state = 'requested', 
                                         validation_status = 'not_checked', 
@@ -151,7 +151,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                                     ], )
                             ], 
                         non_compliant_rules = [
-                            openapi_client.models.certificate_compliance_result_dto.CertificateComplianceResultDto(
+                            pyCZERTAINLY.models.certificate_compliance_result_dto.CertificateComplianceResultDto(
                                 connector_name = 'Provider1', 
                                 rule_name = 'RuleName', 
                                 rule_description = 'Description sample', 
@@ -160,7 +160,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                         custom_attributes = [
                             
                             ], 
-                        key = openapi_client.models.key_dto.KeyDto(
+                        key = pyCZERTAINLY.models.key_dto.KeyDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             description = '', 
@@ -172,7 +172,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                             owner = '', 
                             owner_uuid = '', 
                             items = [
-                                openapi_client.models.key_item_dto.KeyItemDto(
+                                pyCZERTAINLY.models.key_item_dto.KeyItemDto(
                                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                     name = 'Name', 
                                     description = '', 
@@ -197,7 +197,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                                     state = 'pre-active', )
                                 ], 
                             associations = 56, ), 
-                        certificate_request = openapi_client.models.certificate_request_dto.CertificateRequestDto(
+                        certificate_request = pyCZERTAINLY.models.certificate_request_dto.CertificateRequestDto(
                             certificate_request_format = 'pkcs10', 
                             public_key_algorithm = '', 
                             signature_algorithm = '', 
@@ -215,7 +215,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                             
                             ], 
                         related_certificates = [
-                            openapi_client.models.certificate_dto.CertificateDto(
+                            pyCZERTAINLY.models.certificate_dto.CertificateDto(
                                 uuid = '', 
                                 common_name = '', 
                                 serial_number = '', 
@@ -237,7 +237,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                                 private_key_availability = True, 
                                 trusted_ca = True, )
                             ], 
-                        protocol_info = openapi_client.models.certificate_protocol_dto.CertificateProtocolDto(
+                        protocol_info = pyCZERTAINLY.models.certificate_protocol_dto.CertificateProtocolDto(
                             protocol = 'acme', 
                             protocol_profile_uuid = '', 
                             additional_protocol_uuid = '', ), )
@@ -247,7 +247,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
             return CertificateChainResponseDto(
                 complete_chain = True,
                 certificates = [
-                    openapi_client.models.certificate_detail_dto.CertificateDetailDto(
+                    pyCZERTAINLY.models.certificate_detail_dto.CertificateDetailDto(
                         uuid = '', 
                         common_name = '', 
                         serial_number = '', 
@@ -261,29 +261,29 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                         key_size = 56, 
                         state = 'requested', 
                         validation_status = 'not_checked', 
-                        ra_profile = openapi_client.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
+                        ra_profile = pyCZERTAINLY.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             enabled = True, 
                             authority_instance_uuid = '', ), 
                         fingerprint = '', 
                         groups = [
-                            openapi_client.models.group_dto.GroupDto(
+                            pyCZERTAINLY.models.group_dto.GroupDto(
                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                 name = 'Name', 
                                 description = '', 
                                 email = '', 
                                 custom_attributes = [
-                                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
                                         type = 'data', 
                                         content_type = 'string', 
                                         content = [
-                                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                                 reference = '', 
-                                                data = openapi_client.models.data.data(), )
+                                                data = pyCZERTAINLY.models.data.data(), )
                                             ], )
                                     ], )
                             ], 
@@ -303,19 +303,19 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                             ], 
                         subject_type = 'endEntity', 
                         metadata = [
-                            openapi_client.models.metadata_response_dto.MetadataResponseDto(
+                            pyCZERTAINLY.models.metadata_response_dto.MetadataResponseDto(
                                 connector_uuid = '', 
                                 connector_name = '', 
                                 source_object_type = 'NONE', 
                                 items = [
-                                    openapi_client.models.response_metadata_dto.ResponseMetadataDto(
+                                    pyCZERTAINLY.models.response_metadata_dto.ResponseMetadataDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
                                         type = 'data', 
                                         content_type = 'string', 
                                         source_objects = [
-                                            openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                                            pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                                 name = 'Name', )
                                             ], )
@@ -326,14 +326,14 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                             'key' : None
                             }, 
                         locations = [
-                            openapi_client.models.location_dto.LocationDto(
+                            pyCZERTAINLY.models.location_dto.LocationDto(
                                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                 name = 'Name', 
                                 description = '', 
                                 entity_instance_uuid = '', 
                                 entity_instance_name = '', 
                                 attributes = [
-                                    openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                                    pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                         name = 'Attribute', 
                                         label = 'Attribute Name', 
@@ -344,7 +344,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                                 support_multiple_entries = True, 
                                 support_key_management = True, 
                                 certificates = [
-                                    openapi_client.models.certificate_in_location_dto.CertificateInLocationDto(
+                                    pyCZERTAINLY.models.certificate_in_location_dto.CertificateInLocationDto(
                                         certificate_uuid = '', 
                                         state = 'requested', 
                                         validation_status = 'not_checked', 
@@ -360,7 +360,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                                     ], )
                             ], 
                         non_compliant_rules = [
-                            openapi_client.models.certificate_compliance_result_dto.CertificateComplianceResultDto(
+                            pyCZERTAINLY.models.certificate_compliance_result_dto.CertificateComplianceResultDto(
                                 connector_name = 'Provider1', 
                                 rule_name = 'RuleName', 
                                 rule_description = 'Description sample', 
@@ -369,7 +369,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                         custom_attributes = [
                             
                             ], 
-                        key = openapi_client.models.key_dto.KeyDto(
+                        key = pyCZERTAINLY.models.key_dto.KeyDto(
                             uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                             name = 'Name', 
                             description = '', 
@@ -381,7 +381,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                             owner = '', 
                             owner_uuid = '', 
                             items = [
-                                openapi_client.models.key_item_dto.KeyItemDto(
+                                pyCZERTAINLY.models.key_item_dto.KeyItemDto(
                                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                                     name = 'Name', 
                                     description = '', 
@@ -406,7 +406,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                                     state = 'pre-active', )
                                 ], 
                             associations = 56, ), 
-                        certificate_request = openapi_client.models.certificate_request_dto.CertificateRequestDto(
+                        certificate_request = pyCZERTAINLY.models.certificate_request_dto.CertificateRequestDto(
                             certificate_request_format = 'pkcs10', 
                             public_key_algorithm = '', 
                             signature_algorithm = '', 
@@ -424,7 +424,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                             
                             ], 
                         related_certificates = [
-                            openapi_client.models.certificate_dto.CertificateDto(
+                            pyCZERTAINLY.models.certificate_dto.CertificateDto(
                                 uuid = '', 
                                 common_name = '', 
                                 serial_number = '', 
@@ -446,7 +446,7 @@ class TestCertificateChainResponseDto(unittest.TestCase):
                                 private_key_availability = True, 
                                 trusted_ca = True, )
                             ], 
-                        protocol_info = openapi_client.models.certificate_protocol_dto.CertificateProtocolDto(
+                        protocol_info = pyCZERTAINLY.models.certificate_protocol_dto.CertificateProtocolDto(
                             protocol = 'acme', 
                             protocol_profile_uuid = '', 
                             additional_protocol_uuid = '', ), )

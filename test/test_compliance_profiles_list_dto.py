@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_profiles_list_dto import ComplianceProfilesListDto
+from pyCZERTAINLY.models.compliance_profiles_list_dto import ComplianceProfilesListDto
 
 class TestComplianceProfilesListDto(unittest.TestCase):
     """ComplianceProfilesListDto unit test stubs"""
@@ -40,7 +40,7 @@ class TestComplianceProfilesListDto(unittest.TestCase):
                 name = 'Name',
                 description = '',
                 rules = [
-                    openapi_client.models.compliance_provider_summary_dto.ComplianceProviderSummaryDto(
+                    pyCZERTAINLY.models.compliance_provider_summary_dto.ComplianceProviderSummaryDto(
                         connector_name = '', 
                         number_of_rules = 56, 
                         number_of_groups = 56, )
@@ -51,7 +51,7 @@ class TestComplianceProfilesListDto(unittest.TestCase):
                 uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002',
                 name = 'Name',
                 rules = [
-                    openapi_client.models.compliance_provider_summary_dto.ComplianceProviderSummaryDto(
+                    pyCZERTAINLY.models.compliance_provider_summary_dto.ComplianceProviderSummaryDto(
                         connector_name = '', 
                         number_of_rules = 56, 
                         number_of_groups = 56, )

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.scep_profile_management_api import SCEPProfileManagementApi
+from pyCZERTAINLY.api.scep_profile_management_api import SCEPProfileManagementApi
 
 
 class TestSCEPProfileManagementApi(unittest.TestCase):

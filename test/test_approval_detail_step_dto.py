@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.approval_detail_step_dto import ApprovalDetailStepDto
+from pyCZERTAINLY.models.approval_detail_step_dto import ApprovalDetailStepDto
 
 class TestApprovalDetailStepDto(unittest.TestCase):
     """ApprovalDetailStepDto unit test stubs"""
@@ -47,7 +47,7 @@ class TestApprovalDetailStepDto(unittest.TestCase):
                 role_name = '',
                 group_name = '',
                 approval_step_recipients = [
-                    openapi_client.models.approval_step_recipient_dto.ApprovalStepRecipientDto(
+                    pyCZERTAINLY.models.approval_step_recipient_dto.ApprovalStepRecipientDto(
                         approval_recipient_uuid = '', 
                         user_uuid = '', 
                         username = '', 
@@ -62,7 +62,7 @@ class TestApprovalDetailStepDto(unittest.TestCase):
                 order = 56,
                 uuid = '',
                 approval_step_recipients = [
-                    openapi_client.models.approval_step_recipient_dto.ApprovalStepRecipientDto(
+                    pyCZERTAINLY.models.approval_step_recipient_dto.ApprovalStepRecipientDto(
                         approval_recipient_uuid = '', 
                         user_uuid = '', 
                         username = '', 

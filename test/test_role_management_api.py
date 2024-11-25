@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.role_management_api import RoleManagementApi
+from pyCZERTAINLY.api.role_management_api import RoleManagementApi
 
 
 class TestRoleManagementApi(unittest.TestCase):

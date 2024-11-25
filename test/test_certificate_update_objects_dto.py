@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_update_objects_dto import CertificateUpdateObjectsDto
+from pyCZERTAINLY.models.certificate_update_objects_dto import CertificateUpdateObjectsDto
 
 class TestCertificateUpdateObjectsDto(unittest.TestCase):
     """CertificateUpdateObjectsDto unit test stubs"""

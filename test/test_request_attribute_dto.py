@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.request_attribute_dto import RequestAttributeDto
+from pyCZERTAINLY.models.request_attribute_dto import RequestAttributeDto
 
 class TestRequestAttributeDto(unittest.TestCase):
     """RequestAttributeDto unit test stubs"""
@@ -40,9 +40,9 @@ class TestRequestAttributeDto(unittest.TestCase):
                 name = 'Attribute',
                 content_type = 'string',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ]
             )
         else:
@@ -51,9 +51,9 @@ class TestRequestAttributeDto(unittest.TestCase):
                 name = 'Attribute',
                 content_type = 'string',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
         )
         """

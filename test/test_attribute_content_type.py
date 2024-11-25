@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.attribute_content_type import AttributeContentType
+from pyCZERTAINLY.models.attribute_content_type import AttributeContentType
 
 class TestAttributeContentType(unittest.TestCase):
     """AttributeContentType unit test stubs"""

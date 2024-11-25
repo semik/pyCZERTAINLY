@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_usage import KeyUsage
+from pyCZERTAINLY.models.key_usage import KeyUsage
 
 class TestKeyUsage(unittest.TestCase):
     """KeyUsage unit test stubs"""

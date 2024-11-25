@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.attribute_callback import AttributeCallback
+from pyCZERTAINLY.models.attribute_callback import AttributeCallback
 
 class TestAttributeCallback(unittest.TestCase):
     """AttributeCallback unit test stubs"""
@@ -39,7 +39,7 @@ class TestAttributeCallback(unittest.TestCase):
                 callback_context = '',
                 callback_method = '',
                 mappings = [
-                    openapi_client.models.attribute_callback_mapping.AttributeCallbackMapping(
+                    pyCZERTAINLY.models.attribute_callback_mapping.AttributeCallbackMapping(
                         from = '', 
                         attribute_type = 'data', 
                         attribute_content_type = 'string', 
@@ -47,7 +47,7 @@ class TestAttributeCallback(unittest.TestCase):
                         targets = [
                             'pathVariable'
                             ], 
-                        value = openapi_client.models.value.value(), )
+                        value = pyCZERTAINLY.models.value.value(), )
                     ]
             )
         else:
@@ -55,7 +55,7 @@ class TestAttributeCallback(unittest.TestCase):
                 callback_context = '',
                 callback_method = '',
                 mappings = [
-                    openapi_client.models.attribute_callback_mapping.AttributeCallbackMapping(
+                    pyCZERTAINLY.models.attribute_callback_mapping.AttributeCallbackMapping(
                         from = '', 
                         attribute_type = 'data', 
                         attribute_content_type = 'string', 
@@ -63,7 +63,7 @@ class TestAttributeCallback(unittest.TestCase):
                         targets = [
                             'pathVariable'
                             ], 
-                        value = openapi_client.models.value.value(), )
+                        value = pyCZERTAINLY.models.value.value(), )
                     ],
         )
         """

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.ra_profile_association_request_dto import RaProfileAssociationRequestDto
+from pyCZERTAINLY.models.ra_profile_association_request_dto import RaProfileAssociationRequestDto
 
 class TestRaProfileAssociationRequestDto(unittest.TestCase):
     """RaProfileAssociationRequestDto unit test stubs"""

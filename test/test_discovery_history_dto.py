@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.discovery_history_dto import DiscoveryHistoryDto
+from pyCZERTAINLY.models.discovery_history_dto import DiscoveryHistoryDto
 
 class TestDiscoveryHistoryDto(unittest.TestCase):
     """DiscoveryHistoryDto unit test stubs"""

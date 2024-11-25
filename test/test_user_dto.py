@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.user_dto import UserDto
+from pyCZERTAINLY.models.user_dto import UserDto
 
 class TestUserDto(unittest.TestCase):
     """UserDto unit test stubs"""
@@ -43,7 +43,7 @@ class TestUserDto(unittest.TestCase):
                 email = '',
                 description = '',
                 groups = [
-                    openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                    pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', )
                     ],
@@ -55,7 +55,7 @@ class TestUserDto(unittest.TestCase):
                 uuid = '5b5f0784-2519-11ed-861d-0242ac120002',
                 username = 'user1',
                 groups = [
-                    openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                    pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', )
                     ],

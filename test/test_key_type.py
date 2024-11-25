@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_type import KeyType
+from pyCZERTAINLY.models.key_type import KeyType
 
 class TestKeyType(unittest.TestCase):
     """KeyType unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.code_block_attribute_content_data import CodeBlockAttributeContentData
+from pyCZERTAINLY.models.code_block_attribute_content_data import CodeBlockAttributeContentData
 
 class TestCodeBlockAttributeContentData(unittest.TestCase):
     """CodeBlockAttributeContentData unit test stubs"""

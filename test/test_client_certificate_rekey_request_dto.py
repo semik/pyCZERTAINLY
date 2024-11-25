@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.client_certificate_rekey_request_dto import ClientCertificateRekeyRequestDto
+from pyCZERTAINLY.models.client_certificate_rekey_request_dto import ClientCertificateRekeyRequestDto
 
 class TestClientCertificateRekeyRequestDto(unittest.TestCase):
     """ClientCertificateRekeyRequestDto unit test stubs"""
@@ -42,14 +42,14 @@ class TestClientCertificateRekeyRequestDto(unittest.TestCase):
                 key_uuid = '',
                 token_profile_uuid = '',
                 signature_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )

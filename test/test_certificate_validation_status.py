@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_validation_status import CertificateValidationStatus
+from pyCZERTAINLY.models.certificate_validation_status import CertificateValidationStatus
 
 class TestCertificateValidationStatus(unittest.TestCase):
     """CertificateValidationStatus unit test stubs"""

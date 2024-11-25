@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.auth_resource_dto import AuthResourceDto
+from pyCZERTAINLY.models.auth_resource_dto import AuthResourceDto
 
 class TestAuthResourceDto(unittest.TestCase):
     """AuthResourceDto unit test stubs"""
@@ -42,7 +42,7 @@ class TestAuthResourceDto(unittest.TestCase):
                 list_objects_endpoint = '',
                 object_access = True,
                 actions = [
-                    openapi_client.models.action_dto.ActionDto(
+                    pyCZERTAINLY.models.action_dto.ActionDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
@@ -56,7 +56,7 @@ class TestAuthResourceDto(unittest.TestCase):
                 display_name = '',
                 object_access = True,
                 actions = [
-                    openapi_client.models.action_dto.ActionDto(
+                    pyCZERTAINLY.models.action_dto.ActionDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 

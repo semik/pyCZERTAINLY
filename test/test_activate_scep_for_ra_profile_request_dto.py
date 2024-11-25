@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.activate_scep_for_ra_profile_request_dto import ActivateScepForRaProfileRequestDto
+from pyCZERTAINLY.models.activate_scep_for_ra_profile_request_dto import ActivateScepForRaProfileRequestDto
 
 class TestActivateScepForRaProfileRequestDto(unittest.TestCase):
     """ActivateScepForRaProfileRequestDto unit test stubs"""
@@ -37,28 +37,28 @@ class TestActivateScepForRaProfileRequestDto(unittest.TestCase):
         if include_optional:
             return ActivateScepForRaProfileRequestDto(
                 issue_certificate_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )
         else:
             return ActivateScepForRaProfileRequestDto(
                 issue_certificate_attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
         )

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.code_block_attribute_content import CodeBlockAttributeContent
+from pyCZERTAINLY.models.code_block_attribute_content import CodeBlockAttributeContent
 
 class TestCodeBlockAttributeContent(unittest.TestCase):
     """CodeBlockAttributeContent unit test stubs"""
@@ -37,13 +37,13 @@ class TestCodeBlockAttributeContent(unittest.TestCase):
         if include_optional:
             return CodeBlockAttributeContent(
                 reference = '',
-                data = openapi_client.models.code_block_attribute_content_data.CodeBlockAttributeContentData(
+                data = pyCZERTAINLY.models.code_block_attribute_content_data.CodeBlockAttributeContentData(
                     language = 'JAVA, PHP, C, etc', 
                     code = '', )
             )
         else:
             return CodeBlockAttributeContent(
-                data = openapi_client.models.code_block_attribute_content_data.CodeBlockAttributeContentData(
+                data = pyCZERTAINLY.models.code_block_attribute_content_data.CodeBlockAttributeContentData(
                     language = 'JAVA, PHP, C, etc', 
                     code = '', ),
         )

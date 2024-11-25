@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.actor_type import ActorType
+from pyCZERTAINLY.models.actor_type import ActorType
 
 class TestActorType(unittest.TestCase):
     """ActorType unit test stubs"""

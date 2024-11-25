@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.key_format import KeyFormat
+from pyCZERTAINLY.models.key_format import KeyFormat
 
 class TestKeyFormat(unittest.TestCase):
     """KeyFormat unit test stubs"""

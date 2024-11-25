@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_request_format import CertificateRequestFormat
+from pyCZERTAINLY.models.certificate_request_format import CertificateRequestFormat
 
 class TestCertificateRequestFormat(unittest.TestCase):
     """CertificateRequestFormat unit test stubs"""

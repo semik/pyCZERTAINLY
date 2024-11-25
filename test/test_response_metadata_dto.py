@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.response_metadata_dto import ResponseMetadataDto
+from pyCZERTAINLY.models.response_metadata_dto import ResponseMetadataDto
 
 class TestResponseMetadataDto(unittest.TestCase):
     """ResponseMetadataDto unit test stubs"""
@@ -42,12 +42,12 @@ class TestResponseMetadataDto(unittest.TestCase):
                 type = 'data',
                 content_type = 'string',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ],
                 source_objects = [
-                    openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                    pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', )
                     ]
@@ -59,7 +59,7 @@ class TestResponseMetadataDto(unittest.TestCase):
                 type = 'data',
                 content_type = 'string',
                 source_objects = [
-                    openapi_client.models.name_and_uuid_dto.NameAndUuidDto(
+                    pyCZERTAINLY.models.name_and_uuid_dto.NameAndUuidDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', )
                     ],

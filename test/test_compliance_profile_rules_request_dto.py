@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_profile_rules_request_dto import ComplianceProfileRulesRequestDto
+from pyCZERTAINLY.models.compliance_profile_rules_request_dto import ComplianceProfileRulesRequestDto
 
 class TestComplianceProfileRulesRequestDto(unittest.TestCase):
     """ComplianceProfileRulesRequestDto unit test stubs"""
@@ -39,17 +39,17 @@ class TestComplianceProfileRulesRequestDto(unittest.TestCase):
                 connector_uuid = 'c35bc88c-d0ef-11ec-9d64-0242ac120005',
                 kind = 'x509',
                 rules = [
-                    openapi_client.models.compliance_request_rules_dto.ComplianceRequestRulesDto(
+                    pyCZERTAINLY.models.compliance_request_rules_dto.ComplianceRequestRulesDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         attributes = [
-                            openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                            pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 content_type = 'string', 
                                 content = [
-                                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                         reference = '', 
-                                        data = openapi_client.models.data.data(), )
+                                        data = pyCZERTAINLY.models.data.data(), )
                                     ], )
                             ], )
                     ],

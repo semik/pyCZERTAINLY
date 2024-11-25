@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.settings_api import SettingsApi
+from pyCZERTAINLY.api.settings_api import SettingsApi
 
 
 class TestSettingsApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.sign_data_response_dto import SignDataResponseDto
+from pyCZERTAINLY.models.sign_data_response_dto import SignDataResponseDto
 
 class TestSignDataResponseDto(unittest.TestCase):
     """SignDataResponseDto unit test stubs"""
@@ -37,19 +37,19 @@ class TestSignDataResponseDto(unittest.TestCase):
         if include_optional:
             return SignDataResponseDto(
                 signatures = [
-                    openapi_client.models.signature_response_data.SignatureResponseData(
+                    pyCZERTAINLY.models.signature_response_data.SignatureResponseData(
                         data = '', 
                         identifier = 'customId', 
-                        details = openapi_client.models.details.details(), )
+                        details = pyCZERTAINLY.models.details.details(), )
                     ]
             )
         else:
             return SignDataResponseDto(
                 signatures = [
-                    openapi_client.models.signature_response_data.SignatureResponseData(
+                    pyCZERTAINLY.models.signature_response_data.SignatureResponseData(
                         data = '', 
                         identifier = 'customId', 
-                        details = openapi_client.models.details.details(), )
+                        details = pyCZERTAINLY.models.details.details(), )
                     ],
         )
         """

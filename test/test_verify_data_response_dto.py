@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.verify_data_response_dto import VerifyDataResponseDto
+from pyCZERTAINLY.models.verify_data_response_dto import VerifyDataResponseDto
 
 class TestVerifyDataResponseDto(unittest.TestCase):
     """VerifyDataResponseDto unit test stubs"""
@@ -37,19 +37,19 @@ class TestVerifyDataResponseDto(unittest.TestCase):
         if include_optional:
             return VerifyDataResponseDto(
                 verifications = [
-                    openapi_client.models.verification_response_data.VerificationResponseData(
+                    pyCZERTAINLY.models.verification_response_data.VerificationResponseData(
                         result = True, 
                         identifier = 'customId', 
-                        details = openapi_client.models.details.details(), )
+                        details = pyCZERTAINLY.models.details.details(), )
                     ]
             )
         else:
             return VerifyDataResponseDto(
                 verifications = [
-                    openapi_client.models.verification_response_data.VerificationResponseData(
+                    pyCZERTAINLY.models.verification_response_data.VerificationResponseData(
                         result = True, 
                         identifier = 'customId', 
-                        details = openapi_client.models.details.details(), )
+                        details = pyCZERTAINLY.models.details.details(), )
                     ],
         )
         """

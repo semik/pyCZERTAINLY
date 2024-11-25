@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.protection_method import ProtectionMethod
+from pyCZERTAINLY.models.protection_method import ProtectionMethod
 
 class TestProtectionMethod(unittest.TestCase):
     """ProtectionMethod unit test stubs"""

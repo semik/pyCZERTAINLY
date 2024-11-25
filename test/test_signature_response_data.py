@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.signature_response_data import SignatureResponseData
+from pyCZERTAINLY.models.signature_response_data import SignatureResponseData
 
 class TestSignatureResponseData(unittest.TestCase):
     """SignatureResponseData unit test stubs"""
@@ -38,7 +38,7 @@ class TestSignatureResponseData(unittest.TestCase):
             return SignatureResponseData(
                 data = '',
                 identifier = 'customId',
-                details = openapi_client.models.details.details()
+                details = pyCZERTAINLY.models.details.details()
             )
         else:
             return SignatureResponseData(

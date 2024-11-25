@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.acme_account_management_api import ACMEAccountManagementApi
+from pyCZERTAINLY.api.acme_account_management_api import ACMEAccountManagementApi
 
 
 class TestACMEAccountManagementApi(unittest.TestCase):

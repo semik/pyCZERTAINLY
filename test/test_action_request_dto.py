@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.action_request_dto import ActionRequestDto
+from pyCZERTAINLY.models.action_request_dto import ActionRequestDto
 
 class TestActionRequestDto(unittest.TestCase):
     """ActionRequestDto unit test stubs"""

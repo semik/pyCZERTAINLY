@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_protocol import CertificateProtocol
+from pyCZERTAINLY.models.certificate_protocol import CertificateProtocol
 
 class TestCertificateProtocol(unittest.TestCase):
     """CertificateProtocol unit test stubs"""

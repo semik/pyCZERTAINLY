@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.health_status import HealthStatus
+from pyCZERTAINLY.models.health_status import HealthStatus
 
 class TestHealthStatus(unittest.TestCase):
     """HealthStatus unit test stubs"""

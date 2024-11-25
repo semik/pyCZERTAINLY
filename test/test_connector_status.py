@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.connector_status import ConnectorStatus
+from pyCZERTAINLY.models.connector_status import ConnectorStatus
 
 class TestConnectorStatus(unittest.TestCase):
     """ConnectorStatus unit test stubs"""

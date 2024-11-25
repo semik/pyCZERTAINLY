@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.search_request_dto import SearchRequestDto
+from pyCZERTAINLY.models.search_request_dto import SearchRequestDto
 
 class TestSearchRequestDto(unittest.TestCase):
     """SearchRequestDto unit test stubs"""
@@ -37,11 +37,11 @@ class TestSearchRequestDto(unittest.TestCase):
         if include_optional:
             return SearchRequestDto(
                 filters = [
-                    openapi_client.models.search_filter_request_dto.SearchFilterRequestDto(
+                    pyCZERTAINLY.models.search_filter_request_dto.SearchFilterRequestDto(
                         field_source = 'meta', 
                         field_identifier = '', 
                         condition = 'EQUALS', 
-                        value = openapi_client.models.value.value(), )
+                        value = pyCZERTAINLY.models.value.value(), )
                     ],
                 items_per_page = 56,
                 page_number = 56

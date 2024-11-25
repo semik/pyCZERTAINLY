@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_chain_download_response_dto import CertificateChainDownloadResponseDto
+from pyCZERTAINLY.models.certificate_chain_download_response_dto import CertificateChainDownloadResponseDto
 
 class TestCertificateChainDownloadResponseDto(unittest.TestCase):
     """CertificateChainDownloadResponseDto unit test stubs"""

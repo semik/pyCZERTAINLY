@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.condition_item_dto import ConditionItemDto
+from pyCZERTAINLY.models.condition_item_dto import ConditionItemDto
 
 class TestConditionItemDto(unittest.TestCase):
     """ConditionItemDto unit test stubs"""
@@ -39,7 +39,7 @@ class TestConditionItemDto(unittest.TestCase):
                 field_source = 'meta',
                 field_identifier = '',
                 operator = 'EQUALS',
-                value = openapi_client.models.value.value()
+                value = pyCZERTAINLY.models.value.value()
             )
         else:
             return ConditionItemDto(

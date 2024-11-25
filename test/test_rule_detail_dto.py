@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.rule_detail_dto import RuleDetailDto
+from pyCZERTAINLY.models.rule_detail_dto import RuleDetailDto
 
 class TestRuleDetailDto(unittest.TestCase):
     """RuleDetailDto unit test stubs"""
@@ -41,18 +41,18 @@ class TestRuleDetailDto(unittest.TestCase):
                 description = '',
                 resource = 'NONE',
                 conditions = [
-                    openapi_client.models.condition_dto.ConditionDto(
+                    pyCZERTAINLY.models.condition_dto.ConditionDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
                         type = 'checkField', 
                         resource = 'NONE', 
                         items = [
-                            openapi_client.models.condition_item_dto.ConditionItemDto(
+                            pyCZERTAINLY.models.condition_item_dto.ConditionItemDto(
                                 field_source = 'meta', 
                                 field_identifier = '', 
                                 operator = 'EQUALS', 
-                                value = openapi_client.models.value.value(), )
+                                value = pyCZERTAINLY.models.value.value(), )
                             ], )
                     ]
             )
@@ -62,18 +62,18 @@ class TestRuleDetailDto(unittest.TestCase):
                 name = 'Name',
                 resource = 'NONE',
                 conditions = [
-                    openapi_client.models.condition_dto.ConditionDto(
+                    pyCZERTAINLY.models.condition_dto.ConditionDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
                         type = 'checkField', 
                         resource = 'NONE', 
                         items = [
-                            openapi_client.models.condition_item_dto.ConditionItemDto(
+                            pyCZERTAINLY.models.condition_item_dto.ConditionItemDto(
                                 field_source = 'meta', 
                                 field_identifier = '', 
                                 operator = 'EQUALS', 
-                                value = openapi_client.models.value.value(), )
+                                value = pyCZERTAINLY.models.value.value(), )
                             ], )
                     ],
         )

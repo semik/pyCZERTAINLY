@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.user_identification_request_dto import UserIdentificationRequestDto
+from pyCZERTAINLY.models.user_identification_request_dto import UserIdentificationRequestDto
 
 class TestUserIdentificationRequestDto(unittest.TestCase):
     """UserIdentificationRequestDto unit test stubs"""

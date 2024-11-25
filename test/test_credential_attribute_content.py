@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.credential_attribute_content import CredentialAttributeContent
+from pyCZERTAINLY.models.credential_attribute_content import CredentialAttributeContent
 
 class TestCredentialAttributeContent(unittest.TestCase):
     """CredentialAttributeContent unit test stubs"""
@@ -37,18 +37,18 @@ class TestCredentialAttributeContent(unittest.TestCase):
         if include_optional:
             return CredentialAttributeContent(
                 reference = '',
-                data = openapi_client.models.credential_attribute_content_data.CredentialAttributeContentData(
+                data = pyCZERTAINLY.models.credential_attribute_content_data.CredentialAttributeContentData(
                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                     name = 'Name', 
                     kind = 'SoftKeyStore, Basic, ApiKey, etc', 
                     attributes = [
-                        openapi_client.models.data_attribute.DataAttribute(
+                        pyCZERTAINLY.models.data_attribute.DataAttribute(
                             uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                             name = 'Attribute', 
                             description = '', 
                             type = 'data', 
                             content_type = 'string', 
-                            properties = openapi_client.models.data_attribute_properties.DataAttributeProperties(
+                            properties = pyCZERTAINLY.models.data_attribute_properties.DataAttributeProperties(
                                 label = 'Attribute Name', 
                                 visible = True, 
                                 group = 'requiredAttributes', 
@@ -57,17 +57,17 @@ class TestCredentialAttributeContent(unittest.TestCase):
                                 list = True, 
                                 multi_select = True, ), 
                             constraints = [
-                                openapi_client.models.base_attribute_constraint.BaseAttributeConstraint(
+                                pyCZERTAINLY.models.base_attribute_constraint.BaseAttributeConstraint(
                                     description = '', 
                                     error_message = '', 
                                     type = 'regExp', 
-                                    data = openapi_client.models.data.data(), )
+                                    data = pyCZERTAINLY.models.data.data(), )
                                 ], 
-                            attribute_callback = openapi_client.models.attribute_callback.AttributeCallback(
+                            attribute_callback = pyCZERTAINLY.models.attribute_callback.AttributeCallback(
                                 callback_context = '', 
                                 callback_method = '', 
                                 mappings = [
-                                    openapi_client.models.attribute_callback_mapping.AttributeCallbackMapping(
+                                    pyCZERTAINLY.models.attribute_callback_mapping.AttributeCallbackMapping(
                                         from = '', 
                                         attribute_type = 'data', 
                                         attribute_content_type = 'string', 
@@ -75,24 +75,24 @@ class TestCredentialAttributeContent(unittest.TestCase):
                                         targets = [
                                             'pathVariable'
                                             ], 
-                                        value = openapi_client.models.value.value(), )
+                                        value = pyCZERTAINLY.models.value.value(), )
                                     ], ), )
                         ], )
             )
         else:
             return CredentialAttributeContent(
-                data = openapi_client.models.credential_attribute_content_data.CredentialAttributeContentData(
+                data = pyCZERTAINLY.models.credential_attribute_content_data.CredentialAttributeContentData(
                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                     name = 'Name', 
                     kind = 'SoftKeyStore, Basic, ApiKey, etc', 
                     attributes = [
-                        openapi_client.models.data_attribute.DataAttribute(
+                        pyCZERTAINLY.models.data_attribute.DataAttribute(
                             uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                             name = 'Attribute', 
                             description = '', 
                             type = 'data', 
                             content_type = 'string', 
-                            properties = openapi_client.models.data_attribute_properties.DataAttributeProperties(
+                            properties = pyCZERTAINLY.models.data_attribute_properties.DataAttributeProperties(
                                 label = 'Attribute Name', 
                                 visible = True, 
                                 group = 'requiredAttributes', 
@@ -101,17 +101,17 @@ class TestCredentialAttributeContent(unittest.TestCase):
                                 list = True, 
                                 multi_select = True, ), 
                             constraints = [
-                                openapi_client.models.base_attribute_constraint.BaseAttributeConstraint(
+                                pyCZERTAINLY.models.base_attribute_constraint.BaseAttributeConstraint(
                                     description = '', 
                                     error_message = '', 
                                     type = 'regExp', 
-                                    data = openapi_client.models.data.data(), )
+                                    data = pyCZERTAINLY.models.data.data(), )
                                 ], 
-                            attribute_callback = openapi_client.models.attribute_callback.AttributeCallback(
+                            attribute_callback = pyCZERTAINLY.models.attribute_callback.AttributeCallback(
                                 callback_context = '', 
                                 callback_method = '', 
                                 mappings = [
-                                    openapi_client.models.attribute_callback_mapping.AttributeCallbackMapping(
+                                    pyCZERTAINLY.models.attribute_callback_mapping.AttributeCallbackMapping(
                                         from = '', 
                                         attribute_type = 'data', 
                                         attribute_content_type = 'string', 
@@ -119,7 +119,7 @@ class TestCredentialAttributeContent(unittest.TestCase):
                                         targets = [
                                             'pathVariable'
                                             ], 
-                                        value = openapi_client.models.value.value(), )
+                                        value = pyCZERTAINLY.models.value.value(), )
                                     ], ), )
                         ], ),
         )

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.simplified_compliance_profile_dto import SimplifiedComplianceProfileDto
+from pyCZERTAINLY.models.simplified_compliance_profile_dto import SimplifiedComplianceProfileDto
 
 class TestSimplifiedComplianceProfileDto(unittest.TestCase):
     """SimplifiedComplianceProfileDto unit test stubs"""

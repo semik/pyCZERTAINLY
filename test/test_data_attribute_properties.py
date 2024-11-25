@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.data_attribute_properties import DataAttributeProperties
+from pyCZERTAINLY.models.data_attribute_properties import DataAttributeProperties
 
 class TestDataAttributeProperties(unittest.TestCase):
     """DataAttributeProperties unit test stubs"""

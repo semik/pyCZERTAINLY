@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.trigger_request_dto import TriggerRequestDto
+from pyCZERTAINLY.models.trigger_request_dto import TriggerRequestDto
 
 class TestTriggerRequestDto(unittest.TestCase):
     """TriggerRequestDto unit test stubs"""

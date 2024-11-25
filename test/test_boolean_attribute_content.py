@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.boolean_attribute_content import BooleanAttributeContent
+from pyCZERTAINLY.models.boolean_attribute_content import BooleanAttributeContent
 
 class TestBooleanAttributeContent(unittest.TestCase):
     """BooleanAttributeContent unit test stubs"""

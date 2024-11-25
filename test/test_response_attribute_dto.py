@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.response_attribute_dto import ResponseAttributeDto
+from pyCZERTAINLY.models.response_attribute_dto import ResponseAttributeDto
 
 class TestResponseAttributeDto(unittest.TestCase):
     """ResponseAttributeDto unit test stubs"""
@@ -42,9 +42,9 @@ class TestResponseAttributeDto(unittest.TestCase):
                 type = 'data',
                 content_type = 'string',
                 content = [
-                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                         reference = '', 
-                        data = openapi_client.models.data.data(), )
+                        data = pyCZERTAINLY.models.data.data(), )
                     ]
             )
         else:

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.action_detail_dto import ActionDetailDto
+from pyCZERTAINLY.models.action_detail_dto import ActionDetailDto
 
 class TestActionDetailDto(unittest.TestCase):
     """ActionDetailDto unit test stubs"""
@@ -41,17 +41,17 @@ class TestActionDetailDto(unittest.TestCase):
                 description = '',
                 resource = 'NONE',
                 executions = [
-                    openapi_client.models.execution_dto.ExecutionDto(
+                    pyCZERTAINLY.models.execution_dto.ExecutionDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
                         type = 'setField', 
                         resource = 'NONE', 
                         items = [
-                            openapi_client.models.execution_item_dto.ExecutionItemDto(
+                            pyCZERTAINLY.models.execution_item_dto.ExecutionItemDto(
                                 field_source = 'meta', 
                                 field_identifier = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ]
             )
@@ -61,17 +61,17 @@ class TestActionDetailDto(unittest.TestCase):
                 name = 'Name',
                 resource = 'NONE',
                 executions = [
-                    openapi_client.models.execution_dto.ExecutionDto(
+                    pyCZERTAINLY.models.execution_dto.ExecutionDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
                         type = 'setField', 
                         resource = 'NONE', 
                         items = [
-                            openapi_client.models.execution_item_dto.ExecutionItemDto(
+                            pyCZERTAINLY.models.execution_item_dto.ExecutionItemDto(
                                 field_source = 'meta', 
                                 field_identifier = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
         )

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.token_instance_controller_api import TokenInstanceControllerApi
+from pyCZERTAINLY.api.token_instance_controller_api import TokenInstanceControllerApi
 
 
 class TestTokenInstanceControllerApi(unittest.TestCase):

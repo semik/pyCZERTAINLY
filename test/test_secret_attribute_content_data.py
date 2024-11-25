@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.secret_attribute_content_data import SecretAttributeContentData
+from pyCZERTAINLY.models.secret_attribute_content_data import SecretAttributeContentData
 
 class TestSecretAttributeContentData(unittest.TestCase):
     """SecretAttributeContentData unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.resource_dto import ResourceDto
+from pyCZERTAINLY.models.resource_dto import ResourceDto
 
 class TestResourceDto(unittest.TestCase):
     """ResourceDto unit test stubs"""

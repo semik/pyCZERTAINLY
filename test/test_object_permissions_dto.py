@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.object_permissions_dto import ObjectPermissionsDto
+from pyCZERTAINLY.models.object_permissions_dto import ObjectPermissionsDto
 
 class TestObjectPermissionsDto(unittest.TestCase):
     """ObjectPermissionsDto unit test stubs"""

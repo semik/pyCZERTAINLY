@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.verification_response_data import VerificationResponseData
+from pyCZERTAINLY.models.verification_response_data import VerificationResponseData
 
 class TestVerificationResponseData(unittest.TestCase):
     """VerificationResponseData unit test stubs"""

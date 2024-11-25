@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.callback_api import CallbackApi
+from pyCZERTAINLY.api.callback_api import CallbackApi
 
 
 class TestCallbackApi(unittest.TestCase):

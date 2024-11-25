@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.rule_dto import RuleDto
+from pyCZERTAINLY.models.rule_dto import RuleDto
 
 class TestRuleDto(unittest.TestCase):
     """RuleDto unit test stubs"""

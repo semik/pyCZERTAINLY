@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.cipher_response_data import CipherResponseData
+from pyCZERTAINLY.models.cipher_response_data import CipherResponseData
 
 class TestCipherResponseData(unittest.TestCase):
     """CipherResponseData unit test stubs"""

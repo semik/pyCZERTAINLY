@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.scep_profile_dto import ScepProfileDto
+from pyCZERTAINLY.models.scep_profile_dto import ScepProfileDto
 
 class TestScepProfileDto(unittest.TestCase):
     """ScepProfileDto unit test stubs"""
@@ -40,7 +40,7 @@ class TestScepProfileDto(unittest.TestCase):
                 name = 'Name',
                 enabled = True,
                 description = 'Sample description',
-                ra_profile = openapi_client.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
+                ra_profile = pyCZERTAINLY.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                     name = 'Name', 
                     enabled = True, 

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.discovery_management_api import DiscoveryManagementApi
+from pyCZERTAINLY.api.discovery_management_api import DiscoveryManagementApi
 
 
 class TestDiscoveryManagementApi(unittest.TestCase):

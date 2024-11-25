@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.compliance_profile_management_api import ComplianceProfileManagementApi
+from pyCZERTAINLY.api.compliance_profile_management_api import ComplianceProfileManagementApi
 
 
 class TestComplianceProfileManagementApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.simplified_ra_profile_dto import SimplifiedRaProfileDto
+from pyCZERTAINLY.models.simplified_ra_profile_dto import SimplifiedRaProfileDto
 
 class TestSimplifiedRaProfileDto(unittest.TestCase):
     """SimplifiedRaProfileDto unit test stubs"""

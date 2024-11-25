@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_rule_deletion_request_dto import ComplianceRuleDeletionRequestDto
+from pyCZERTAINLY.models.compliance_rule_deletion_request_dto import ComplianceRuleDeletionRequestDto
 
 class TestComplianceRuleDeletionRequestDto(unittest.TestCase):
     """ComplianceRuleDeletionRequestDto unit test stubs"""

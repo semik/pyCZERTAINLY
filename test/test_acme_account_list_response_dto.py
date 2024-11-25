@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.acme_account_list_response_dto import AcmeAccountListResponseDto
+from pyCZERTAINLY.models.acme_account_list_response_dto import AcmeAccountListResponseDto
 
 class TestAcmeAccountListResponseDto(unittest.TestCase):
     """AcmeAccountListResponseDto unit test stubs"""
@@ -41,7 +41,7 @@ class TestAcmeAccountListResponseDto(unittest.TestCase):
                 enabled = False,
                 total_orders = 4,
                 status = 'VALID',
-                ra_profile = openapi_client.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
+                ra_profile = pyCZERTAINLY.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                     name = 'Name', 
                     enabled = True, 
@@ -56,7 +56,7 @@ class TestAcmeAccountListResponseDto(unittest.TestCase):
                 enabled = False,
                 total_orders = 4,
                 status = 'VALID',
-                ra_profile = openapi_client.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
+                ra_profile = pyCZERTAINLY.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                     name = 'Name', 
                     enabled = True, 

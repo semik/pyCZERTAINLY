@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.token_profile_dto import TokenProfileDto
+from pyCZERTAINLY.models.token_profile_dto import TokenProfileDto
 
 class TestTokenProfileDto(unittest.TestCase):
     """TokenProfileDto unit test stubs"""

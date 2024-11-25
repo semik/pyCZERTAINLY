@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.connector_registration_api import ConnectorRegistrationApi
+from pyCZERTAINLY.api.connector_registration_api import ConnectorRegistrationApi
 
 
 class TestConnectorRegistrationApi(unittest.TestCase):

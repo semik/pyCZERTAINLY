@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
+from pyCZERTAINLY.models.search_field_data_by_group_dto import SearchFieldDataByGroupDto
 
 class TestSearchFieldDataByGroupDto(unittest.TestCase):
     """SearchFieldDataByGroupDto unit test stubs"""
@@ -38,7 +38,7 @@ class TestSearchFieldDataByGroupDto(unittest.TestCase):
             return SearchFieldDataByGroupDto(
                 filter_field_source = 'meta',
                 search_field_data = [
-                    openapi_client.models.search_field_data_dto.SearchFieldDataDto(
+                    pyCZERTAINLY.models.search_field_data_dto.SearchFieldDataDto(
                         field_identifier = '', 
                         field_label = '', 
                         type = 'string', 
@@ -47,7 +47,7 @@ class TestSearchFieldDataByGroupDto(unittest.TestCase):
                             ], 
                         platform_enum = 'Resource', 
                         attribute_content_type = 'string', 
-                        value = openapi_client.models.value.value(), 
+                        value = pyCZERTAINLY.models.value.value(), 
                         multi_value = True, )
                     ]
             )

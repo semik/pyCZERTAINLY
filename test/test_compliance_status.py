@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.compliance_status import ComplianceStatus
+from pyCZERTAINLY.models.compliance_status import ComplianceStatus
 
 class TestComplianceStatus(unittest.TestCase):
     """ComplianceStatus unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.float_attribute_content import FloatAttributeContent
+from pyCZERTAINLY.models.float_attribute_content import FloatAttributeContent
 
 class TestFloatAttributeContent(unittest.TestCase):
     """FloatAttributeContent unit test stubs"""

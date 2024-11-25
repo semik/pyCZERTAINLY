@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_dto import CertificateDto
+from pyCZERTAINLY.models.certificate_dto import CertificateDto
 
 class TestCertificateDto(unittest.TestCase):
     """CertificateDto unit test stubs"""
@@ -49,29 +49,29 @@ class TestCertificateDto(unittest.TestCase):
                 key_size = 56,
                 state = 'requested',
                 validation_status = 'not_checked',
-                ra_profile = openapi_client.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
+                ra_profile = pyCZERTAINLY.models.simplified_ra_profile_dto.SimplifiedRaProfileDto(
                     uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                     name = 'Name', 
                     enabled = True, 
                     authority_instance_uuid = '', ),
                 fingerprint = '',
                 groups = [
-                    openapi_client.models.group_dto.GroupDto(
+                    pyCZERTAINLY.models.group_dto.GroupDto(
                         uuid = '7b55ge1c-844f-11dc-a8a3-0242ac120002', 
                         name = 'Name', 
                         description = '', 
                         email = '', 
                         custom_attributes = [
-                            openapi_client.models.response_attribute_dto.ResponseAttributeDto(
+                            pyCZERTAINLY.models.response_attribute_dto.ResponseAttributeDto(
                                 uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                                 name = 'Attribute', 
                                 label = 'Attribute Name', 
                                 type = 'data', 
                                 content_type = 'string', 
                                 content = [
-                                    openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                                    pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                         reference = '', 
-                                        data = openapi_client.models.data.data(), )
+                                        data = pyCZERTAINLY.models.data.data(), )
                                     ], )
                             ], )
                     ],

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.update_key_usage_request_dto import UpdateKeyUsageRequestDto
+from pyCZERTAINLY.models.update_key_usage_request_dto import UpdateKeyUsageRequestDto
 
 class TestUpdateKeyUsageRequestDto(unittest.TestCase):
     """UpdateKeyUsageRequestDto unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.file_attribute_content import FileAttributeContent
+from pyCZERTAINLY.models.file_attribute_content import FileAttributeContent
 
 class TestFileAttributeContent(unittest.TestCase):
     """FileAttributeContent unit test stubs"""
@@ -37,14 +37,14 @@ class TestFileAttributeContent(unittest.TestCase):
         if include_optional:
             return FileAttributeContent(
                 reference = '',
-                data = openapi_client.models.file_attribute_content_data.FileAttributeContentData(
+                data = pyCZERTAINLY.models.file_attribute_content_data.FileAttributeContentData(
                     content = '', 
                     file_name = '', 
                     mime_type = '', )
             )
         else:
             return FileAttributeContent(
-                data = openapi_client.models.file_attribute_content_data.FileAttributeContentData(
+                data = pyCZERTAINLY.models.file_attribute_content_data.FileAttributeContentData(
                     content = '', 
                     file_name = '', 
                     mime_type = '', ),

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.notification_instance_request_dto import NotificationInstanceRequestDto
+from pyCZERTAINLY.models.notification_instance_request_dto import NotificationInstanceRequestDto
 
 class TestNotificationInstanceRequestDto(unittest.TestCase):
     """NotificationInstanceRequestDto unit test stubs"""
@@ -38,18 +38,18 @@ class TestNotificationInstanceRequestDto(unittest.TestCase):
             return NotificationInstanceRequestDto(
                 description = '',
                 attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 attribute_mappings = [
-                    openapi_client.models.attribute_mapping_dto.AttributeMappingDto(
+                    pyCZERTAINLY.models.attribute_mapping_dto.AttributeMappingDto(
                         mapping_attribute_uuid = '', 
                         mapping_attribute_name = '', 
                         custom_attribute_uuid = '', 
@@ -62,14 +62,14 @@ class TestNotificationInstanceRequestDto(unittest.TestCase):
         else:
             return NotificationInstanceRequestDto(
                 attributes = [
-                    openapi_client.models.request_attribute_dto.RequestAttributeDto(
+                    pyCZERTAINLY.models.request_attribute_dto.RequestAttributeDto(
                         uuid = '166b5cf52-63f2-11ec-90d6-0242ac120003', 
                         name = 'Attribute', 
                         content_type = 'string', 
                         content = [
-                            openapi_client.models.base_attribute_content_dto.BaseAttributeContentDto(
+                            pyCZERTAINLY.models.base_attribute_content_dto.BaseAttributeContentDto(
                                 reference = '', 
-                                data = openapi_client.models.data.data(), )
+                                data = pyCZERTAINLY.models.data.data(), )
                             ], )
                     ],
                 name = '',

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.resource_management_api import ResourceManagementApi
+from pyCZERTAINLY.api.resource_management_api import ResourceManagementApi
 
 
 class TestResourceManagementApi(unittest.TestCase):

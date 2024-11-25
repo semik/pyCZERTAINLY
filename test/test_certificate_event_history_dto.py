@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.certificate_event_history_dto import CertificateEventHistoryDto
+from pyCZERTAINLY.models.certificate_event_history_dto import CertificateEventHistoryDto
 
 class TestCertificateEventHistoryDto(unittest.TestCase):
     """CertificateEventHistoryDto unit test stubs"""

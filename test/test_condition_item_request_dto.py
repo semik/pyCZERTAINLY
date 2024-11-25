@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.condition_item_request_dto import ConditionItemRequestDto
+from pyCZERTAINLY.models.condition_item_request_dto import ConditionItemRequestDto
 
 class TestConditionItemRequestDto(unittest.TestCase):
     """ConditionItemRequestDto unit test stubs"""

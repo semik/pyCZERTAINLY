@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.models.date_time_attribute_constraint_data import DateTimeAttributeConstraintData
+from pyCZERTAINLY.models.date_time_attribute_constraint_data import DateTimeAttributeConstraintData
 
 class TestDateTimeAttributeConstraintData(unittest.TestCase):
     """DateTimeAttributeConstraintData unit test stubs"""
