@@ -29,7 +29,7 @@ class ClientCertificateRevocationDto(BaseModel):
     """
     ClientCertificateRevocationDto
     """ # noqa: E501
-    reason: Optional[CertificateRevocationReason] = UNSPECIFIED
+    reason: Optional[CertificateRevocationReason] = CertificateRevocationReason.UNSPECIFIED
     attributes: List[RequestAttributeDto] = Field(description="List of Attributes to revoke Certificate")
     destroy_key: Optional[StrictBool] = Field(default=False, description="Destroy Key upon successful revocation", alias="destroyKey")
     __properties: ClassVar[List[str]] = ["reason", "attributes", "destroyKey"]
@@ -97,5 +97,3 @@ class ClientCertificateRevocationDto(BaseModel):
             "destroyKey": obj.get("destroyKey") if obj.get("destroyKey") is not None else False
         })
         return _obj
-
-
