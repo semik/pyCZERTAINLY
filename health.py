@@ -43,7 +43,7 @@ configuration.cert_file = args.cert
 configuration.key_file = args.key
 
 # TODO check core
-# it's not present in API :(
+# /api/v1/health/liveness not present in API, cuz is undocumented :(
 
 # Iterate over all connectors, print their name and status
 with pyCZERTAINLY.ApiClient(configuration) as api_client:
