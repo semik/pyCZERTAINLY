@@ -20,7 +20,6 @@ with pyCZERTAINLY.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyCZERTAINLY.ConnectorManagementApi(api_client)
     #function_group = pyCZERTAINLY.FunctionGroupCode() # FunctionGroupCode |  (optional)
-    #kind = 'kind_example' # str |  (optional)
     #status = pyCZERTAINLY.ConnectorStatus() # ConnectorStatus |  (optional)
 
     try:
